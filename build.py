@@ -263,7 +263,6 @@ def landing(lang):
     features = "".join(f'<article class="card tint{i % 4}"><h3>{esc(title)}</h3><p>{esc(text)}</p></article>'
                        for i, (title, text) in enumerate(t["features"]))
     points = "".join(f"<li>{esc(point)}</li>" for point in t["privacy_points"])
-    shot = "focus-en.png" if lang == "en" else "today-tr.png"
     body = f"""<section class="hero">
 <div>
 <img class="icon" src="{asset('icon-512.png')}" alt="" width="112" height="112">
@@ -273,8 +272,8 @@ def landing(lang):
 {badge(lang)}
 </div>
 <div class="shots">
-<img src="{asset('shots/' + shot)}" alt="{esc(t['alt_today'])}" width="300" loading="lazy">
-<img src="{asset('shots/wall.png')}" alt="{esc(t['alt_wall'])}" width="300" loading="lazy">
+<img src="{asset(f'shots/today-{lang}.png')}" alt="{esc(t['alt_today'])}" width="300" loading="lazy">
+<img src="{asset(f'shots/wall-{lang}.png')}" alt="{esc(t['alt_wall'])}" width="300" loading="lazy">
 </div>
 </section>
 <section>
