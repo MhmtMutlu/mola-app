@@ -18,7 +18,8 @@ https://mola.mm-apps.com/kvkk/. Bağlayıcı metin Türkçedir (Bölüm 14).
   aile içinde görünen adın, yalnız ailenizin cihazlarının açabileceği şekilde şifrelenir. Sunucumuz bunları **okuyamaz.**
 - Mola'yı yalnız kendin için (odak ve çini duvarı) kullanırsan **sunucumuza hiçbir şey gitmez.**
 - Aile kurarsanız Türkiye'deki sunucumuzda yalnız şunlar durur: rastgele üretilmiş kimlikler, şifreli ve en çok 25 saat
-  yaşayan zarflar ve, bildirimlere izin verdiysen, Apple'ın cihazın için ürettiği bildirim jetonu.
+  yaşayan zarflar ve, ebeveyn telefonunda bildirimleri açtıysan, Apple'ın o telefon için ürettiği bildirim jetonu.
+  **Çocuk telefonlarından bildirim jetonu alınmaz.**
 - **Seni izlemeyiz,** verilerini **satmayız,** reklam göstermeyiz. Uygulamada analitik ya da çökme raporlama aracı yoktur.
 - Sorun olursa Türkçe ya da İngilizce yaz: **destek@mm-apps.com**
 
@@ -38,6 +39,10 @@ temsilcimiz yoktur; bu ülkelerdeki kullanıcılar ve makamlar dahil herkes bize
 Bu politika iOS, iPadOS ve watchOS için Mola uygulamasını, uygulamanın aile sunucusunu ("relay") ve bizimle yaptığın
 yazışmaları kapsar. App Store'un kendisi, Apple'ın Ekran Süresi ve Aile Paylaşımı özellikleri ve Apple'ın bildirim
 hizmeti, Apple'ın kendi gizlilik politikasına tabidir.
+
+Bu sayfanın yayımlandığı site çerez ve analiz aracı kullanmaz. Site GitHub Pages üzerinde barındırılır; sayfayı
+açtığında IP adresin, her web sitesinde olduğu gibi, barındırıcıya (GitHub, ABD) ulaşır ve GitHub bunu kendi gizlilik
+politikasıyla işler.
 
 ## 3. Hangi bilgiler nerede durur?
 
@@ -64,33 +69,40 @@ gerekir. Bu sunucu yalnız kapalı zarf taşır.
 
 | | |
 | --- | --- |
-| **Veriler** | Rastgele üretilen hesap numarası ve oturum anahtarları; hesabın açılış ve son giriş zamanı; rastgele aile kimliği ve rastgele üye kimliği; ailenin erişim jetonunun özeti (jetonun kendisi değil); cihazın sunucuya en son bağlandığı zaman; **şifreli zarflar** (gönderen ve alıcı üye kimliği, son kullanma zamanı ve sunucunun okuyamadığı şifreli içerik); herkese giden zarflar için "alındı" kaydı |
+| **Veriler** | Rastgele üretilen hesap numarası ve oturum anahtarları; hesabın açılış ve son giriş zamanı; rastgele aile kimliği ve rastgele üye kimliği; ailenin erişim jetonunun özeti (jetonun kendisi değil); kayıtların oluşturulma zamanları ve cihazın sunucuya en son bağlandığı zaman; **şifreli zarflar** (zarf kimliği, gönderen ve alıcı üye kimliği, oluşturulma ve son kullanma zamanı ve sunucunun okuyamadığı şifreli içerik); herkese giden zarflar için "alındı" kaydı; aileden çıkarılan bir cihaz için o cihazın rastgele üye kimliği ve sunucunun okuyamadığı, ebeveynin imzaladığı kısa bir bildirim |
 | **Amaç** | Bir aile cihazının gönderdiği komutu, kuralı, isteği ya da yanıtı ailenin diğer cihazlarına iletmek; aileye yalnız aile anahtarını bilen cihazların katılabilmesini sağlamak |
 | **Hukuki dayanak** | Sözleşmenin kurulması ve ifası: KVKK m.5/2(c) · GDPR m.6/1(b). Kötüye kullanımı önleyen sınırlar için meşru menfaat: KVKK m.5/2(f) · GDPR m.6/1(f) |
-| **Saklama** | Tek cihaza giden zarf, o cihaz alınca **hemen** silinir. Diğer zarflar en çok **25 saat** yaşar. Cihaz kaydı, aileden ayrılana kadar; cihaz **180 gün** boyunca sunucuya hiç bağlanmazsa kendiliğinden silinir. Aileye hiç katılmamış hesaplar 2 gün sonra silinir. |
+| **Saklama** | Tek cihaza giden zarf, o cihaz alınca **hemen** silinir. Diğer zarflar en çok **25 saat** yaşar. Cihaz kaydı, aileden ayrılana kadar; cihaz **180 gün** boyunca sunucuya hiç bağlanmazsa kendiliğinden silinir. Aileye hiç katılmamış hesaplar 2 gün sonra silinir. Aileden çıkarılan bir cihazın hesabı, kaydı ve zarfları **hemen** silinir; o cihaza bırakılan şifreli bildirim 180 gün sonra silinir. |
 
 Sunucu zarfın içini okuyamaz: içerik cihazında ailenizin anahtarıyla şifrelenir (ChaCha20-Poly1305) ve gönderen
 cihazın anahtarıyla imzalanır (Ed25519). Sunucuda ad, e-posta, kullanım verisi, uygulama listesi ya da kural **bulunmaz.**
 
 **IP adresi.** Cihazın sunucuya bağlanırken IP adresi, bağlantının doğası gereği sunucuya ulaşır. Bunu hesabınla
-birlikte saklamayız: web sunucumuz erişim günlüğü tutmaz, oturum kayıtlarındaki IP adresi ve cihaz bilgisi alanları boş
-bırakılır. Kötüye kullanımı sınırlamak için adres yalnız bellekte, dakikalık sayaçlarda kullanılır.
+birlikte saklamayız: sunucu yazılımımızı erişim günlüğü tutmayacak biçimde yapılandırdık; oturum kayıtlarındaki IP
+adresi ve cihaz bilgisi yazılır, ancak en geç bir saat içinde silinir. Adres, kötüye kullanımı sınırlayan kısa süreli
+sayaçlarda bellekte kullanılır. Barındırma sağlayıcımız, kendi yasal yükümlülükleri gereği ağ trafiği kayıtlarını kendi
+sorumluluğunda tutabilir.
 
-### 3.3 Bildirimler (isteğe bağlı)
+### 3.3 Bildirimler (isteğe bağlı, yalnız ebeveyn telefonunda)
 
-Aile kurduğunuzda Mola bildirim izni ister. İzin verirsen ebeveynin verdiği mola ya da çocuğun süre isteği, uygulama
-kapalıyken de ulaşır. İzin vermezsen Mola çalışmaya devam eder; komutlar ve istekler uygulama açıldığında gelir.
+Bildirimler yalnız **ebeveyn telefonunda** ve yalnız sen açarsan kullanılır. Mola önce ne olacağını kendi ekranında
+anlatır; "Bildirimleri aç"a dokunursan iOS'un sorusu gelir. Açarsan çocuğunun süre isteği, uygulama kapalıyken de sana
+ulaşır. Açmazsan Mola çalışmaya devam eder; istekler uygulamayı açtığında gelir.
+
+**Çocuk telefonlarında bildirim kullanılmaz ve çocuk telefonundan bildirim jetonu alınmaz.** Ebeveynin verdiği mola ya
+da yeni bir kural, çocuğun telefonunda Mola açıldığında ya da iOS uygulamaya arka planda sıra verdiğinde uygulanır. Okul,
+uyku ve günlük sınır gibi planlı kurallar telefonda kayıtlıdır ve internet olmadan da çalışır.
 
 | | |
 | --- | --- |
-| **Veriler** | Apple'ın bu cihaz ve uygulama için ürettiği **bildirim jetonu**; jetonun test mi gerçek mi olduğu |
-| **Amaç** | Ailenden yeni bir zarf geldiğinde cihazını uyandırmak |
-| **Hukuki dayanak** | Açık rıza: KVKK m.5/1 · GDPR m.6/1(a). iOS Ayarları → Bildirimler → Mola'dan istediğin an geri alırsın; uygulama bir sonraki açılışta jetonu sunucudan siler |
-| **Saklama** | Bildirimleri kapatana, aileden ayrılana ya da Apple jetonun geçersiz olduğunu bildirene kadar |
-| **Alıcı** | Apple Push Notification service (Bölüm 4 ve 5) |
+| **Veriler** | Apple'ın bu telefon ve uygulama için ürettiği **bildirim jetonu**; jetonun test mi gerçek mi olduğu |
+| **Amaç** | Ailenden yeni bir zarf geldiğinde ebeveynin telefonunu uyandırmak |
+| **Hukuki dayanak** | Senin açtığın bildirim özelliğinin yerine getirilmesi: KVKK m.5/2(c) · GDPR m.6/1(b). Bildirimleri iOS Ayarları → Bildirimler → Mola'dan istediğin an kapatırsın |
+| **Saklama** | Bildirimleri kapatana (kapattıktan sonra uygulamayı bir kez açtığında jeton sunucudan silinir), aileden ayrılana ya da Apple jetonun geçersiz olduğunu bildirene kadar |
+| **Alıcı** | Apple'ın bildirim hizmeti (Bölüm 4 ve 5) |
 
 Bildirimin içinde ad, aile kimliği ya da mesajın içeriği **yoktur.** Sunucu içeriği okuyamadığı için bildirim yalnız
-"Ailenden yeni bir güncelleme var" der; metni cihazın kendi dilinde gösterir.
+"Ailenden yeni bir güncelleme var" der; metni telefonun kendi dilinde gösterir.
 
 ### 3.4 Bize yazarsan
 
@@ -114,10 +126,10 @@ Verilerini **satmayız** ve reklam amacıyla **paylaşmayız.** Yalnız şu alı
 | Alıcı | Ne alır? | Neden? | Rolü |
 | --- | --- | --- | --- |
 | **Ailenizin diğer cihazları** | Kurallar, komutlar, istekler ve aile içi ad; uçtan uca şifreli | Uygulamanın işlevi | — |
-| **Güzel Hosting** (GNET İnternet Telekomünikasyon A.Ş., Türkiye) | Bölüm 3.2 ve 3.3'teki sunucu verileri | Sunucumuzun bulunduğu sanal sunucu hizmeti; veritabanı ve sunucu yazılımı (açık kaynaklı Supabase) bu sunucuda, bizim işletmemizle çalışır | Veri işleyen |
-| **Güzel Hosting**, kurumsal e-posta | Bize yazdığın e-postalar ve yanıtlarımız | Destek adresimiz bu hizmette barındırılır | Veri işleyen |
-| **MailChannels Corporation** (Kanada) | Sana gönderdiğimiz yanıtın içeriği ve e-posta adresin, yalnız iletim sırasında | Güzel Hosting'in posta iletim hizmeti | Veri işleyen (Güzel Hosting'in alt hizmeti) |
-| **Apple** (Apple Distribution International Ltd. ve bağlı şirketleri) | Uygulamanın App Store'dan indirilmesi; Ekran Süresi ve Aile Paylaşımı (bunlar cihazında Apple'ın sistemidir); bildirimlere izin verdiysen bildirim jetonun ve sabit bir bildirim, sunucumuzdan; iOS ayarlarında izin verdiysen Apple'ın kendi çökme ve kullanım istatistikleri | App Store, Ekran Süresi, bildirim | Bağımsız veri sorumlusu |
+| **Güzel Hosting** (GNET İnternet Telekomünikasyon A.Ş., Türkiye) | Bölüm 3.2 ve 3.3'teki sunucu verileri | Sunucumuzun bulunduğu sanal sunucu hizmeti; veritabanı ve sunucu yazılımı (açık kaynaklı Supabase) bu sunucuda, bizim işletmemizle çalışır | Barındırma hizmeti sağlayıcı; herkese açık hizmet koşullarıyla çalışır, aramızda ayrıca bir veri işleme sözleşmesi yoktur |
+| **Güzel Hosting**, kurumsal e-posta | Bize yazdığın e-postalar ve yanıtlarımız | Destek adresimiz bu hizmette barındırılır | Aynı |
+| **MailChannels Corporation** (Kanada) | Sana gönderdiğimiz yanıtın içeriği ve e-posta adresin, yalnız iletim sırasında | Güzel Hosting'in posta iletim hizmeti | Güzel Hosting'in alt hizmeti; kendi koşullarıyla çalışır |
+| **Apple** (Apple Distribution International Ltd. ve bağlı şirketleri) | Uygulamanın App Store'dan indirilmesi; Ekran Süresi ve Aile Paylaşımı (bunlar cihazında Apple'ın sistemidir); ebeveyn telefonunda bildirimleri açtıysan o telefonun bildirim jetonu, uygulamanın kimliği ve içeriksiz bir bildirim, sunucumuzdan; iOS ayarlarında izin verdiysen Apple'ın kendi çökme ve kullanım istatistikleri | App Store, Ekran Süresi, bildirim | Kendi koşulları ve gizlilik politikasıyla çalışır |
 | **Yetkili kamu kurumları ve mahkemeler** | Yalnız hukuken zorunlu olan kadarı | Hukuki yükümlülük | — |
 
 **Üçüncü tarafların kendi koşulları.** Apple, hizmetlerini kendi bağımsız koşulları ve gizlilik politikası altında
@@ -127,25 +139,25 @@ sunulan çevrim içi koşullarını kabul ettik.
 
 ## 5. Verilerin yurt dışına aktarılıyor mu?
 
-- **Aile sunucusundaki veriler Türkiye'de kalır.** Sunucumuz Türkiye'dedir. Bu veriler için yedek tutmuyoruz: içerik en
-  çok 25 saat yaşayan şifreli zarflardır.
-- **Apple, bildirimler (yalnız izin verirsen):** Ailenden bir zarf geldiğinde sunucumuz, cihazının bildirim jetonunu ve
-  sabit bir bildirimi Türkiye dışındaki Apple sunucularına (Apple Push Notification service) gönderir. Bu, bildirimleri
-  açık tuttuğun sürece **düzenli olarak** yapılır. Bu aktarım için Kişisel Verileri Koruma Kurulu'na bildirilmiş bir
-  standart sözleşme ya da taahhütname yoktur; bildiğimiz kadarıyla Kurul'un ilgili ülkeler hakkında bir yeterlilik
-  kararı da bulunmamaktadır. KVKK m.9/6(a), açık rızayı yalnız arızi aktarımlar için bir dayanak sayar; bu aktarım
-  düzenli olduğundan bu dayanağın ona uygulanıp uygulanamayacağı belirsizdir ve aktarımı ona dayandırdığımızı ileri
-  sürmüyoruz. Aktarımı en aza indirdik: giden yalnız Apple'ın kendi ürettiği jeton ve içeriksiz bir bildirimdir.
-  **Olası riskler:** bu bilgi Türkiye'dekiyle aynı koruma düzeyini sağlamayabilecek bir ülkede işlenebilir; oradaki
-  kamu makamlarının erişimi farklı kurallara bağlı olabilir. Bunu istemiyorsan bildirim izni vermemen ya da kapatman
-  yeterlidir; Mola çalışmaya devam eder.
+- **Aile sunucusundaki veriler Türkiye'de kalır.** Sunucumuz Türkiye'dedir. Bu veriler için ayrıca yedek almıyoruz:
+  içerik en çok 25 saat yaşayan şifreli zarflardır.
+- **Apple, bildirimler (yalnız ebeveyn telefonunda ve yalnız açarsan):** Bildirimleri açarsan telefonun Apple'a kendisi
+  kaydolur ve jetonu Apple üretir. Ailenden bir zarf geldiğinde sunucumuz bu jetonu içeriksiz bir bildirimle Türkiye
+  dışındaki Apple sunucularına gönderir; bu, bildirimler açık kaldıkça düzenli olur. Bu gönderim için standart sözleşme,
+  taahhütname ya da yeterlilik kararı yoktur. Apple kendi koşulları ve gizlilik politikasıyla çalışır
+  (https://www.apple.com/legal/privacy/). **Olası riskler:** bu bilgi, Türkiye'dekiyle aynı korumayı sağlamayabilecek
+  bir ülkede işlenebilir; oradaki kamu makamlarının erişimi farklı kurallara bağlı olabilir. İstemiyorsan bildirimleri
+  açma ya da kapat; Mola çalışmaya devam eder. Kapattıktan sonra uygulamayı bir kez açtığında jeton sunucudan silinir
+  ve gönderim durur.
 - **E-posta:** Bize yazdığın e-postalar Güzel Hosting'in Türkiye'deki sunucularında saklanır. Sana gönderdiğimiz
-  yanıtlar MailChannels Corporation (Kanada; sunucuları Kuzey Amerika'da) üzerinden iletilir, orada saklanmaz. Bu geçişi,
-  yanıtımızın sana ulaşması için gerekli, arızi bir aktarım olarak değerlendiririz (KVKK m.9/6(b)).
-- **AEA, Birleşik Krallık ve İsviçre'deki kullanıcılar için:** Aile sunucusundaki veriler Türkiye'de işlenir. Türkiye
-  için bir AB yeterlilik kararı yoktur. Bu aktarım, senin istediğin hizmetin (ailenizin cihazları arasında iletim)
-  yerine getirilmesi için gereklidir: GDPR m.49/1(b). Aktarılan veri rastgele kimlikler ve sunucunun okuyamadığı
-  şifreli zarflardır.
+  yanıtlar MailChannels Corporation (Kanada; sunucuları Kuzey Amerika'da) üzerinden iletilir; yanıtın içeriği ve e-posta
+  adresin iletim sırasında bu şirketin sunucularından geçer, orada saklanmaz. Bu yalnız bize yazdığında ve sana yanıt
+  verdiğimizde olur.
+- **AEA, Birleşik Krallık ve İsviçre'deki kullanıcılar için:** Verilerini telefonun doğrudan Türkiye'deki sunucumuza
+  verir ve veriler orada işlenir; Türkiye için bir AB yeterlilik kararı yoktur. GDPR bize, sana bu hizmeti sunduğumuz
+  için uygulanır (m.3/2). Bizim yaptığımız tek aktarım, bildirimleri açan ebeveyn telefonunun jetonunun Apple'a
+  gönderilmesidir; bunun için standart sözleşme maddeleri yoktur ve bu gönderimi, senin açtığın özelliği sunmak için
+  gerekli görüyoruz (GDPR m.49/1(b)).
 
 ## 6. Ne kadar süre saklıyoruz? (Özet)
 
@@ -153,22 +165,27 @@ sunulan çevrim içi koşullarını kabul ettik.
 | --- | --- |
 | Tek cihaza giden şifreli zarf | Alınana kadar; en çok 25 saat |
 | Herkese giden şifreli zarf ve alındı kayıtları | En çok 25 saat |
-| Cihaz kaydı (rastgele kimlikler, bildirim jetonu) | Aileden ayrılana ya da 180 gün sessizliğe kadar |
+| Cihaz kaydı (rastgele kimlikler; ebeveynde bildirim jetonu) | Aileden ayrılana, çıkarılana ya da 180 gün sessizliğe kadar |
+| Aileden çıkarılan cihaza bırakılan şifreli bildirim | 180 gün |
 | Aileye katılmamış hesap | 2 gün |
 | Aile kaydı | Son cihaz ayrılana kadar |
 | E-posta yazışmaları | Kapandıktan sonra en çok 24 ay |
 
 ## 7. Aileden ayrılma ve silme
 
-- **Ebeveyn:** Ayarlar → **Aileden ayrıl ve verilerimi sil.** Sunucudaki hesabın, gönderdiğin ve sana gelen zarflar,
-  cihaz kaydın ve bildirim jetonun **hemen** silinir; bu aileden ayrılan son cihazsan aile kaydı da silinir. Cihazındaki
-  anahtarlar ve aile bilgileri de silinir.
-- **Çocuk cihazı:** Çocuk, anlaşmadan tek başına çıkamasın diye bu seçenek çocuk cihazında yoktur. Çocuk cihazının
-  sunucudaki kaydını silmek için bize **Ayarlar → Cihaz numarası**'nı yazın (Bölüm 9); 180 gün bağlanmayan cihazın
-  kaydı zaten kendiliğinden silinir.
+Silme uygulamanın içinden yapılır:
+
+- **Ebeveyn, kendisi için:** Ayarlar → **Aileden ayrıl ve verilerimi sil.** Sunucudaki hesabın, gönderdiğin ve sana
+  gelen zarflar, cihaz kaydın ve bildirim jetonun **hemen** silinir. Ailedeki tek ebeveynsen çocuk cihazlarının
+  kayıtları da aynı anda silinir. Telefonundaki anahtarlar ve aile bilgileri de silinir.
+- **Ebeveyn, çocuğu için:** Aile → çocuğun adı → **Aileden çıkar.** O cihazın sunucudaki hesabı, kaydı ve zarfları
+  **hemen** silinir. Çocuğun telefonu bir sonraki bağlanışında bunu öğrenir ve aile bilgilerini ve kuralları kendisi
+  siler.
+- **Çocuk cihazı:** Çocuk, anlaşmadan tek başına çıkamaz; ama isteyebilir: Ayarlar → **Aileden ayrılmak istiyorum**
+  ebeveyne bir istek gönderir, ebeveyn onaylayınca yukarıdaki silme yapılır.
 - **Yalnız kendin için kullanıyorsan** sunucumuzda bir kaydın yoktur. Uygulamayı silmen yeterlidir.
 
-Ayrıntılı adımlar: https://mola.mm-apps.com/hesap-silme/
+Uygulamaya ulaşamıyorsan bize yazabilirsin (Bölüm 9). Ayrıntılı adımlar: https://mola.mm-apps.com/hesap-silme/
 
 ## 8. Otomatik kararlar ve profil çıkarma
 
@@ -189,7 +206,7 @@ talep etme.
 erişim, düzeltme, silme, işlemenin kısıtlanması, veri taşınabilirliği, meşru menfaate dayanan işlemeye itiraz etme ve
 rızaya dayanan işlemede rızanı istediğin zaman geri alma hakların vardır.
 
-**Uygulamanın içinden:** silme için Bölüm 7; bildirim iznini geri almak için iOS Ayarları → Bildirimler → Mola.
+**Uygulamanın içinden:** silme için Bölüm 7; bildirimleri kapatmak için iOS Ayarları → Bildirimler → Mola.
 
 **Bize yazarak:** destek@mm-apps.com adresine "Kişisel veri başvurusu" konusuyla yaz ve **Ayarlar → Cihaz numarası**'nı
 ekle. Sunucumuz adını bilmediği için hangi kaydın sana ait olduğunu ad ya da kimlik numarasıyla bulamayız; cihaz
@@ -204,22 +221,34 @@ veri koruma makamına başvurabilirsin.
 ## 10. Çocuklar
 
 Mola bir aile uygulamasıdır ve çocukların cihazlarında çalışmak üzere tasarlanmıştır; bu yüzden özellikle az veriyle
-çalışır.
+çalışır. Kimseye yaşını sormayız.
 
-- **Çocuk cihazı aileye yalnız ebeveynin eliyle katılır:** ebeveyn kendi telefonunda bir QR kod gösterir, çocuğun
-  telefonu onu okutur. Çocuğun cihazında Ekran Süresi izni, Aile Paylaşımı'ndaki ebeveynin Apple hesabıyla onaylanır.
-- Çocuktan ad, e-posta, doğum tarihi ya da başka bir iletişim bilgisi istemeyiz. Kurulumda yazılan ad yalnız ailenin
-  cihazlarında görünür ve gerçek ad olmak zorunda değildir.
-- Çocuğun kullanım verisi, mesajları ve uygulama listesi cihazından çıkmaz; biz de ebeveyn de göremez.
-- Çocuk cihazı için sunucuda duran tek şey Bölüm 3.2 ve 3.3'teki rastgele kimlikler ve, bildirim izni verildiyse,
-  bildirim jetonudur. Çocuğa reklam gösterilmez, çocuk izlenmez, profili çıkarılmaz.
-- **Ebeveynler için:** çocuğunuzun cihaz kaydının silinmesini ya da onunla ilgili herhangi bir bilgiyi bizden
-  isteyebilirsiniz (Bölüm 9).
+- **Kurulumu ebeveyn yapar.** Çocuk cihazının aileye, ebeveynin kendi telefonunda gösterdiği QR kodla katılması
+  öngörülmüştür; ebeveyn, QR kodu göstermeden önce çocuğun ebeveyni ya da vasisi olduğunu ve çocuğun bundan haberi
+  olduğunu kendi telefonunda onaylar. Ekran Süresi izni, Aile Paylaşımı kuruluysa ebeveynin Apple hesabıyla onaylanır;
+  kurulu değilse uygulama bunu açıkça gösterir.
+- **Çocuk cihazından toplananlar:** yalnız Bölüm 3.2'deki rastgele kimlikler ve, bağlantı anında, IP adresi. Çocuktan
+  ad, e-posta, doğum tarihi, konum ya da başka bir iletişim bilgisi istemeyiz; **çocuk cihazından bildirim jetonu
+  alınmaz.** Kurulumda yazılan ad yalnız ailenin cihazlarında görünür, sunucumuz onu okuyamaz ve gerçek ad olmak
+  zorunda değildir.
+- **Bu kimlikler ne için kullanılır?** Yalnız uygulamanın iç işleyişi için: ailenin cihazları arasında zarf iletmek,
+  cihazın aileye ait olduğunu doğrulamak ve sunucuyu kötüye kullanıma karşı korumak. Çocukla iletişim kurmak, profil
+  çıkarmak, reklam göstermek ya da başka bir veriyle birleştirmek için **kullanılmaz;** sunucu içeriği okuyamadığı ve
+  başka hiçbir bilgi tutmadığı için bunu yapacak bir yolu da yoktur.
+- Çocuğun kullanım verisi, mesajları ve uygulama listesi cihazından çıkmaz; biz de ebeveyn de göremez. Çocuğun
+  telefonunda, telefonun aileyle birlikte Mola ile yönetildiği ve hangi kuralın neden açık olduğu her zaman görünür.
+- **Ebeveynlerin hakları:** çocuğunuzun cihaz kaydını uygulamadan hemen silebilir (Bölüm 7), onun hakkında sunucuda
+  ne tutulduğunu bizden öğrenebilir ve daha fazla veri toplanmasını, cihazı aileden çıkararak durdurabilirsiniz.
+- **ABD'deki ebeveynler için:** bu bölüm, çocukların çevrim içi gizliliğine ilişkin ABD kuralları (COPPA) kapsamındaki
+  bildirimimizdir. Operatör: Mehmet Mutlu, Türkiye; e-posta: destek@mm-apps.com. Posta adresimizi ve telefon numaramızı
+  bu adrese yazarak isteyebilirsiniz.
 
 ## 11. Verilerini nasıl koruyoruz?
 
 - Aile içi iletişim uçtan uca şifrelidir ve her mesaj gönderenin anahtarıyla imzalanır; kilit, kural ve onay gibi
   komutları yalnız ebeveynin imzası geçerli kılar.
+- Ailenin şifreleme anahtarı her eşlemeden sonra, bir cihaz aileden çıkarıldığında ve en geç 30 günde bir yenilenir;
+  yeni anahtar her cihaza yalnız o cihazın açabileceği biçimde iletilir.
 - Sunucuyla bağlantı TLS ile şifrelidir. Sunucudaki tablolara uygulamalar doğrudan erişemez; her işlem sunucudaki
   denetimli işlevlerden geçer.
 - Anahtarlar cihazın anahtar zincirinde, yalnız o cihazda durur.

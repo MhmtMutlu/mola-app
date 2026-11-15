@@ -23,8 +23,9 @@ https://mola.mm-apps.com/gizlilik/
 
 - **Ebeveyn ya da vasi olarak** Mola'yı kurabilmek için bulunduğun ülkede reşit olmalı ve yönettiğin cihazın
   kullanıcısı olan çocuğun ebeveyni ya da yasal vasisi olmalısın.
-- **Çocuk cihazı** aileye yalnız bir ebeveynin gösterdiği QR kodla katılır. Çocuğunuzun Mola'yı kullanmasına siz izin
-  verir ve bu koşulları onun adına da kabul edersiniz.
+- **Çocuk cihazının** aileye, ebeveynin kendi telefonunda gösterdiği QR kodla katılması öngörülmüştür. Çocuğunuzun
+  cihazını bağlayarak Mola'yı kullanmasına izin verir ve bu koşulları onun adına da kabul edersiniz. Bir cihazı,
+  kullanıcısı olan çocuğun ebeveyni ya da vasisi olmadan bağlayamazsınız.
 - **Kendin için** (odak programları) kullanıyorsan ve reşit değilsen, uygulamayı ebeveyninin ya da vasinin izniyle
   kullanmalısın.
 - Mola'yı yalnız kendi ailenin cihazlarında, cihazın kullanıcısının bilgisi dahilinde kullanabilirsin (Bölüm 4).
@@ -57,8 +58,10 @@ Kurulumdan önce çocuğunuzla konuşmanızı öneririz: kuralları birlikte koy
   değiştirebilir. Bu yüzden:
   - Bir kural, iOS güncellemesi ya da sistem hatası nedeniyle gecikebilir, erken ya da geç devreye girebilir ya da
     çalışmayabilir. "Bugün kalan süre" yaklaşık bir değerdir.
-  - Ebeveynin gönderdiği bir komut, çocuk cihazı çevrim dışıysa ya da bildirimler kapalıysa gecikebilir. Uygulama,
-    komutun cihaza ulaşıp ulaşmadığını gösterir.
+  - Ebeveynin verdiği mola ya da yeni bir kural, çocuğun telefonuna **anında ulaşmaz:** çocuğun telefonunda Mola
+    açıldığında ya da iOS uygulamaya arka planda sıra verdiğinde uygulanır (çocuk telefonlarında bildirim
+    kullanmıyoruz). Uygulama, komutun cihazda uygulanıp uygulanmadığını gösterir. Okul, uyku ve günlük sınır gibi
+    planlı kurallar telefonda kayıtlıdır ve bundan etkilenmez.
   - Ekran Süresi izni çocuğun cihazında Aile Paylaşımı'ndaki ebeveynin Apple hesabıyla onaylanmadıysa, izin
     Ayarlar'dan kapatılabilir ve uygulama silinebilir. Uygulama bu durumu açıkça söyler.
 - Bu nedenlerle Mola'ya **çocuğunuzun güvenliğini sağlayan tek önlem olarak güvenmeyin.**
@@ -85,8 +88,10 @@ Bu koşulları ağır biçimde ihlal edersen (ör. Bölüm 4), aile sunucusuna e
   vermeyiz.
 - Yasanın izin verdiği ölçüde; dolaylı zararlardan, veri kaybından, bir kuralın uygulanmamasından ya da gecikmesinden,
   Apple'ın sistemlerindeki değişiklik ve hatalardan ve üçüncü tarafların hizmetlerinden doğan zararlardan sorumlu
-  değiliz. Sorumluluğumuz her hâlde, zararın doğduğu tarihten önceki 12 ayda uygulama için bize ödediğin tutarla
-  sınırlıdır.
+  değiliz.
+- Mola'yı kimin cihazına, hangi kurallarla kurduğunuz sizin kararınızdır: bir cihazı bağlayan kişi, o cihazın
+  kullanıcısı üzerinde bunu yapmaya yetkili olduğunu (ebeveyn ya da vasi) ve kullanıcının bundan haberdar olduğunu
+  beyan eder; bu beyanın doğru olmamasından doğan sonuçlar beyanı verene aittir.
 - **Bu sınırlar şunları kapsamaz:** kastımızdan ya da ağır kusurumuzdan doğan zararlar, ölüm ya da bedensel zarar ve
   yasanın sınırlanmasına izin vermediği diğer sorumluluklar.
 - **Tüketici hakların saklıdır.** Yaşadığın ülkenin tüketici hukukunun sana tanıdığı ve sözleşmeyle kaldırılamayan
@@ -98,7 +103,19 @@ Mola; Apple'ın App Store, Ekran Süresi, Aile Paylaşımı ve bildirim hizmetle
 bağımsız koşulları ve gizlilik politikası altında sunar; onlardan Apple sorumludur. Bu şirketlerle ayrıca imzalanmış bir
 sözleşmemiz yoktur.
 
-## 10. Apple ile ilişki
+## 10. Şifreleme ve ihracat kuralları
+
+- **Kullanılan şifreleme.** Uygulama, aile verilerini iletim sırasında, Apple'ın işletim sisteminin sağladığı (CryptoKit)
+  standart ve herkese açık biçimde belgelenmiş algoritmalarla korur: ChaCha20-Poly1305 (256 bit) şifreleme, Ed25519
+  imza, X25519/HPKE anahtar anlaşması ve HKDF; ayrıca işletim sisteminin sağladığı TLS. Uygulamada tescilli ya da
+  üçüncü taraflara ait bir şifreleme gerçekleştirmesi yoktur ve kullanıcılar şifreleme işlevlerini değiştiremez.
+- **Yerel kurallar.** Şifreleme yazılımlarının ithalatı, kullanımı ve ihracatına ilişkin kurallar ülkeden ülkeye
+  değişir. Uygulamayı indirmenin ve kullanmanın bulunduğun yerde hukuka uygun olmasını sağlamak senin
+  sorumluluğundadır. Bu madde, emredici tüketici hukukunun sana tanıdığı hakları sınırlamaz.
+- **İhracat.** Uygulamayı, yürürlükteki ihracat denetimi ve yaptırım kurallarına aykırı biçimde kullanamaz ya da
+  yeniden ihraç edemezsin.
+
+## 11. Apple ile ilişki
 
 Bu koşullar seninle bizim aramızdadır, Apple ile değil. Uygulamanın içeriğinden ve bakımından biz sorumluyuz; Apple'ın
 uygulama için bakım ya da destek yükümlülüğü yoktur. Uygulamanın bir garantiye uymaması hâlinde Apple'a bildirirsen
@@ -108,21 +125,20 @@ fikri mülkiyet talepleri) bize yöneltilir. Apple ve bağlı şirketleri bu ko�
 koşulları sana karşı ileri sürebilir. Uygulamayı kullanırken Apple'ın App Store kullanım kurallarına uymalısın. ABD
 ambargosu altındaki bir ülkede bulunmadığını ve yasaklı taraflar listelerinde yer almadığını beyan edersin.
 
-## 11. Koşullarda değişiklik
+## 12. Koşullarda değişiklik
 
-Bu koşulları güncellersek yeni sürümü bu sayfada yayımlar ve önemli değişiklikleri uygulamada duyururuz. Değişiklik
-yürürlüğe girdikten sonra uygulamayı kullanmaya devam edersen yeni koşulları kabul etmiş olursun; kabul etmiyorsan
-uygulamayı bırakabilirsin.
+Bu koşulları güncellersek yeni sürümü bu sayfada yayımlarız. Önemli bir değişiklikte uygulama, yeni sürümü sana
+gösterir ve devam etmeden önce kabulünü ister; kabul etmiyorsan uygulamayı bırakabilir ve verilerini silebilirsin.
 
-## 12. Uygulanacak hukuk ve uyuşmazlıklar
+## 13. Uygulanacak hukuk ve uyuşmazlıklar
 
 Bu koşullara Türkiye Cumhuriyeti hukuku uygulanır. Tüketiciysen, yaşadığın ülkenin emredici tüketici hükümlerinin
 korumasından yararlanmaya ve o ülkenin mahkemelerine ya da tüketici hakem heyetlerine başvurmaya devam edersin.
 
-## 13. İletişim
+## 14. İletişim
 
 **destek@mm-apps.com**
 
-## 14. Dil
+## 15. Dil
 
 Bu koşulların bağlayıcı metni Türkçedir; diğer dillerdeki metinler çeviridir.

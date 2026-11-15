@@ -22,9 +22,10 @@ kapatılabilir; uygulama bunu açıkça söyler.
 
 ### "Mola ver" dedim ama çocuğumun telefonu hemen kapanmadı.
 
-Komut, çocuğun telefonuna bildirimle ulaşır. Telefon çevrim dışıysa ya da bildirimler kapalıysa komut, Mola açıldığında
+Bu beklenen bir durum. Çocukların telefonlarında bildirim kullanmıyoruz (çocuk telefonundan bildirim jetonu almıyoruz);
+bu yüzden verdiğin mola, çocuğunun telefonunda Mola açıldığında ya da iOS uygulamaya arka planda sıra verdiğinde
 uygulanır. Ebeveyn ekranında komutun durumu görünür: "İletildi" ya da "Uygulandı". Okul, uyku ve günlük sınır gibi
-planlı kurallar telefonda kayıtlıdır ve internet olmadan da çalışır.
+planlı kurallar telefonda kayıtlıdır; gecikmeden ve internet olmadan çalışır.
 
 ### "Bugün kalan süre" neden yaklaşık?
 

@@ -15,8 +15,8 @@ Politikası'ndadır: https://mola.mm-apps.com/gizlilik/
 | --- | --- | --- |
 | Rastgele hesap numarası ve oturum kayıtları; rastgele aile ve üye kimliği; aile erişim jetonunun özeti; son bağlantı zamanı | Ailenizin cihazları arasında iletimi sağlamak | Sözleşmenin kurulması ve ifası (m.5/2-c) |
 | Uçtan uca şifreli zarflar (içeriğini okuyamayız) | Komut, kural, istek ve yanıtların iletimi | Sözleşmenin kurulması ve ifası (m.5/2-c) |
-| Bildirim jetonu (yalnız izin verirsen) | Yeni bir zarf geldiğinde cihazı uyandırmak | Açık rıza (m.5/1) |
-| IP adresi (saklanmaz; yalnız bellekteki dakikalık sayaçlarda) | Sunucuyu kötüye kullanıma karşı korumak | Meşru menfaat (m.5/2-f) |
+| Bildirim jetonu (yalnız ebeveyn telefonunda ve yalnız bildirimleri açarsan; çocuk telefonundan alınmaz) | Yeni bir zarf geldiğinde ebeveynin telefonunu uyandırmak | Senin açtığın özelliğin yerine getirilmesi (m.5/2-c) |
+| IP adresi (hesabınla saklanmaz; kısa süreli sayaçlarda bellekte kullanılır) | Sunucuyu kötüye kullanıma karşı korumak | Meşru menfaat (m.5/2-f) |
 | E-posta adresin ve yazışmalar (bize yazarsan) | Yanıtlamak, başvuruyu sonuçlandırmak | Meşru menfaat (m.5/2-f), hukuki yükümlülük (m.5/2-ç) |
 
 Ad, e-posta (bize yazmadıkça), telefon, konum, ekran süresi kullanımı, uygulama listesi, mesaj içeriği ve reklam kimliği
@@ -31,18 +31,19 @@ otomatik yollarla toplanır.
 ## 4. Aktarım
 
 - **Yurt içi:** Sunucumuzun ve destek e-postamızın barındırıldığı Güzel Hosting (GNET İnternet Telekomünikasyon A.Ş.).
-- **Yurt dışı:** Yalnız bildirimlere izin verirsen, bildirim jetonun ve içeriksiz bir bildirim Apple'ın yurt dışındaki
-  sunucularına (Apple Push Notification service) düzenli olarak gönderilir. Bu aktarım için bildirilmiş bir standart
-  sözleşme ya da yeterlilik kararı yoktur; KVKK m.9/6(a) açık rızayı yalnız arızi aktarımlar için dayanak saydığından
-  aktarımı ona dayandırdığımızı ileri sürmüyoruz. Riskler ve ayrıntı Gizlilik Politikası Bölüm 5'tedir. Bildirim izni
-  vermezsen ya da kapatırsan bu aktarım olmaz; Mola çalışmaya devam eder. Sana e-postayla yanıt verirken yanıtımız
-  MailChannels (Kanada) üzerinden iletilir; bu arızi bir aktarımdır (m.9/6-b).
+- **Yurt dışı:** Yalnız ebeveyn telefonunda bildirimleri açarsan telefon Apple'a kendisi kaydolur ve jetonu Apple
+  üretir; ailenden bir zarf geldiğinde sunucumuz bu jetonu içeriksiz bir bildirimle Apple'ın yurt dışındaki
+  sunucularına gönderir. Bu, bildirimler açık kaldıkça düzenli olur. Bu gönderim için standart sözleşme, taahhütname
+  ya da yeterlilik kararı yoktur. Riskler ve ayrıntı Gizlilik Politikası Bölüm 5'tedir. Bildirimleri açmazsan bu
+  gönderim olmaz; kapatırsan, uygulamayı bir kez açtığında jeton sunucudan silinir ve gönderim durur. Mola iki durumda
+  da çalışmaya devam eder. Sana e-postayla yanıt verirken yanıtımız MailChannels (Kanada) üzerinden iletilir ve orada
+  saklanmaz.
 - Yetkili kamu kurumlarına yalnız hukuken zorunlu olan kadarı.
 
 ## 5. Saklama
 
-Şifreli zarflar en çok 25 saat; cihaz kaydı aileden ayrılana ya da 180 gün sessizliğe kadar; e-posta yazışmaları
-kapandıktan sonra en çok 24 ay.
+Şifreli zarflar en çok 25 saat; cihaz kaydı aileden ayrılana, çıkarılana ya da 180 gün sessizliğe kadar; aileden
+çıkarılan cihaza bırakılan şifreli bildirim 180 gün; e-posta yazışmaları kapandıktan sonra en çok 24 ay.
 
 ## 6. Hakların (KVKK m.11)
 
@@ -51,7 +52,8 @@ kullanılmadığını öğrenme; aktarıldığı üçüncü kişileri bilme; dü
 isteme; bu işlemlerin aktarılan üçüncü kişilere bildirilmesini isteme; otomatik sistemlerle analiz sonucu aleyhine
 çıkan sonuca itiraz etme; zararın giderilmesini talep etme.
 
-**Nasıl kullanırsın?** Silme için uygulamada Ayarlar → Aileden ayrıl ve verilerimi sil. Diğer talepler için
+**Nasıl kullanırsın?** Silme uygulamanın içinden yapılır: ebeveyn kendisi için Ayarlar → Aileden ayrıl ve verilerimi
+sil, çocuğu için Aile → çocuğun adı → Aileden çıkar; çocuk Ayarlar'dan ayrılma isteği gönderebilir. Diğer talepler için
 destek@mm-apps.com adresine "Kişisel veri başvurusu" konusuyla yaz ve Ayarlar → Cihaz numarası'nı ekle. Başvurunu en
 geç 30 gün içinde ücretsiz yanıtlarız. Yanıtımızı yetersiz bulursan Kişisel Verileri Koruma Kurulu'na şikâyette
 bulunabilirsin (https://www.kvkk.gov.tr).
