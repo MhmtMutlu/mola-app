@@ -65,7 +65,7 @@
       "points": [
         "Pomodoro (25 dk), Ders (45 dk), Derin odak (50 dk)",
         "Kilitli Ekran'da ve Dynamic Island'da Canlı Etkinlik",
-        "Ana Ekran araç takımı ve Denetim Merkezi düğmesi"
+        "iPhone'unun Odak moduyla birlikte başlar; Mola kendi hatırlatmalarını sessize alabilir"
       ],
       "alt": "Odak oturumu ekranı: boyanmakta olan çini ve kalan süre"
     },
@@ -73,7 +73,7 @@
       "shot": "friction",
       "tag": "Sıkılık düzeyleri",
       "title": "Vazgeçmeden önce kısa bir an",
-      "text": "Dengeli bir planda mola vermek ya da bir oturumu erken bitirmek istediğinde Mola önce kısa bir süre bekletir. Çoğu zaman bu kadarı yeter. Sıkı bir plan ise bitene kadar değiştirilemez.",
+      "text": "Dengeli bir planda mola vermek ya da bir oturumu erken bitirmek istediğinde Mola önce kısa bir süre bekletir. Bazen bu kadarı yeter. Sıkı bir plan ise bitene kadar değiştirilemez.",
       "points": [
         "Esnek: dilediğin an 5 dakikalık mola",
         "Dengeli: moladan önce 20 saniye bekleme",
@@ -85,11 +85,11 @@
       "shot": "wall",
       "tag": "Çini duvarı",
       "title": "Emeğin görünür olsun",
-      "text": "Her çini önce konturunu, sonra rengini, en sonunda sırını alır. Selçuklu yıldızıyla başlarsın; duvarın büyüdükçe Lale ve Rumi desenleri açılır.",
+      "text": "Her çini önce konturunu, sonra rengini, en sonunda sırını alır. Selçuklu yıldızıyla başlarsın; duvarın büyüdükçe Lale, Karanfil, Rumi, Çintemani, Hatayi, Geçme ve Nar desenleri açılır, sen de çıraklıktan ustalığa ilerlersin.",
       "points": [
-        "Bugünkü odak süren ve son yedi gün",
-        "Üst üste odaklandığın gün sayısı",
-        "Yarım kalan çini kaybolmaz"
+        "Sekiz desen, dört kademe: çırak, kalfa, usta, ustabaşı",
+        "Sıradaki desene kaç çini kaldığı hep görünür",
+        "Yarım kalan çini kaybolmaz; kazanılan hiçbir şey geri alınmaz"
       ],
       "alt": "Çini duvarı: tamamlanmış çiniler ve sıradaki desen seçimi"
     }
@@ -98,7 +98,7 @@
   "extras": [
     [
       "Apple Watch",
-      "Programını bileğinden başlat; tur ve mola geçişlerini bileğindeki dokunuşla hisset."
+      "Telefonda başlattığın oturum bileğinde de sürer: aynı çini aynı hızda boyanır, kalan süre ve günün saati birlikte görünür."
     ],
     [
       "Araç takımları",

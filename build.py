@@ -178,8 +178,8 @@ def shell(lang, path, title, description, body, key):
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:image" content="{SITE_URL}assets/icon-512.png">
-<meta name="theme-color" content="#E4F1EC" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0F1A18" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F3EEE6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15130F" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="{rel(path, 'assets/site.css')}">
 </head>
 <body>

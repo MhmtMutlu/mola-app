@@ -1,6 +1,6 @@
 # Mola Privacy Policy
 
-**Effective date:** 15 November 2026 · **Version:** 1.0
+**Effective date:** 17 November 2026 · **Version:** 1.1
 
 This is a translation provided for convenience. The binding text is the Turkish version:
 https://mola.mm-apps.com/gizlilik/ (Section 14). It has been prepared as the notice required by Article 10 of the
@@ -60,7 +60,7 @@ These are **never sent** to our server (the part that goes to family devices tra
 | App selection | Which apps are limited is chosen in Apple's own picker and stays on the device. The selection consists of Apple-specific tokens that cannot be transferred to another device or to a server. |
 | Rules, modes, time requests and their reasons | Stored on the device; sent to family devices end-to-end encrypted only. |
 | The name shown in the family | The name you type during setup. It is visible only on your family's devices and does not have to be your real name. |
-| Your blocking plans, your daily limits, your own focus programs, your focus sessions, your daily focus times and your tile wall | On your device only. |
+| Your blocking plans, your daily limits, your own focus programs, your focus sessions, your daily focus times, your tile wall and, if you write one, the line about what you keep this time for | On your device only. |
 | Encryption keys | In the device's keychain, on this device only. The family key passes from the parent's screen to the child's camera by QR code and never reaches the server. |
 
 Deleting the app deletes this information from your device. If iCloud Backup is on, app data may be included in your

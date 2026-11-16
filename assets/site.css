@@ -1,21 +1,23 @@
-/* Mola's website. Colours, radii and the rounded type follow the app's design language (MolaDesign tokens):
-   soft mint days, white cards, pastel tints, a deep green night for focus, amber for what is earned. */
+/* Mola's website. Colours, radii and type follow the app's design language (MolaDesign tokens, "Krem atölye"):
+   paper ground, ink type and buttons, colour from the tiles; cobalt for links, amber for what is earned.
+   Headlines speak in the system serif (New York on Apple devices), everything else in the rounded face. */
 @font-face { font-family: Nunito; src: url(fonts/Nunito-500-800.woff2) format("woff2"); font-weight: 500 800; font-display: swap; }
 
 :root {
-  --ground: #E4F1EC; --surface: #FFFFFF; --sunken: #EEF5F2; --ink: #14201E; --muted: #47605A; --primary: #1F6F6B;
-  --mint: #D3EBE4; --lilac: #DDD6F6; --peach: #FBE3B5; --sky: #CFE3F5; --hairline: #CFDFDA;
-  --on-mint: #14564F; --on-lilac: #3B2F7A; --on-peach: #5E4514; --on-sky: #1D4A75;
-  --night: #0F1A18; --night-ink: #FFFFFF; --night-muted: #B4C6C1; --amber: #F2B24C; --on-amber: #2A1E05;
-  --bezel: #14201E; --shadow: 0 30px 60px -30px rgba(20, 32, 30, .35);
+  --ground: #F3EEE6; --surface: #FFFDF9; --sunken: #EAE3D7; --ink: #1C1A17; --muted: #655C52; --primary: #1F4E9E;
+  --mint: #DCE4F3; --lilac: #E4DDF0; --peach: #F6E3BB; --sky: #D5ECEA; --hairline: #E2D9CB;
+  --on-mint: #173B78; --on-lilac: #3B2F7A; --on-peach: #5E4514; --on-sky: #0F5E5B;
+  --night: #1C1A17; --night-ink: #F3EEE6; --night-muted: #B5AB9D; --amber: #F2B24C; --on-amber: #2A1E05;
+  --bezel: #1C1A17; --shadow: 0 30px 60px -30px rgba(28, 26, 23, .35);
+  --display: "New York", ui-serif, "Iowan Old Style", Georgia, serif;
   --gutter: 20px; --radius: 32px;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --ground: #0F1A18; --surface: #182B28; --sunken: #14231F; --ink: #FFFFFF; --muted: #B4C6C1; --primary: #5FB8B0;
-    --mint: #1D3A35; --lilac: #2C2750; --peach: #3A2F14; --sky: #1B3147; --hairline: #2F4A45;
-    --on-mint: #9FE0D6; --on-lilac: #CFC6F7; --on-peach: #F2C27A; --on-sky: #BBD9F5;
-    --night: #0A1211; --bezel: #2F4A45; --shadow: 0 30px 60px -30px rgba(0, 0, 0, .7);
+    --ground: #15130F; --surface: #211E19; --sunken: #1A1814; --ink: #F3EEE6; --muted: #B5AB9D; --primary: #8FB0EE;
+    --mint: #1C2A4A; --lilac: #2C2750; --peach: #3A2F14; --sky: #153B39; --hairline: #3A352D;
+    --on-mint: #B9CDF5; --on-lilac: #CFC6F7; --on-peach: #F2C27A; --on-sky: #9FE0D6;
+    --night: #0D0C0A; --bezel: #3A352D; --shadow: 0 30px 60px -30px rgba(0, 0, 0, .7);
   }
 }
 * { box-sizing: border-box; }
@@ -26,6 +28,7 @@ a { color: var(--primary); text-underline-offset: 3px; }
 a:focus-visible, summary:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; border-radius: 8px; }
 img { max-width: 100%; height: auto; display: block; }
 h1, h2, h3 { font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+h1, h2, .feature h3 { font-family: var(--display); font-weight: 600; letter-spacing: -0.015em; }
 p { margin: 0; text-wrap: pretty; }
 main ul, main ol, footer ul { margin: 0; padding: 0; list-style: none; }
 main, .top, footer { max-width: 1120px; margin: 0 auto; padding: 0 var(--gutter); }
@@ -54,8 +57,8 @@ h2 { font-size: clamp(30px, 4vw, 44px); }
 .button { display: inline-block; font-weight: 800; border-radius: 999px; padding: 16px 28px; background: var(--ink); color: var(--ground); text-decoration: none; }
 .button.soon { background: var(--amber); color: var(--on-amber); }
 .ticks li { position: relative; padding-left: 34px; margin: 12px 0; }
-.ticks li::before { content: ""; position: absolute; left: 0; top: .2em; width: 22px; height: 22px; border-radius: 50%; background: #D3EBE4
-  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cpath d='M6.5 11.5l3 3 6-7' fill='none' stroke='%231F6F6B' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat; }
+.ticks li::before { content: ""; position: absolute; left: 0; top: .2em; width: 22px; height: 22px; border-radius: 50%; background: #DCE4F3
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cpath d='M6.5 11.5l3 3 6-7' fill='none' stroke='%231F4E9E' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat; }
 
 /* The device frame around every screenshot */
 .phone { width: min(100%, 300px); aspect-ratio: 603 / 1311; margin: 0 auto; border: 9px solid var(--bezel); border-radius: 46px; overflow: hidden;
@@ -68,7 +71,7 @@ h2 { font-size: clamp(30px, 4vw, 44px); }
 .hero h1 { font-size: clamp(40px, 6.4vw, 72px); letter-spacing: -0.035em; line-height: 1.02; }
 .lead { font-size: clamp(18px, 2vw, 21px); color: var(--muted); max-width: 32em; margin: 24px 0 28px; }
 .actions { margin-bottom: 14px; }
-.stage { background: var(--mint); border-radius: 48px; padding: 40px 24px; }
+.stage { background: var(--sunken); border-radius: 48px; padding: 40px 24px; }
 .stage .phone { width: min(100%, 310px); }
 
 /* Steps */
@@ -123,12 +126,12 @@ summary::after { content: ""; position: absolute; right: 24px; top: 50%; width: 
 details[open] summary::after { transform: translateY(-30%) rotate(-135deg); }
 details p { padding: 0 24px 22px; color: var(--muted); }
 
-/* Closing band: the night of the focus screen */
+/* Closing band: the other side of the sheet, ink with paper type */
 .cta { background: var(--night); color: var(--night-ink); border-radius: var(--radius); padding: 64px 24px; text-align: center; }
 .cta img { margin: 0 auto 20px; border-radius: 22px; }
-.cta h2 { color: var(--amber); }
+.cta h2 { color: var(--night-ink); }
 .cta p { color: var(--night-muted); font-size: 19px; margin-top: 10px; }
-.cta .button { margin-top: 24px; background: var(--amber); color: var(--on-amber); }
+.cta .button { margin-top: 24px; background: var(--night-ink); color: var(--night); }
 
 /* Footer */
 footer { padding-top: 8px; padding-bottom: 48px; color: var(--muted); font-size: 15px; }

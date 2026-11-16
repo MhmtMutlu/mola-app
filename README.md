@@ -19,7 +19,7 @@ ve destek. Uygulama bu sayfaları buradan açar. GitHub Pages ile yayınlanır; 
   `docs/legal/` klasörü. Değişince: `python3 tools/import_legal.py ../mola` → `python3 build.py`.
 - Derleme: `python3 build.py` (statik HTML'i depo köküne, `sitemap.xml` ve `robots.txt`'yi yazar, bütün iç bağlantıları
   kontrol eder). Derlenmiş HTML de commit'lenir; GitHub Pages ek bir derleme adımı çalıştırmaz.
-- Stil: `assets/site.css` (renkler ve yarıçaplar uygulamanın MolaDesign token'larıyla aynı). İkon ve çini görselleri
+- Stil: `assets/site.css` (renkler ve yarıçaplar uygulamanın MolaDesign token'larıyla aynı: kâğıt zemin, mürekkep yazı; başlıklar sistem serifi). İkon ve çini görselleri
   uygulama deposundan gelir (`scripts/app-icon.sh`, `docs/screens/`).
 - Yayın günü: `build.py` → `APP_ID` ve `APP_STORE_LIVE = True`.
 

@@ -65,7 +65,7 @@
       "points": [
         "Pomodoro (25 min), Study (45 min), Deep focus (50 min)",
         "A Live Activity on the Lock Screen and in the Dynamic Island",
-        "A Home Screen widget and a Control Center button"
+        "Starts together with your iPhone's Focus; Mola can keep its own reminders silent"
       ],
       "alt": "The focus session screen: a tile being painted and the time remaining"
     },
@@ -73,7 +73,7 @@
       "shot": "friction",
       "tag": "Strictness levels",
       "title": "A brief moment before you give up",
-      "text": "When you want to take a break during a balanced plan or end a session early, Mola first has you wait a moment. Most of the time, that's enough. A strict plan, though, can't be changed until it ends.",
+      "text": "When you want to take a break during a balanced plan or end a session early, Mola first has you wait a moment. Sometimes that is enough. A strict plan, though, can't be changed until it ends.",
       "points": [
         "Flexible: a 5-minute break whenever you like",
         "Balanced: a 20-second wait before a break",
@@ -85,11 +85,11 @@
       "shot": "wall",
       "tag": "Tile wall",
       "title": "Make your effort visible",
-      "text": "Each tile gets its outline first, then its color and finally its glaze. You start with the Seljuk star; as your wall grows, the Tulip and Rumi patterns unlock.",
+      "text": "Every tile gets its contour first, then its colours, and last its glaze. You begin with the Seljuk star; as your wall grows, the Tulip, Carnation, Rumi, Çintemani, Hatayi, Interlace and Pomegranate patterns unlock, and you move from apprentice towards master.",
       "points": [
-        "Today's focus time and the last seven days",
-        "The number of days you've focused in a row",
-        "An unfinished tile is never lost"
+        "Eight patterns, four ranks: apprentice, journeyman, master, head master",
+        "You always see how many tiles are left until the next pattern",
+        "A half-painted tile is never lost; nothing you earned is taken back"
       ],
       "alt": "The tile wall: finished tiles and the choice of the next pattern"
     }
@@ -98,7 +98,7 @@
   "extras": [
     [
       "Apple Watch",
-      "Start your program from your wrist and feel a tap when each round and break begins."
+      "A session started on your phone continues on your wrist: the same tile is painted at the same pace, with the time left and the time of day both in view."
     ],
     [
       "Widgets",

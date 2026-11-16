@@ -1,6 +1,6 @@
 # Mola Gizlilik Politikası
 
-**Yürürlük tarihi:** 15 Kasım 2026 · **Sürüm:** 1.0
+**Yürürlük tarihi:** 17 Kasım 2026 · **Sürüm:** 1.1
 
 Bu metin, KVKK (6698 sayılı Kişisel Verilerin Korunması Kanunu) madde 10 uyarınca aydınlatma metni ve AB Genel Veri
 Koruma Tüzüğü (GDPR) madde 13 uyarınca bilgilendirme olarak hazırlanmıştır. Kısa KVKK aydınlatma metni:
@@ -56,7 +56,7 @@ Bunlar sunucumuza **hiç gönderilmez** (aile cihazlarına giden kısım Bölüm
 | Uygulama seçimi | Hangi uygulamaların sınırlanacağı Apple'ın seçim ekranında belirlenir ve cihazda kalır. Bu seçim başka bir cihaza ya da sunucuya aktarılamayan, Apple'a özgü belirteçlerdir. |
 | Kurallar, modlar, süre istekleri ve nedenleri | Cihazda saklanır; aile cihazlarına yalnız uçtan uca şifreli gider. |
 | Aile içinde görünen ad | Kurulumda yazdığın ad. Yalnız ailenizin cihazlarında görünür; gerçek adın olmak zorunda değildir. |
-| Engelleme planların, günlük sınırların, kendi odak programların, odak oturumların, günlük odak sürelerin ve çini duvarın | Yalnız cihazında. |
+| Engelleme planların, günlük sınırların, kendi odak programların, odak oturumların, günlük odak sürelerin, çini duvarın ve istersen yazdığın "bu zamanı neye ayırıyorum" cümlesi | Yalnız cihazında. |
 | Şifreleme anahtarları | Cihazın anahtar zincirinde; yalnız bu cihazda. Aile anahtarı ebeveynin ekranındaki QR kodla çocuğun kamerasına geçer, sunucuya hiç gitmez. |
 
 Uygulamayı silersen bu bilgiler cihazından silinir. iCloud yedeğin açıksa uygulama verileri Apple'ın yedekleme
