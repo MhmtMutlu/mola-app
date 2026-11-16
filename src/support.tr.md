@@ -14,6 +14,12 @@ cümle. Kişisel veri başvurusu yapıyorsan **Ayarlar → Cihaz numarası** alt
 saatini, günleri ve sıkılık düzeyini seç. Plan başladığında seçtiğin uygulamalar kapanır, bittiğinde yeniden açılır.
 Mesai, ders ve uyku saatleri için ayrı planlar kurabilirsin.
 
+### Günlük sınır nasıl oluşturulur?
+
+**Bugün** sekmesinde **Günlük sınırlar** başlığının yanındaki artı düğmesine dokun. Sınıra bir ad ver, uygulamaları seç,
+günlük süreyi ve sıkılık düzeyini belirle. Seçtiğin uygulamalar gün içinde bu süre kadar kullanıldığında ertesi güne
+kadar kapanır. Süreyi iOS ölçer; birkaç dakikalık sapma olabilir.
+
 ### Kapalı bir uygulamaya ihtiyacım olursa?
 
 Ne yapabileceğin planın sıkılık düzeyine bağlıdır. **Esnek** planda dilediğin an 5 dakikalık mola verebilirsin.

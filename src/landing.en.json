@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "iPhone · iPad · Apple Watch",
     "headline": "Close your distractions. Get back to your focus.",
-    "lead": "Mola closes the apps you choose during the hours you set and paints every minute of focus into a tile. You don't create an account, and your data stays on your phone.",
+    "lead": "Mola closes the apps you choose during the hours you set or once your daily time is up, and paints every minute of focus into a tile. You don't create an account, and your data stays on your phone.",
     "soon": "Coming soon to the App Store",
     "store": "Download on the App Store",
     "note": "iOS 18 or later. No ads, no tracking.",
@@ -44,6 +44,18 @@
         "Turn a plan on or off with one tap"
       ],
       "alt": "The plan editing screen: name, start and end time, days and strictness level"
+    },
+    {
+      "shot": "limit",
+      "tag": "Daily limits",
+      "title": "Decide how much each day",
+      "text": "Give the apps you choose a daily amount of time. When the time is up, those apps close until the next day; your other apps stay open.",
+      "points": [
+        "A separate choice of apps for each limit",
+        "A daily time from 5 minutes to 8 hours",
+        "iOS measures the time; it can be off by a few minutes"
+      ],
+      "alt": "The limit editor: name, apps, daily time and strictness"
     },
     {
       "shot": "focus",
@@ -149,6 +161,10 @@
     [
       "Do I need to create an account?",
       "No. You can start using Mola as soon as you open it. The family feature doesn't ask for a name, email address or phone number either; devices are paired with a QR code."
+    ],
+    [
+      "Can I use an app for only a set amount of time each day?",
+      "Yes. Create a daily limit in the Today tab, choose the apps and set the daily time. When the time is up, those apps close until the next day. To close them at certain hours instead, use a blocking plan."
     ],
     [
       "What if I really need an app I've closed?",

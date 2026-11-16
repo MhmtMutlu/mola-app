@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "iPhone · iPad · Apple Watch",
     "headline": "Dikkatini dağıtanları kapat. Odağına dön.",
-    "lead": "Mola, seçtiğin uygulamaları belirlediğin saatlerde kapatır ve odaklandığın her dakikayı bir çiniye işler. Hesap açmazsın; verilerin telefonunda kalır.",
+    "lead": "Mola, seçtiğin uygulamaları belirlediğin saatlerde ya da günlük süren tamamlandığında kapatır ve odaklandığın her dakikayı bir çiniye işler. Hesap açmazsın; verilerin telefonunda kalır.",
     "soon": "Yakında App Store'da",
     "store": "App Store'dan indir",
     "note": "iOS 18 ve sonrası. Reklam ve izleme yok.",
@@ -44,6 +44,18 @@
         "Tek dokunuşla açıp kapatma"
       ],
       "alt": "Plan düzenleme ekranı: ad, başlangıç ve bitiş saati, günler ve sıkılık düzeyi"
+    },
+    {
+      "shot": "limit",
+      "tag": "Günlük sınırlar",
+      "title": "Günde ne kadar, sen karar ver",
+      "text": "Seçtiğin uygulamalara günlük bir süre tanı. Süre tamamlandığında o uygulamalar ertesi güne kadar kapanır; diğer uygulamaların açık kalır.",
+      "points": [
+        "Her sınır için ayrı uygulama seçimi",
+        "5 dakikadan 8 saate kadar günlük süre",
+        "Süreyi iOS ölçer; birkaç dakikalık sapma olabilir"
+      ],
+      "alt": "Sınır düzenleme ekranı: ad, uygulamalar, günlük süre ve sıkılık düzeyi"
     },
     {
       "shot": "focus",
@@ -149,6 +161,10 @@
     [
       "Hesap açmam gerekiyor mu?",
       "Hayır. Mola'yı açar açmaz kullanmaya başlarsın. Aile özelliği için de ad, e-posta ya da telefon numarası istenmez; cihazlar bir QR kodla eşleşir."
+    ],
+    [
+      "Bir uygulamayı günde yalnızca belirli bir süre kullanabilir miyim?",
+      "Evet. Bugün sekmesinde bir günlük sınır oluştur, uygulamaları seç ve günlük süreyi belirle. Süre tamamlandığında o uygulamalar ertesi güne kadar kapanır. Belirli saatlerde kapanmaları için ise bir engelleme planı kullanırsın."
     ],
     [
       "Kapattığım bir uygulamaya gerçekten ihtiyacım olursa ne olur?",

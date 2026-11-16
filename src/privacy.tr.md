@@ -56,7 +56,7 @@ Bunlar sunucumuza **hiç gönderilmez** (aile cihazlarına giden kısım Bölüm
 | Uygulama seçimi | Hangi uygulamaların sınırlanacağı Apple'ın seçim ekranında belirlenir ve cihazda kalır. Bu seçim başka bir cihaza ya da sunucuya aktarılamayan, Apple'a özgü belirteçlerdir. |
 | Kurallar, modlar, süre istekleri ve nedenleri | Cihazda saklanır; aile cihazlarına yalnız uçtan uca şifreli gider. |
 | Aile içinde görünen ad | Kurulumda yazdığın ad. Yalnız ailenizin cihazlarında görünür; gerçek adın olmak zorunda değildir. |
-| Engelleme planların, kendi odak programların, odak oturumların, günlük odak sürelerin ve çini duvarın | Yalnız cihazında. |
+| Engelleme planların, günlük sınırların, kendi odak programların, odak oturumların, günlük odak sürelerin ve çini duvarın | Yalnız cihazında. |
 | Şifreleme anahtarları | Cihazın anahtar zincirinde; yalnız bu cihazda. Aile anahtarı ebeveynin ekranındaki QR kodla çocuğun kamerasına geçer, sunucuya hiç gitmez. |
 
 Uygulamayı silersen bu bilgiler cihazından silinir. iCloud yedeğin açıksa uygulama verileri Apple'ın yedekleme

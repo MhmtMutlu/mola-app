@@ -14,6 +14,12 @@ In the **Today** tab, open **Blocking plans** and tap the plus button. Give the 
 and end time, days and strictness level. When the plan starts, the apps you chose close; when it ends, they open
 again. You can set up separate plans for work, study and sleep hours.
 
+### How do I create a daily limit?
+
+In the **Today** tab, tap the plus button next to **Daily limits**. Name the limit, choose the apps, and set the daily
+time and the strictness. Once the apps you chose have been used for that long in a day, they close until the next
+day. iOS measures the time; it can be off by a few minutes.
+
 ### What if I need an app that's closed?
 
 What you can do depends on the plan's strictness level. In a **Flexible** plan, you can take a 5-minute break
