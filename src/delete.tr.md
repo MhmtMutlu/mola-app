@@ -1,13 +1,13 @@
-# Verilerini silme
+# Verileri silme
 
-Mola'da ad, e-posta ya da parola içeren bir hesap yoktur. Aile kurduysanız sunucumuzda yalnız rastgele kimlikler, en çok
-25 saat yaşayan şifreli zarflar ve, ebeveyn telefonunda bildirimleri açtıysan, o telefonun bildirim jetonu bulunur.
-Hepsi uygulamanın içinden silinir:
+Mola'da ad, e-posta ya da parola içeren bir hesap yoktur. Aile kurduysan sunucumuzda yalnızca rastgele kimlikler, en
+çok 25 saat saklanan şifreli zarflar ve (ebeveyn telefonunda bildirimleri açtıysan) o telefonun bildirim jetonu
+bulunur. Bunların hepsini uygulamanın içinden silebilirsin.
 
 ## Ebeveynsen, kendi verilerin
 
 1. Mola'yı aç, **Ayarlar** sekmesine git.
-2. **Aileden ayrıl ve verilerimi sil**'e dokun ve onayla.
+2. **Aileden ayrıl ve verileri sil**'e dokun ve onayla.
 
 Hemen silinenler: sunucudaki hesabın, gönderdiğin ve sana gelen zarflar, cihaz kaydın ve bildirim jetonun. Ailedeki tek
 ebeveynsen çocuk cihazlarının kayıtları da aynı anda silinir. Telefonundaki şifreleme anahtarları ve aile bilgileri de
@@ -23,17 +23,18 @@ aile bilgilerini ve kuralları kendisi siler.
 
 ## Çocuk cihazındaysan
 
-Aileden tek başına ayrılamazsın, ama isteyebilirsin: **Ayarlar → Aileden ayrılmak istiyorum.** İsteğin ebeveynine gider;
-o onaylayınca telefonunun kaydı silinir ve kurallar kalkar.
+Aileden tek başına ayrılamazsın, ama ayrılmayı isteyebilirsin: **Ayarlar → Aileden ayrılmak istiyorum**. İsteğin
+ebeveynine gider; ebeveynin onaylayınca telefonunun kaydı silinir ve kurallar kalkar.
 
 ## Yalnız kendin için kullanıyorsan
 
-Sunucumuzda bir kaydın yoktur. Odak oturumların ve çini duvarın yalnız telefonundadır; uygulamayı silmen yeterlidir.
+Sunucumuzda bir kaydın yoktur. Odak oturumların ve çini duvarın yalnızca telefonundadır; uygulamayı silmen yeterlidir.
 
 ## Uygulamaya ulaşamıyorsan
 
-Bize yaz: **destek@mm-apps.com**, konu "Kişisel veri başvurusu". Cihazın **Ayarlar → Cihaz numarası**'nı ekle. En geç 30
-gün içinde sileriz. Ayrıca 180 gün boyunca hiç bağlanmayan bir cihazın kaydı kendiliğinden silinir.
+Konu satırına "Kişisel veri başvurusu" yazarak **destek@mm-apps.com** adresine e-posta gönder. **Ayarlar → Cihaz
+numarası** altında görünen numarayı da ekle. Verilerini en geç 30 gün içinde sileriz. Ayrıca 180 gün boyunca hiç
+bağlanmayan bir cihazın kaydı kendiliğinden silinir.
 
 ## Silinmeyen bir şey kalır mı?
 

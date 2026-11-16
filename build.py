@@ -10,7 +10,7 @@ script renders them and wraps them in the shared header and footer. Every link i
 https://mhmtmutlu.github.io/mola-app/ and at https://mola.mm-apps.com/. No cookies, no analytics, no third-party
 requests: the font is self-hosted.
 """
-import html, pathlib, re
+import html, json, pathlib, re
 
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
@@ -146,66 +146,10 @@ PAGES = {
 }
 DOCS = ["privacy", "terms", "kvkk", "delete", "support"]
 
-S = {
-    "tr": {
-        "name": "Mola", "tagline": "Ekran süresini kavgaya değil, anlaşmaya çevirin.",
-        "description": "Mola, ailelerin ekran süresi kurallarını birlikte koyduğu, çocukların süre isteyebildiği ve odaklandıkça çini boyanan bir iPhone uygulaması.",
-        "lead": "Mola, ebeveynle çocuğun kuralları birlikte koyduğu bir aile ekran süresi uygulaması. Yasak yok, mola var: neyin neden ve ne zamana kadar kapalı olduğu her zaman görünür.",
-        "soon": "Çok yakında App Store'da", "store": "App Store'dan indir",
-        "features_title": "Anlaşma, gözetim değil",
-        "features": [
-            ("Birlikte konan kurallar", "Günlük sınır, okul ve uyku modu. Çocuk kendi ekranında bütün kuralları görür; gizli hiçbir şey yoktur."),
-            ("“15 dakika daha?”", "Çocuk kısa bir nedenle süre ister, ebeveyn tek dokunuşla yanıtlar. İnat yerine konuşma."),
-            ("Odaklan, çinini boya", "Her odak oturumu bir çiniyi boyar: önce kontur, sonra renk, sonunda sır. Yarım kalan çini kaybolmaz, sonra tamamlanır."),
-            ("Bilekten pomodoro", "Apple Watch'ta program seç, tur ve mola geçişlerini bileğinde hisset."),
-        ],
-        "privacy_title": "Gizlilik sözümüz",
-        "privacy_points": [
-            "Ad, e-posta, telefon ya da konum istemeyiz. Hesap açmazsın.",
-            "Kullanım verin telefonundan çıkmaz; biz de ebeveyn de göremez.",
-            "Mesajlarını okumayız. Mola'nın buna ne izni ne de bir yolu vardır.",
-            "Ailenizin cihazları arasındaki her şey uçtan uca şifrelidir; sunucumuz okuyamaz.",
-            "Reklam, izleme ve analiz aracı yoktur.",
-        ],
-        "privacy_more": "Gizlilik politikasının tamamı",
-        "alt_today": "Çocuğun Bugün ekranı: kalan süre, yarım kalan çini ve aile anlaşması",
-        "alt_wall": "Çini duvarı: tamamlanan çiniler ve sıradaki desen",
-        "alt_tiles": "Bir çininin dört aşaması: ham, kontur, renk, sır",
-        "nav": {"privacy": "Gizlilik", "terms": "Koşullar", "kvkk": "KVKK", "delete": "Verileri silme", "support": "Destek"},
-        "footer": "Bireysel geliştirici Mehmet Mutlu tarafından yapıldı.",
-        "other": ("English", "en"), "back": "Ana sayfa",
-        "notfound_title": "Sayfa bulunamadı", "notfound_body": "Aradığın sayfa burada değil.",
-    },
-    "en": {
-        "name": "Mola", "tagline": "Turn screen time from a fight into an agreement.",
-        "description": "Mola is an iPhone app where families set screen-time rules together, children can ask for time, and every focus session paints a tile.",
-        "lead": "Mola is a family screen-time app where parent and child set the rules together. Nothing is forbidden, things take a break: what is closed, why and until when is always visible.",
-        "soon": "Coming soon to the App Store", "store": "Download on the App Store",
-        "features_title": "An agreement, not surveillance",
-        "features": [
-            ("Rules made together", "A daily limit, school and sleep modes. The child sees every rule on their own screen; nothing is hidden."),
-            ("“15 more minutes?”", "A child asks for time with a short reason, a parent answers with one tap. A conversation instead of a standoff."),
-            ("Focus and paint your tile", "Every focus session paints a tile: outline first, then colour, finally the glaze. A half-painted tile is never lost; you finish it later."),
-            ("Pomodoro on your wrist", "Pick a program on Apple Watch and feel rounds and breaks change on your wrist."),
-        ],
-        "privacy_title": "Our privacy promise",
-        "privacy_points": [
-            "We do not ask for a name, e-mail, phone number or location. There is no account.",
-            "Usage data never leaves the phone; neither we nor a parent can see it.",
-            "We do not read messages. Mola has neither the permission nor any way to do so.",
-            "Everything between your family's devices is end-to-end encrypted; our server cannot read it.",
-            "No ads, no tracking, no analytics.",
-        ],
-        "privacy_more": "Read the full privacy policy",
-        "alt_today": "The child's Today screen: time left, a half-painted tile and the family agreement",
-        "alt_wall": "The tile wall: finished tiles and the next pattern",
-        "alt_tiles": "Four stages of a tile: raw, outline, colour, glaze",
-        "nav": {"privacy": "Privacy", "terms": "Terms", "delete": "Deleting your data", "support": "Support"},
-        "footer": "Made by Mehmet Mutlu, an individual developer.",
-        "other": ("Türkçe", "tr"), "back": "Home",
-        "notfound_title": "Page not found", "notfound_body": "The page you are looking for is not here.",
-    },
-}
+# The landing copy lives in src/landing.<lang>.json, so it can be reviewed and translated as text.
+S = {lang: json.loads((SRC / f"landing.{lang}.json").read_text(encoding="utf-8")) for lang in ("tr", "en")}
+# Screenshots a landing page needs (assets/shots/<name>-<lang>.png, made with tools/shots.sh in the app repository).
+SHOT_WIDTH, SHOT_HEIGHT = 603, 1311
 
 
 def rel(from_path, to_path):
@@ -217,7 +161,9 @@ def shell(lang, path, title, description, body, key):
     t = S[lang]
     other_name, other_lang = t["other"]
     other_path = PAGES[key].get(other_lang, PAGES["home"][other_lang])
-    nav = "".join(f'<a href="{rel(path, PAGES[k][lang])}">{esc(label)}</a>' for k, label in t["nav"].items())
+    home = rel(path, PAGES["home"][lang])
+    top = "".join(f'<a href="{home}#{anchor}">{esc(label)}</a>' for anchor, label in t["nav"].items())
+    foot = "".join(f'<a href="{rel(path, PAGES[k][lang])}">{esc(label)}</a>' for k, label in t["foot_nav"].items())
     return f"""<!doctype html>
 <html lang="{lang}">
 <head>
@@ -228,21 +174,29 @@ def shell(lang, path, title, description, body, key):
 <link rel="canonical" href="{SITE_URL}{path}">
 <link rel="icon" href="{rel(path, 'assets/icon-64.png')}">
 <link rel="apple-touch-icon" href="{rel(path, 'assets/icon-180.png')}">
+<meta property="og:type" content="website">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:image" content="{SITE_URL}assets/icon-512.png">
+<meta name="theme-color" content="#E4F1EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1A18" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="{rel(path, 'assets/site.css')}">
 </head>
 <body>
+<a class="skip" href="#main">{esc(t['skip'])}</a>
 <header class="top">
-<a class="brand" href="{rel(path, PAGES['home'][lang])}"><img src="{rel(path, 'assets/icon-180.png')}" alt="" width="40" height="40"><span>Mola</span></a>
-<a class="lang" href="{rel(path, other_path)}" lang="{other_lang}">{esc(other_name)}</a>
+<a class="brand" href="{home}"><img src="{rel(path, 'assets/icon-180.png')}" alt="" width="36" height="36"><span>Mola</span></a>
+<nav class="menu" aria-label="{esc(t['menu_label'])}">{top}</nav>
+<a class="lang" href="{rel(path, other_path)}" lang="{other_lang}" hreflang="{other_lang}">{esc(other_name)}</a>
 </header>
-<main>
+<main id="main">
 {body}
 </main>
 <footer>
-<nav aria-label="{esc(t['name'])}">{nav}</nav>
+<div class="foot">
+<a class="brand" href="{home}"><img src="{rel(path, 'assets/icon-180.png')}" alt="" width="32" height="32"><span>Mola</span></a>
+<nav aria-label="{esc(t['foot_label'])}">{foot}</nav>
+</div>
 <p>{esc(t['footer'])} <a href="mailto:{CONTACT}">{CONTACT}</a></p>
 </footer>
 </body>
@@ -251,44 +205,103 @@ def shell(lang, path, title, description, body, key):
 
 
 def badge(lang):
-    t = S[lang]
+    t = S[lang]["hero"]
     if APP_STORE_LIVE:
         return f'<a class="button" href="{APP_STORE_URL}">{esc(t["store"])}</a>'
-    return f'<span class="chip">{esc(t["soon"])}</span>'
+    return f'<span class="button soon">{esc(t["soon"])}</span>'
+
+
+def phone(path, name, lang, alt, eager=False, night=False):
+    """A screenshot in a plain device frame."""
+    source = rel(path, f"assets/shots/{name}-{lang}.png")
+    loading = 'fetchpriority="high"' if eager else 'loading="lazy" decoding="async"'
+    return (f'<div class="phone{" night" if night else ""}"><img src="{source}" alt="{esc(alt)}" '
+            f'width="{SHOT_WIDTH}" height="{SHOT_HEIGHT}" {loading}></div>')
 
 
 def landing(lang):
     t, path = S[lang], PAGES["home"][lang]
-    asset = lambda name: rel(path, "assets/" + name)
-    features = "".join(f'<article class="card tint{i % 4}"><h3>{esc(title)}</h3><p>{esc(text)}</p></article>'
-                       for i, (title, text) in enumerate(t["features"]))
-    points = "".join(f"<li>{esc(point)}</li>" for point in t["privacy_points"])
+    hero, family, privacy = t["hero"], t["family"], t["privacy"]
+    steps = "".join(f'<li><span class="num" aria-hidden="true">{n}</span><h3>{esc(title)}</h3><p>{esc(text)}</p></li>'
+                    for n, (title, text) in enumerate(t["steps"], 1))
+    features = ""
+    for index, feature in enumerate(t["features"]):
+        points = "".join(f"<li>{esc(point)}</li>" for point in feature["points"])
+        night = feature["shot"] in ("focus", "wall")
+        features += f"""<article class="feature{' flip' if index % 2 else ''}">
+<div class="copy">
+<p class="tag tint{index % 4}">{esc(feature['tag'])}</p>
+<h3>{esc(feature['title'])}</h3>
+<p>{esc(feature['text'])}</p>
+<ul class="ticks">{points}</ul>
+</div>
+{phone(path, feature['shot'], lang, feature['alt'], night=night)}
+</article>
+"""
+    extras = "".join(f'<article class="card"><h3>{esc(title)}</h3><p>{esc(text)}</p></article>'
+                     for title, text in t["extras"])
+    family_points = "".join(f"<li><h3>{esc(title)}</h3><p>{esc(text)}</p></li>" for title, text in family["points"])
+    privacy_points = "".join(f"<li>{esc(point)}</li>" for point in privacy["points"])
+    faq = "".join(f"<details><summary>{esc(question)}</summary><p>{esc(answer)}</p></details>"
+                  for question, answer in t["faq"])
     body = f"""<section class="hero">
+<div class="copy">
+<p class="eyebrow">{esc(hero['eyebrow'])}</p>
+<h1>{esc(hero['headline'])}</h1>
+<p class="lead">{esc(hero['lead'])}</p>
+<p class="actions">{badge(lang)}</p>
+<p class="fine">{esc(hero['note'])}</p>
+</div>
+<div class="stage">{phone(path, 'today', lang, hero['alt'], eager=True)}</div>
+</section>
+
+<section class="steps" aria-labelledby="steps-title">
+<h2 id="steps-title">{esc(t['steps_title'])}</h2>
+<ol>{steps}</ol>
+</section>
+
+<section id="features" aria-labelledby="features-title">
+<h2 id="features-title" class="center">{esc(t['features_title'])}</h2>
+{features}
+<div class="grid">{extras}</div>
+</section>
+
+<section id="family" class="band" aria-labelledby="family-title">
+<div class="copy">
+<p class="tag tint2">{esc(family['tag'])}</p>
+<h2 id="family-title">{esc(family['title'])}</h2>
+<p>{esc(family['text'])}</p>
+<ul class="pairs">{family_points}</ul>
+<p class="fine">{esc(family['note'])}</p>
+</div>
+<div class="duo">
+{phone(path, 'parent', lang, family['alt_parent'])}
+{phone(path, 'child', lang, family['alt_child'])}
+</div>
+</section>
+
+<section id="privacy" class="split" aria-labelledby="privacy-title">
 <div>
-<img class="icon" src="{asset('icon-512.png')}" alt="" width="112" height="112">
-<h1>{esc(t['name'])}</h1>
-<p class="tagline">{esc(t['tagline'])}</p>
-<p class="lead">{esc(t['lead'])}</p>
-{badge(lang)}
+<p class="tag tint0">{esc(privacy['tag'])}</p>
+<h2 id="privacy-title">{esc(privacy['title'])}</h2>
+<p>{esc(privacy['text'])}</p>
+<p><a href="{rel(path, PAGES['privacy'][lang])}">{esc(privacy['more'])}</a></p>
 </div>
-<div class="shots">
-<img src="{asset(f'shots/today-{lang}.png')}" alt="{esc(t['alt_today'])}" width="300" loading="lazy">
-<img src="{asset(f'shots/wall-{lang}.png')}" alt="{esc(t['alt_wall'])}" width="300" loading="lazy">
-</div>
+<ul class="ticks card">{privacy_points}</ul>
 </section>
-<section>
-<h2>{esc(t['features_title'])}</h2>
-<div class="grid">{features}</div>
+
+<section id="faq" class="faq" aria-labelledby="faq-title">
+<h2 id="faq-title">{esc(t['faq_title'])}</h2>
+{faq}
 </section>
-<section class="night">
-<img src="{asset('tiles.png')}" alt="{esc(t['alt_tiles'])}" loading="lazy">
-</section>
-<section class="card">
-<h2>{esc(t['privacy_title'])}</h2>
-<ul class="checks">{points}</ul>
-<p><a href="{rel(path, PAGES['privacy'][lang])}">{esc(t['privacy_more'])}</a></p>
+
+<section class="cta">
+<img src="{rel(path, 'assets/icon-512.png')}" alt="" width="88" height="88" loading="lazy">
+<h2>{esc(t['cta']['title'])}</h2>
+<p>{esc(t['cta']['text'])}</p>
+{badge(lang) if APP_STORE_LIVE else ''}
 </section>"""
-    write(path, shell(lang, path, f"{t['name']}: {t['tagline']}", t["description"], body, "home"))
+    write(path, shell(lang, path, t["title"], t["description"], body, "home"))
 
 
 def document(key, lang):

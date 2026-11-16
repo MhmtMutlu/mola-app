@@ -19,7 +19,7 @@ General Data Protection Regulation (GDPR). The short KVKK notice: https://mola.m
 - **Everything between your family's devices is end-to-end encrypted.** Rules, time requests, the short reason you
   write and the name shown inside the family are encrypted so that only your family's devices can open them. Our server
   **cannot read them.**
-- If you use Mola only for yourself (focus and the tile wall), **nothing is sent to our server.**
+- If you use Mola only for yourself (blocking plans, focus and the tile wall), **nothing is sent to our server.**
 - If you set up a family, our server in Türkiye holds only: randomly generated identifiers, encrypted envelopes that
   live at most 25 hours and, if you turned on notifications on the parent's phone, the notification token Apple
   generated for that phone. **No notification token is taken from children's phones.**
@@ -60,7 +60,7 @@ These are **never sent** to our server (the part that goes to family devices tra
 | App selection | Which apps are limited is chosen in Apple's own picker and stays on the device. The selection consists of Apple-specific tokens that cannot be transferred to another device or to a server. |
 | Rules, modes, time requests and their reasons | Stored on the device; sent to family devices end-to-end encrypted only. |
 | The name shown in the family | The name you type during setup. It is visible only on your family's devices and does not have to be your real name. |
-| Focus sessions and your tile wall | On your device only. |
+| Your blocking plans, your own focus programs, your focus sessions, your daily focus times and your tile wall | On your device only. |
 | Encryption keys | In the device's keychain, on this device only. The family key passes from the parent's screen to the child's camera by QR code and never reaches the server. |
 
 Deleting the app deletes this information from your device. If iCloud Backup is on, app data may be included in your

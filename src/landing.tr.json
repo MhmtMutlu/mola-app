@@ -1,0 +1,192 @@
+{
+  "title": "Mola: odak ve uygulama engelleme",
+  "description": "Mola, dikkat dağıtan uygulamaları belirlediğin saatlerde kapatan ve odak oturumlarını çiniye dönüştüren bir iPhone, iPad ve Apple Watch uygulamasıdır. İstersen ailenle birlikte de kullanabilirsin.",
+  "nav": {
+    "features": "Özellikler",
+    "family": "Aile",
+    "privacy": "Gizlilik",
+    "faq": "Sorular"
+  },
+  "hero": {
+    "eyebrow": "iPhone · iPad · Apple Watch",
+    "headline": "Dikkatini dağıtanları kapat. Odağına dön.",
+    "lead": "Mola, seçtiğin uygulamaları belirlediğin saatlerde kapatır ve odaklandığın her dakikayı bir çiniye işler. Hesap açmazsın; verilerin telefonunda kalır.",
+    "soon": "Yakında App Store'da",
+    "store": "App Store'dan indir",
+    "note": "iOS 18 ve sonrası. Reklam ve izleme yok.",
+    "alt": "Mola'nın Bugün ekranı: açık olan engelleme planı, bugünkü odak süresi ve haftalık özet"
+  },
+  "steps_title": "Üç adımda başla",
+  "steps": [
+    [
+      "Uygulamalarını seç",
+      "Dikkatini en çok dağıtan uygulamaları, kategorileri ve siteleri Apple'ın kendi seçicisiyle belirle. Seçimin telefonundan çıkmaz."
+    ],
+    [
+      "Planını kur ya da oturum başlat",
+      "Mesai, ders ve uyku saatleri için plan oluştur; plan dışında dilediğin an bir odak oturumu başlat."
+    ],
+    [
+      "Çinini boya",
+      "Odakta geçen süre bir çiniyi boyar. Tamamlanan çiniler duvarında birikir; yarım kalan çini bir sonraki oturumda kaldığı yerden devam eder."
+    ]
+  ],
+  "features_title": "Odağını koruyan her şey tek yerde",
+  "features": [
+    {
+      "shot": "plan",
+      "tag": "Engelleme planları",
+      "title": "Saatleri sen belirle, gerisi kendiliğinden işlesin",
+      "text": "Plan başladığında seçtiğin uygulamalar kapanır, bittiğinde yeniden açılır. Hafta içi, hafta sonu ya da dilediğin günler için ayrı planlar kurabilirsin.",
+      "points": [
+        "Mesai, ders ve uyku saatleri için ayrı planlar",
+        "Gece yarısını geçen planlar",
+        "Tek dokunuşla açıp kapatma"
+      ],
+      "alt": "Plan düzenleme ekranı: ad, başlangıç ve bitiş saati, günler ve sıkılık düzeyi"
+    },
+    {
+      "shot": "focus",
+      "tag": "Odak oturumları",
+      "title": "Pomodoro, ders ya da kendi programın",
+      "text": "Hazır programlardan birini seç ya da odak süresini, tur sayısını ve ara süresini kendin belirle. Oturum sürerken dikkat dağıtan uygulamalar kapalı kalır.",
+      "points": [
+        "Pomodoro (25 dk), Ders (45 dk), Derin odak (50 dk)",
+        "Kilitli Ekran'da ve Dynamic Island'da Canlı Etkinlik",
+        "Ana Ekran araç takımı ve Denetim Merkezi düğmesi"
+      ],
+      "alt": "Odak oturumu ekranı: boyanmakta olan çini ve kalan süre"
+    },
+    {
+      "shot": "friction",
+      "tag": "Sıkılık düzeyleri",
+      "title": "Vazgeçmeden önce kısa bir an",
+      "text": "Dengeli bir planda mola vermek ya da bir oturumu erken bitirmek istediğinde Mola önce kısa bir süre bekletir. Çoğu zaman bu kadarı yeter. Sıkı bir plan ise bitene kadar değiştirilemez.",
+      "points": [
+        "Esnek: dilediğin an 5 dakikalık mola",
+        "Dengeli: moladan önce 20 saniye bekleme",
+        "Sıkı: plan bitene kadar mola yok"
+      ],
+      "alt": "Kısa mola penceresi: geri sayım bitince mola düğmesi etkinleşir"
+    },
+    {
+      "shot": "wall",
+      "tag": "Çini duvarı",
+      "title": "Emeğin görünür olsun",
+      "text": "Her çini önce konturunu, sonra rengini, en sonunda sırını alır. Selçuklu yıldızıyla başlarsın; duvarın büyüdükçe Lale ve Rumi desenleri açılır.",
+      "points": [
+        "Bugünkü odak süren ve son yedi gün",
+        "Üst üste odaklandığın gün sayısı",
+        "Yarım kalan çini kaybolmaz"
+      ],
+      "alt": "Çini duvarı: tamamlanmış çiniler ve sıradaki desen seçimi"
+    }
+  ],
+  "extras_title": "Telefonun dışında da yanında",
+  "extras": [
+    [
+      "Apple Watch",
+      "Programını bileğinden başlat; tur ve mola geçişlerini bileğindeki dokunuşla hisset."
+    ],
+    [
+      "Araç takımları",
+      "Ana Ekran'dan tek dokunuşla oturum başlat, kalan süreni bir bakışta gör."
+    ],
+    [
+      "iPad ve iPhone Duo",
+      "Düzen ekran boyutuna göre kendini ayarlar; cihazı katladığında kaldığın yer kaybolmaz."
+    ],
+    [
+      "15 dil",
+      "Türkçe ve İngilizcenin yanında Almanca, Fransızca, İspanyolca, Japonca, Korece, Arapça ve diğerleri."
+    ]
+  ],
+  "family": {
+    "tag": "Aile",
+    "title": "İstersen ailenle birlikte",
+    "text": "Mola'yı kendin için kullanırken dilediğin zaman bir aile kurabilirsin. Çocuğunun telefonundaki günlük süreyi, okul ve uyku saatlerini onunla birlikte belirlersin; çocuğun, hangi kuralın neden ve ne zamana kadar geçerli olduğunu kendi ekranında görür.",
+    "points": [
+      [
+        "Birlikte belirlenen kurallar",
+        "Günlük süre, okul modu ve uyku modu. Gizli kural yoktur."
+      ],
+      [
+        "Süre istekleri",
+        "Çocuk kısa bir gerekçeyle ek süre ister; ebeveyn tek dokunuşla yanıtlar."
+      ],
+      [
+        "Gözetim değil, anlaşma",
+        "Mola; mesajları, fotoğrafları, konumu ya da hangi uygulamanın kullanıldığını ebeveyne göstermez."
+      ],
+      [
+        "Uçtan uca şifreli",
+        "Aile cihazları arasındaki mesajlar cihazlarda şifrelenir; sunucumuz içeriği okuyamaz."
+      ]
+    ],
+    "note": "Ebeveynin verdiği mola ya da yeni kural, çocuğun telefonunda Mola açıldığında uygulanır. Mola, Apple'ın Ekran Süresi sistemiyle çalışır.",
+    "alt_parent": "Ebeveynin Aile ekranı: çocuğun süre isteği ve kalan süresi",
+    "alt_child": "Çocuğun Bugün ekranı: kalan süre ve geçerli kurallar"
+  },
+  "privacy": {
+    "tag": "Gizlilik",
+    "title": "Verilerin sende kalır",
+    "text": "Mola'yı veri toplamadan çalışacak biçimde tasarladık. Tek başına kullanırken sunucumuzda sana ait hiçbir kayıt oluşmaz.",
+    "points": [
+      "Ad, e-posta, telefon numarası ya da konum istemeyiz; hesap açmazsın.",
+      "Uygulama seçimin, planların, odak geçmişin ve çini duvarın yalnızca cihazında durur.",
+      "Hangi uygulamayı ne kadar kullandığını biz göremeyiz.",
+      "Aile özelliğini kullanırsan sunucumuzda yalnızca rastgele kimlikler, okuyamadığımız şifreli mesajlar ve bildirimleri açan ebeveynin bildirim jetonu bulunur.",
+      "Reklam, izleme ve analiz aracı yoktur."
+    ],
+    "more": "Gizlilik Politikası'nın tamamını oku"
+  },
+  "faq_title": "Sık sorulan sorular",
+  "faq": [
+    [
+      "Mola hangi cihazlarda çalışır?",
+      "iOS 18 ve sonrasını kullanan iPhone'larda, iPadOS 18 ve sonrasını kullanan iPad'lerde ve watchOS 11 ve sonrasını kullanan Apple Watch'larda çalışır."
+    ],
+    [
+      "Hesap açmam gerekiyor mu?",
+      "Hayır. Mola'yı açar açmaz kullanmaya başlarsın. Aile özelliği için de ad, e-posta ya da telefon numarası istenmez; cihazlar bir QR kodla eşleşir."
+    ],
+    [
+      "Kapattığım bir uygulamaya gerçekten ihtiyacım olursa ne olur?",
+      "Planının sıkılık düzeyi uygunsa 5 dakikalık bir mola verebilirsin. Dengeli planlarda moladan önce 20 saniye beklersin; sıkı planlarda plan bitene kadar mola yoktur. Esnek ve dengeli planları dilediğin zaman Mola'dan kapatabilirsin; sıkı bir plan, süresi dolana kadar kapatılamaz."
+    ],
+    [
+      "Mola hangi uygulamaları kullandığımı görebilir mi?",
+      "Hayır. Uygulamaları Apple'ın Ekran Süresi seçicisiyle belirlersin; Mola seçtiklerinin adını bile bilmez, yalnızca cihazında geçerli olan şifreli işaretleri saklar."
+    ],
+    [
+      "Aile özelliğini kullanmak için ne gerekir?",
+      "Mola'nın hem ebeveynin hem çocuğun telefonunda kurulu olması yeterlidir. Çocuğun kuralları kaldıramaması için Apple hesabının Aile Paylaşımı'nda çocuk olarak tanımlanmasını öneririz."
+    ],
+    [
+      "Uygulamayı silersem verilerime ne olur?",
+      "Planların, odak geçmişin ve çini duvarın cihazında tutulduğu için uygulamayla birlikte silinir. Aile özelliğini kullandıysan sunucudaki kayıtlarını silmenin yolu \"Verileri silme\" sayfasında anlatılır."
+    ]
+  ],
+  "cta": {
+    "title": "Odağını geri al",
+    "text": "Mola yakında App Store'da."
+  },
+  "footer": "Mehmet Mutlu tarafından bireysel olarak geliştirildi.",
+  "foot_nav": {
+    "privacy": "Gizlilik",
+    "terms": "Koşullar",
+    "kvkk": "KVKK",
+    "delete": "Verileri silme",
+    "support": "Destek"
+  },
+  "other": [
+    "English",
+    "en"
+  ],
+  "back": "Ana sayfa",
+  "notfound_title": "Sayfa bulunamadı",
+  "notfound_body": "Aradığın sayfa burada değil.",
+  "skip": "İçeriğe geç",
+  "menu_label": "Bölümler",
+  "foot_label": "Sayfalar"
+}

@@ -1,46 +1,68 @@
 # Destek
 
-Bir sorun mu var, bir şey mi anlaşılmadı? Bize yaz: **destek@mm-apps.com** (Türkçe ya da İngilizce). Genellikle birkaç iş
-günü içinde yanıtlarız.
+Bir sorun yaşıyorsan ya da aklına takılan bir şey varsa bize yaz: **destek@mm-apps.com** (Türkçe ya da İngilizce).
+Genellikle birkaç iş günü içinde yanıtlarız.
 
-Yazarken şunları eklersen daha hızlı yardımcı oluruz: cihaz modeli, iOS sürümü, Mola'nın sürümü ve ne olduğunu kısaca
-anlatan bir iki cümle. Bir kişisel veri başvurusuysa **Ayarlar → Cihaz numarası**'nı da ekle.
+Şunları eklersen daha hızlı yardımcı olabiliriz: cihaz modeli, iOS sürümü, Mola sürümü ve sorunu anlatan bir iki
+cümle. Kişisel veri başvurusu yapıyorsan **Ayarlar → Cihaz numarası** altında görünen numarayı da ekle.
 
 ## Sık sorulanlar
 
+### Engelleme planı nasıl oluşturulur?
+
+**Bugün** sekmesinde **Engelleme planları**'nı aç ve artı düğmesine dokun. Plana bir ad ver; başlangıç ve bitiş
+saatini, günleri ve sıkılık düzeyini seç. Plan başladığında seçtiğin uygulamalar kapanır, bittiğinde yeniden açılır.
+Mesai, ders ve uyku saatleri için ayrı planlar kurabilirsin.
+
+### Kapalı bir uygulamaya ihtiyacım olursa?
+
+Ne yapabileceğin planın sıkılık düzeyine bağlıdır. **Esnek** planda dilediğin an 5 dakikalık mola verebilirsin.
+**Dengeli** planda moladan önce 20 saniye beklersin. **Sıkı** planda plan bitene kadar mola yoktur.
+
+### Kapanacak uygulamaları nasıl değiştiririm?
+
+**Ayarlar → Kapanacak uygulamalar**'ı aç. Uygulamaları, kategorileri ve siteleri Apple'ın kendi seçicisiyle
+belirlersin; seçimin telefonundan çıkmaz.
+
+### Kendi odak programımı nasıl oluştururum?
+
+**Odak** sekmesinde **Kendi programını oluştur**'a dokun; odak süresini, tur sayısını ve ara süresini belirle. Hazır
+programlardan birini de seçebilirsin: Pomodoro (25 dk), Ders (45 dk), Derin odak (50 dk).
+
 ### Çocuğumun telefonunu aileye nasıl eklerim?
 
-Kendi telefonunda Mola'yı aç, **Aile** sekmesinde **Çocuk ekle**'ye dokun. Çıkan QR kodu çocuğunun telefonunun Kamera
-uygulamasıyla okut. Kod 10 dakika geçerlidir ve yalnız bir cihaz için çalışır. Ardından çocuğunun telefonunda Ekran
-Süresi iznini birlikte verin ve sınırın geçerli olacağı uygulamaları birlikte seçin.
+Kendi telefonunda Mola'yı aç, **Aile** sekmesinde **Çocuk ekle**'ye dokun. Ekrana gelen QR kodu çocuğunun
+telefonundaki Kamera uygulamasıyla okut. Kod 10 dakika boyunca ve yalnızca tek bir cihaz için geçerlidir. Ardından
+çocuğunla birlikte onun telefonunda Ekran Süresi iznini ver ve sınırın geçerli olacağı uygulamaları seç.
 
 ### Ekran Süresi izni neden gerekli?
 
-Mola kuralları Apple'ın Ekran Süresi sistemiyle uygular; profil kurmaz. İzin, çocuğun telefonunda Aile Paylaşımı'ndaki
-ebeveynin Apple hesabıyla onaylanır. Aile Paylaşımı kurulu değilse izin yine verilebilir, ama o durumda Ayarlar'dan
-kapatılabilir; uygulama bunu açıkça söyler.
+Mola, kuralları Apple'ın Ekran Süresi sistemiyle uygular; telefona profil kurmaz. İzin, çocuğun telefonunda Aile
+Paylaşımı'ndaki ebeveynin Apple hesabıyla onaylanır. Aile Paylaşımı kurulu değilse izin yine verilebilir, ama bu
+durumda Ayarlar'dan kapatılabilir; Mola bunu açıkça belirtir.
 
-### "Mola ver" dedim ama çocuğumun telefonu hemen kapanmadı.
+### "Mola ver" dedim ama çocuğumun telefonunda mola hemen başlamadı. Neden?
 
-Bu beklenen bir durum. Çocukların telefonlarında bildirim kullanmıyoruz (çocuk telefonundan bildirim jetonu almıyoruz);
-bu yüzden verdiğin mola, çocuğunun telefonunda Mola açıldığında ya da iOS uygulamaya arka planda sıra verdiğinde
-uygulanır. Ebeveyn ekranında komutun durumu görünür: "İletildi" ya da "Uygulandı". Okul, uyku ve günlük sınır gibi
-planlı kurallar telefonda kayıtlıdır; gecikmeden ve internet olmadan çalışır.
+Bu beklenen bir durumdur. Çocukların telefonunda bildirim kullanmıyoruz; bu telefonlardan bildirim jetonu da
+almıyoruz. Bu yüzden verdiğin mola, çocuğunun telefonunda Mola açıldığında ya da iOS, Mola'yı arka planda
+çalıştırdığında uygulanır. Komutun durumunu kendi ekranında görürsün: "İletildi" ya da "Uygulandı". Okul, uyku ve
+günlük sınır gibi planlı kurallar ise çocuğunun telefonunda kayıtlıdır; gecikmeden ve internet bağlantısı olmadan
+çalışır.
 
-### "Bugün kalan süre" neden yaklaşık?
+### "Bugün kalan süre" neden yaklaşık gösteriliyor?
 
-Apple'ın sistemi toplam kullanım süresini uygulamalara vermez; yalnız belirli eşikler aşıldığında haber verir. Mola
-günlük sınırı sekiz adıma böler ve kalan süreyi bu adımlarla gösterir.
+Apple'ın sistemi toplam kullanım süresini uygulamalarla paylaşmaz; yalnızca belirli eşikler aşıldığında haber verir.
+Mola bu yüzden günlük sınırı sekiz adıma böler ve kalan süreyi bu adımlarla gösterir.
 
-### Çocuğumun hangi uygulamada ne kadar kaldığını görebilir miyim?
+### Çocuğumun hangi uygulamayı ne kadar kullandığını görebilir miyim?
 
 Hayır. Kullanım verisi çocuğun telefonundan çıkmaz; biz de göremeyiz. Mola bir gözetim aracı değil, ailenin birlikte
 koyduğu kuralları uygulayan bir araçtır.
 
 ### Çinim yarım kaldı, kayboldu mu?
 
-Hayır. Odağı yarıda bırakırsan çinin yarım kalır ve bir sonraki odakta kaldığı yerden boyanmaya devam eder.
+Hayır. Odak oturumunu yarıda bırakırsan çinin yarım kalır ve bir sonraki oturumda kaldığı yerden boyanmaya devam eder.
 
 ### Verilerimi nasıl silerim?
 
-[Hesap silme](../hesap-silme/) sayfasına bak.
+Adımlar [Verileri silme](../hesap-silme/) sayfasında anlatılıyor.

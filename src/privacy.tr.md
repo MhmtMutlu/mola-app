@@ -16,7 +16,7 @@ https://mola.mm-apps.com/kvkk/. Bağlayıcı metin Türkçedir (Bölüm 14).
 - **Mesajlarını, fotoğraflarını, rehberini okumayız.** Mola'nın buna ne izni ne de bir yolu vardır.
 - **Ailenizin cihazları arasındaki her şey uçtan uca şifrelidir.** Kurallar, süre istekleri, yazdığın kısa neden ve
   aile içinde görünen adın, yalnız ailenizin cihazlarının açabileceği şekilde şifrelenir. Sunucumuz bunları **okuyamaz.**
-- Mola'yı yalnız kendin için (odak ve çini duvarı) kullanırsan **sunucumuza hiçbir şey gitmez.**
+- Mola'yı yalnız kendin için (engelleme planları, odak ve çini duvarı) kullanırsan **sunucumuza hiçbir şey gitmez.**
 - Aile kurarsanız Türkiye'deki sunucumuzda yalnız şunlar durur: rastgele üretilmiş kimlikler, şifreli ve en çok 25 saat
   yaşayan zarflar ve, ebeveyn telefonunda bildirimleri açtıysan, Apple'ın o telefon için ürettiği bildirim jetonu.
   **Çocuk telefonlarından bildirim jetonu alınmaz.**
@@ -56,7 +56,7 @@ Bunlar sunucumuza **hiç gönderilmez** (aile cihazlarına giden kısım Bölüm
 | Uygulama seçimi | Hangi uygulamaların sınırlanacağı Apple'ın seçim ekranında belirlenir ve cihazda kalır. Bu seçim başka bir cihaza ya da sunucuya aktarılamayan, Apple'a özgü belirteçlerdir. |
 | Kurallar, modlar, süre istekleri ve nedenleri | Cihazda saklanır; aile cihazlarına yalnız uçtan uca şifreli gider. |
 | Aile içinde görünen ad | Kurulumda yazdığın ad. Yalnız ailenizin cihazlarında görünür; gerçek adın olmak zorunda değildir. |
-| Odak oturumları ve çini duvarın | Yalnız cihazında. |
+| Engelleme planların, kendi odak programların, odak oturumların, günlük odak sürelerin ve çini duvarın | Yalnız cihazında. |
 | Şifreleme anahtarları | Cihazın anahtar zincirinde; yalnız bu cihazda. Aile anahtarı ebeveynin ekranındaki QR kodla çocuğun kamerasına geçer, sunucuya hiç gitmez. |
 
 Uygulamayı silersen bu bilgiler cihazından silinir. iCloud yedeğin açıksa uygulama verileri Apple'ın yedekleme
