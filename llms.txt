@@ -1,0 +1,57 @@
+# Mola
+
+> Mola is an app blocker and focus app for iPhone, iPad and Apple Watch that needs no account. It closes the apps you choose during the hours you set or once your daily time is up, and turns your focus sessions into tiles.
+
+## Facts
+
+- Platforms: iPhone (iOS 18 or later), iPad (iPadOS 18 or later), Apple Watch (watchOS 11 or later)
+- Account: none; the family feature pairs devices with a QR code
+- Ads, tracking, analytics: none
+- Where data lives: Your app selection, your plans, your focus history and your tile wall are stored only on your device.
+- Languages: Turkish and English, along with German, French, Spanish, Japanese, Korean, Arabic and more.
+- App Store: not released yet
+- Publisher: mm-apps (https://mm-apps.com/), destek@mm-apps.com
+
+## What it does
+
+- You set the hours, the rest takes care of itself: When a plan starts, the apps you chose close; when it ends, they open again. You can set up separate plans for weekdays, weekends or any days you like.
+- Decide how much each day: Give the apps you choose a daily amount of time. When the time is up, those apps close until the next day; your other apps stay open.
+- Pomodoro, study or your own program: Choose one of the ready-made programs or set the focus time, the number of rounds and the break length yourself. Distracting apps stay closed while the session runs.
+- A brief moment before you give up: When you want to take a break during a balanced plan or end a session early, Mola first has you wait a moment. Sometimes that is enough. A strict plan, though, can't be changed until it ends.
+- Make your effort visible: Every tile gets its contour first, then its colours, and last its glaze. You begin with the Seljuk star; as your wall grows, the Tulip, Carnation, Rumi, Çintemani, Hatayi, Interlace and Pomegranate patterns unlock, and you move from apprentice towards master.
+
+## Questions
+
+- Which devices does Mola work on? It works on iPhones running iOS 18 or later, iPads running iPadOS 18 or later, and Apple Watches running watchOS 11 or later.
+- Do I need to create an account? No. You can start using Mola as soon as you open it. The family feature doesn't ask for a name, email address or phone number either; devices are paired with a QR code.
+- Can I use an app for only a set amount of time each day? Yes. Create a daily limit in the Today tab, choose the apps and set the daily time. When the time is up, those apps close until the next day. To close them at certain hours instead, use a blocking plan.
+- What if I really need an app I've closed? If your plan's strictness level allows it, you can take a 5-minute break. In balanced plans you wait 20 seconds before a break; in strict plans there are no breaks until the plan ends. You can turn off flexible and balanced plans in Mola at any time; a strict plan can't be turned off until its time is up.
+- Can Mola see which apps I use? No. You choose apps with Apple's Screen Time picker; Mola doesn't even know the names of the ones you chose and stores only encrypted tokens that are valid on your device alone.
+- What do I need to use the family feature? Mola just needs to be installed on both the parent's and the child's phone. So that the child can't remove the rules, we recommend that the child's Apple Account be set up as a child in Family Sharing.
+- What happens to my data if I delete the app? Your plans, focus history and tile wall are stored on your device, so they're deleted along with the app. If you've used the family feature, the "Deleting your data" page explains how to delete your records on the server.
+
+## Pages
+
+- [Overview](https://mola.mm-apps.com/en/)
+- [Privacy policy](https://mola.mm-apps.com/en/privacy/)
+- [Terms of use](https://mola.mm-apps.com/en/terms/)
+- [Deleting your data](https://mola.mm-apps.com/en/delete-account/)
+- [Support](https://mola.mm-apps.com/en/support/)
+
+## Guides
+
+- [How to block apps on iPhone](https://mola.mm-apps.com/en/guides/block-apps/): With Screen Time settings and with Mola, step by step.
+- [How to set a daily time limit for an app](https://mola.mm-apps.com/en/guides/daily-time-limit/): App Limits, Downtime and Mola's daily limits.
+- [What the Pomodoro Technique is and how to use it](https://mola.mm-apps.com/en/guides/pomodoro-technique/): 25-minute rounds, breaks and keeping the phone out of the work.
+
+## Türkçe
+
+- [Mola](https://mola.mm-apps.com/)
+- [Gizlilik](https://mola.mm-apps.com/gizlilik/)
+- [Koşullar](https://mola.mm-apps.com/kosullar/)
+- [KVKK](https://mola.mm-apps.com/kvkk/)
+- [Verileri silme](https://mola.mm-apps.com/hesap-silme/)
+- [Destek](https://mola.mm-apps.com/destek/)
+- [iPhone'da uygulama nasıl engellenir?](https://mola.mm-apps.com/rehber/uygulama-engelleme/)
+- [Bir uygulamaya günlük süre sınırı nasıl konur?](https://mola.mm-apps.com/rehber/gunluk-sure-siniri/)
+- [Pomodoro tekniği nedir, nasıl uygulanır?](https://mola.mm-apps.com/rehber/pomodoro-teknigi/)

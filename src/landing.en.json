@@ -1,6 +1,6 @@
 {
-  "title": "Mola: focus and app blocking",
-  "description": "Mola is an iPhone, iPad and Apple Watch app that closes distracting apps during the hours you set and turns your focus sessions into tiles. You can also use it with your family if you like.",
+  "title": "Mola: App Blocker & Focus Timer for iPhone",
+  "description": "Mola is an app blocker and focus app for iPhone, iPad and Apple Watch that needs no account. It closes the apps you choose during the hours you set or once your daily time is up, and turns your focus sessions into tiles.",
   "nav": {
     "features": "Features",
     "family": "Family",
@@ -8,7 +8,7 @@
     "faq": "Questions"
   },
   "hero": {
-    "eyebrow": "iPhone · iPad · Apple Watch",
+    "eyebrow": "App blocker and focus · iPhone, iPad, Apple Watch",
     "headline": "Close your distractions. Get back to your focus.",
     "lead": "Mola closes the apps you choose during the hours you set or once your daily time is up, and paints every minute of focus into a tile. You don't create an account, and your data stays on your phone.",
     "soon": "Coming soon to the App Store",
@@ -203,5 +203,24 @@
   "notfound_body": "The page you're looking for isn't here.",
   "skip": "Skip to content",
   "menu_label": "Sections",
-  "foot_label": "Pages"
+  "foot_label": "Pages",
+  "guides_title": "Guides",
+  "guides": [
+    [
+      "guide-block",
+      "How to block apps on iPhone",
+      "With Screen Time settings and with Mola, step by step."
+    ],
+    [
+      "guide-limit",
+      "How to set a daily time limit for an app",
+      "App Limits, Downtime and Mola's daily limits."
+    ],
+    [
+      "guide-pomodoro",
+      "What the Pomodoro Technique is and how to use it",
+      "25-minute rounds, breaks and keeping the phone out of the work."
+    ]
+  ],
+  "updated": "Last updated"
 }

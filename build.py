@@ -21,6 +21,13 @@ CONTACT = "destek@mm-apps.com"
 APP_STORE_LIVE = False
 APP_ID = ""
 APP_STORE_URL = f"https://apps.apple.com/app/id{APP_ID}"
+PUBLISHER = {"@type": "Organization", "@id": "https://mm-apps.com/#org", "name": "mm-apps",
+             "url": "https://mm-apps.com/", "email": CONTACT}
+OG_LOCALE = {"tr": "tr_TR", "en": "en_US"}
+# Search and answer-engine crawlers are named so that a later "Disallow" for one of them is a decision, not a default.
+CRAWLERS = ["Googlebot", "Bingbot", "Applebot", "Applebot-Extended", "DuckDuckBot", "YandexBot", "GPTBot",
+            "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot",
+            "Perplexity-User", "Google-Extended", "CCBot"]
 
 
 def esc(text):
@@ -143,8 +150,14 @@ PAGES = {
     "kvkk": {"tr": "kvkk/"},
     "delete": {"tr": "hesap-silme/", "en": "en/delete-account/"},
     "support": {"tr": "destek/", "en": "en/support/"},
+    "guide-block": {"tr": "rehber/uygulama-engelleme/", "en": "en/guides/block-apps/"},
+    "guide-limit": {"tr": "rehber/gunluk-sure-siniri/", "en": "en/guides/daily-time-limit/"},
+    "guide-pomodoro": {"tr": "rehber/pomodoro-teknigi/", "en": "en/guides/pomodoro-technique/"},
 }
-DOCS = ["privacy", "terms", "kvkk", "delete", "support"]
+GUIDES = [key for key in PAGES if key.startswith("guide-")]
+DOCS = ["privacy", "terms", "kvkk", "delete", "support", *GUIDES]
+# The day the guides were last checked against iOS and the app; shown on the page and in its structured data.
+GUIDES_UPDATED = "2026-11-17"
 
 # The landing copy lives in src/landing.<lang>.json, so it can be reviewed and translated as text.
 S = {lang: json.loads((SRC / f"landing.{lang}.json").read_text(encoding="utf-8")) for lang in ("tr", "en")}
@@ -157,7 +170,28 @@ def rel(from_path, to_path):
     return "../" * from_path.count("/") + to_path
 
 
-def shell(lang, path, title, description, body, key):
+def alternates(key):
+    """hreflang links of a page that exists in more than one language; Turkish is the default."""
+    paths = PAGES[key]
+    if len(paths) < 2:
+        return ""
+    links = [f'<link rel="alternate" hreflang="{lang}" href="{SITE_URL}{path}">' for lang, path in paths.items()]
+    links.append(f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{paths["tr"]}">')
+    return "\n".join(links) + "\n"
+
+
+def graph(lang, path, title, description, extra=()):
+    """The page's JSON-LD: who publishes the site, the site, this page, and whatever the page adds."""
+    site = {"@type": "WebSite", "@id": f"{SITE_URL}#website", "url": SITE_URL, "name": "Mola",
+            "publisher": {"@id": PUBLISHER["@id"]}, "inLanguage": list(S)}
+    page = {"@type": "WebPage", "@id": f"{SITE_URL}{path}#webpage", "url": f"{SITE_URL}{path}", "name": title,
+            "description": description, "inLanguage": lang, "isPartOf": {"@id": site["@id"]}}
+    data = {"@context": "https://schema.org", "@graph": [PUBLISHER, site, page, *extra]}
+    return ('<script type="application/ld+json">'
+            + json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + "</script>\n")
+
+
+def shell(lang, path, title, description, body, key, extra=(), index=True):
     t = S[lang]
     other_name, other_lang = t["other"]
     other_path = PAGES[key].get(other_lang, PAGES["home"][other_lang])
@@ -171,17 +205,22 @@ def shell(lang, path, title, description, body, key):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(description)}">
-<link rel="canonical" href="{SITE_URL}{path}">
+{f'<link rel="canonical" href="{SITE_URL}{path}">' if index else '<meta name="robots" content="noindex">'}
+{alternates(key) if index else ''}{f'<meta name="apple-itunes-app" content="app-id={APP_ID}">' if APP_STORE_LIVE else ''}
 <link rel="icon" href="{rel(path, 'assets/icon-64.png')}">
 <link rel="apple-touch-icon" href="{rel(path, 'assets/icon-180.png')}">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Mola">
+<meta property="og:locale" content="{OG_LOCALE[lang]}">
+<meta property="og:url" content="{SITE_URL}{path}">
+<meta name="twitter:card" content="summary">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:image" content="{SITE_URL}assets/icon-512.png">
 <meta name="theme-color" content="#F3EEE6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#15130F" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="{rel(path, 'assets/site.css')}">
-</head>
+{graph(lang, path, title, description, extra) if index else ''}</head>
 <body>
 <a class="skip" href="#main">{esc(t['skip'])}</a>
 <header class="top">
@@ -244,6 +283,8 @@ def landing(lang):
     privacy_points = "".join(f"<li>{esc(point)}</li>" for point in privacy["points"])
     faq = "".join(f"<details><summary>{esc(question)}</summary><p>{esc(answer)}</p></details>"
                   for question, answer in t["faq"])
+    guides = "".join(f'<article class="card"><h3><a href="{rel(path, PAGES[key][lang])}">{esc(title)}</a></h3>'
+                     f"<p>{esc(text)}</p></article>" for key, title, text in t["guides"])
     body = f"""<section class="hero">
 <div class="copy">
 <p class="eyebrow">{esc(hero['eyebrow'])}</p>
@@ -295,21 +336,70 @@ def landing(lang):
 {faq}
 </section>
 
+<section id="guides" class="guides" aria-labelledby="guides-title">
+<h2 id="guides-title">{esc(t['guides_title'])}</h2>
+<div class="grid">{guides}</div>
+</section>
+
 <section class="cta">
 <img src="{rel(path, 'assets/icon-512.png')}" alt="" width="88" height="88" loading="lazy">
 <h2>{esc(t['cta']['title'])}</h2>
 <p>{esc(t['cta']['text'])}</p>
 {badge(lang) if APP_STORE_LIVE else ''}
 </section>"""
-    write(path, shell(lang, path, t["title"], t["description"], body, "home"))
+    app = {"@type": ["MobileApplication", "SoftwareApplication"], "@id": f"{SITE_URL}#app", "name": "Mola",
+           "description": t["description"], "url": f"{SITE_URL}{path}", "operatingSystem": "iOS 18, iPadOS 18, watchOS 11",
+           "applicationCategory": "ProductivityApplication", "inLanguage": lang, "publisher": {"@id": PUBLISHER["@id"]},
+           "image": f"{SITE_URL}assets/icon-512.png",
+           "screenshot": [f"{SITE_URL}assets/shots/{name}-{lang}.png" for name in ("today", "plan", "focus", "wall")]}
+    if APP_STORE_LIVE:
+        app["downloadUrl"] = APP_STORE_URL
+    # The questions and answers are the ones on the page, word for word.
+    questions = {"@type": "FAQPage", "@id": f"{SITE_URL}{path}#faq", "mainEntity": [
+        {"@type": "Question", "name": question, "acceptedAnswer": {"@type": "Answer", "text": answer}}
+        for question, answer in t["faq"]]}
+    write(path, shell(lang, path, t["title"], t["description"], body, "home", extra=(app, questions)))
 
 
 def document(key, lang):
     path = PAGES[key][lang]
     title, body = markdown((SRC / f"{key}.{lang}.md").read_text(encoding="utf-8"))
     t = S[lang]
-    page = f'<article class="doc"><p class="crumb"><a href="{rel(path, PAGES["home"][lang])}">{esc(t["back"])}</a></p><h1>{esc(title)}</h1>\n{body}</article>'
-    write(path, shell(lang, path, f"{title} · Mola", title, page, key))
+    description, extra, stamp = title, (), ""
+    if key in GUIDES:
+        # A guide answers its question in its first paragraph; that paragraph is also its description.
+        description = html.unescape(re.sub(r"<[^>]+>", "", re.search(r"<p>(.*?)</p>", body, re.S).group(1)))
+        extra = ({"@type": "Article", "@id": f"{SITE_URL}{path}#article", "headline": title, "description": description,
+                  "inLanguage": lang, "dateModified": GUIDES_UPDATED, "mainEntityOfPage": f"{SITE_URL}{path}",
+                  "author": {"@id": PUBLISHER["@id"]}, "publisher": {"@id": PUBLISHER["@id"]},
+                  "about": {"@id": f"{SITE_URL}#app"}},)
+        stamp = f'<p class="fine">{esc(t["updated"])}: <time datetime="{GUIDES_UPDATED}">{GUIDES_UPDATED}</time></p>'
+    page = f'<article class="doc"><p class="crumb"><a href="{rel(path, PAGES["home"][lang])}">{esc(t["back"])}</a></p><h1>{esc(title)}</h1>\n{body}\n{stamp}</article>'
+    write(path, shell(lang, path, f"{title} · Mola", description, page, key, extra=extra))
+
+
+def llms():
+    """A plain summary for answer engines, made from the same copy as the pages so the two cannot disagree."""
+    t = S["en"]
+    facts = [("Platforms", "iPhone (iOS 18 or later), iPad (iPadOS 18 or later), Apple Watch (watchOS 11 or later)"),
+             ("Account", "none; the family feature pairs devices with a QR code"),
+             ("Ads, tracking, analytics", "none"),
+             ("Where data lives", t["privacy"]["points"][1]),
+             ("Languages", t["extras"][3][1]),
+             ("App Store", APP_STORE_URL if APP_STORE_LIVE else "not released yet"),
+             ("Publisher", f"{PUBLISHER['name']} ({PUBLISHER['url']}), {CONTACT}")]
+    names = {"home": "Overview", "privacy": "Privacy policy", "terms": "Terms of use", "delete": "Deleting your data",
+             "support": "Support"}
+    out = ["# Mola", "", f"> {t['description']}", "", "## Facts", ""]
+    out += [f"- {label}: {value}" for label, value in facts]
+    out += ["", "## What it does", ""] + [f"- {f['title']}: {f['text']}" for f in t["features"]]
+    out += ["", "## Questions", ""] + [f"- {q} {a}" for q, a in t["faq"]]
+    out += ["", "## Pages", ""] + [f"- [{names[k]}]({SITE_URL}{PAGES[k]['en']})" for k in names]
+    out += ["", "## Guides", ""] + [f"- [{title}]({SITE_URL}{PAGES[k]['en']}): {text}" for k, title, text in t["guides"]]
+    out += ["", "## Türkçe", ""] + [f"- [{S['tr']['foot_nav'].get(k, 'Mola')}]({SITE_URL}{PAGES[k]['tr']})"
+                                     for k in PAGES if k not in GUIDES]
+    out += [f"- [{title}]({SITE_URL}{PAGES[k]['tr']})" for k, title, _ in S["tr"]["guides"]]
+    return "\n".join(out) + "\n"
 
 
 written = []
@@ -346,15 +436,21 @@ def main():
     t = S["tr"]
     notfound = shell("tr", "", t["notfound_title"] + " · Mola", t["notfound_body"],
                      f'<article class="doc"><h1>{esc(t["notfound_title"])}</h1><p>{esc(t["notfound_body"])} '
-                     f'<a href="{SITE_URL}">{esc(t["back"])}</a></p></article>', "home")
+                     f'<a href="{SITE_URL}">{esc(t["back"])}</a></p></article>', "home", index=False)
     # The 404 page is served for any path: its links must be absolute.
     notfound = re.sub(r'(href|src)="(?!https?:|mailto:)([^"]*)"', lambda m: f'{m.group(1)}="/{m.group(2).lstrip("./")}"', notfound)
     (ROOT / "404.html").write_text(notfound, encoding="utf-8")
-    urls = "".join(f"<url><loc>{SITE_URL}{path}</loc></url>" for path in written)
+    urls = ""
+    for paths in PAGES.values():
+        links = "".join(f'<xhtml:link rel="alternate" hreflang="{lang}" href="{SITE_URL}{path}"/>'
+                        for lang, path in paths.items()) if len(paths) > 1 else ""
+        urls += "".join(f"<url><loc>{SITE_URL}{path}</loc>{links}</url>" for path in paths.values())
     (ROOT / "sitemap.xml").write_text(
-        f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n',
-        encoding="utf-8")
-    (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}sitemap.xml\n", encoding="utf-8")
+        '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+        f'xmlns:xhtml="http://www.w3.org/1999/xhtml">{urls}</urlset>\n', encoding="utf-8")
+    robots = "".join(f"User-agent: {name}\n" for name in ["*", *CRAWLERS])
+    (ROOT / "robots.txt").write_text(f"{robots}Allow: /\n\nSitemap: {SITE_URL}sitemap.xml\n", encoding="utf-8")
+    (ROOT / "llms.txt").write_text(llms(), encoding="utf-8")
     check_links()
     print(f"{len(written)} pages")
 

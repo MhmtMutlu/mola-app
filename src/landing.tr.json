@@ -1,6 +1,6 @@
 {
-  "title": "Mola: odak ve uygulama engelleme",
-  "description": "Mola, dikkat dağıtan uygulamaları belirlediğin saatlerde kapatan ve odak oturumlarını çiniye dönüştüren bir iPhone, iPad ve Apple Watch uygulamasıdır. İstersen ailenle birlikte de kullanabilirsin.",
+  "title": "Mola: iPhone için Uygulama Engelleme ve Odak",
+  "description": "Mola, iPhone, iPad ve Apple Watch için hesap gerektirmeyen bir uygulama engelleme ve odak uygulamasıdır. Seçtiğin uygulamaları belirlediğin saatlerde ya da günlük süren tamamlandığında kapatır ve odak oturumlarını çiniye dönüştürür.",
   "nav": {
     "features": "Özellikler",
     "family": "Aile",
@@ -8,7 +8,7 @@
     "faq": "Sorular"
   },
   "hero": {
-    "eyebrow": "iPhone · iPad · Apple Watch",
+    "eyebrow": "Uygulama engelleme ve odak · iPhone, iPad, Apple Watch",
     "headline": "Dikkatini dağıtanları kapat. Odağına dön.",
     "lead": "Mola, seçtiğin uygulamaları belirlediğin saatlerde ya da günlük süren tamamlandığında kapatır ve odaklandığın her dakikayı bir çiniye işler. Hesap açmazsın; verilerin telefonunda kalır.",
     "soon": "Yakında App Store'da",
@@ -204,5 +204,24 @@
   "notfound_body": "Aradığın sayfa burada değil.",
   "skip": "İçeriğe geç",
   "menu_label": "Bölümler",
-  "foot_label": "Sayfalar"
+  "foot_label": "Sayfalar",
+  "guides_title": "Rehberler",
+  "guides": [
+    [
+      "guide-block",
+      "iPhone'da uygulama nasıl engellenir?",
+      "Ekran Süresi ayarlarıyla ve Mola ile, adım adım."
+    ],
+    [
+      "guide-limit",
+      "Bir uygulamaya günlük süre sınırı nasıl konur?",
+      "Uygulama Sınırları, Atıl Süre ve Mola'nın günlük sınırları."
+    ],
+    [
+      "guide-pomodoro",
+      "Pomodoro tekniği nedir, nasıl uygulanır?",
+      "25 dakikalık turlar, aralar ve telefonu işin dışında tutmak."
+    ]
+  ],
+  "updated": "Son güncelleme"
 }
