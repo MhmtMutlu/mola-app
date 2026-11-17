@@ -236,7 +236,7 @@ def shell(lang, path, title, description, body, key, extra=(), index=True):
 <a class="brand" href="{home}"><img src="{rel(path, 'assets/icon-180.png')}" alt="" width="32" height="32"><span>Mola</span></a>
 <nav aria-label="{esc(t['foot_label'])}">{foot}</nav>
 </div>
-<p>{esc(t['footer'])} <a href="mailto:{CONTACT}">{CONTACT}</a></p>
+<p>{esc(t['footer'])} <a href="mailto:{CONTACT}">{CONTACT}</a> · <a href="https://mm-apps.com/{'en/' if lang == 'en' else ''}">{esc(t['more_apps'])}</a></p>
 </footer>
 </body>
 </html>
