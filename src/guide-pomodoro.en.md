@@ -18,10 +18,10 @@ Looking at the phone during a round splits the round. The simplest fix is to lea
 ## Pomodoro in Mola
 
 1. Open the **Focus** tab and choose the ready-made Pomodoro program, or set the focus time, the number of rounds and the break length yourself.
-2. Start the session. The apps you chose stay closed while it runs.
+2. Start the session. If you like, the apps you chose stay blocked while it runs.
 3. Every session paints a tile: first its contour, then its colours, and last its glaze. Finished tiles gather on your wall.
 
-The session continues on Apple Watch, with the time left on your wrist.
+Apple Watch has a focus timer too; while the watch app is open, the session stays in sync with your phone.
 
 ## Common questions
 

@@ -18,10 +18,10 @@ Tur sırasında telefona bakmak turu böler. En basit çözüm telefonu başka b
 ## Mola'da Pomodoro
 
 1. **Odak** sekmesini aç ve hazır Pomodoro programını seç ya da odak süresini, tur sayısını ve ara uzunluğunu kendin belirle.
-2. Oturumu başlat. Oturum sürerken seçtiğin uygulamalar kapalı kalır.
+2. Oturumu başlat. İstersen oturum sürerken seçtiğin uygulamalar kapalı kalır.
 3. Her oturum bir çiniyi boyar: önce kontur, sonra renk, en son sır. Tamamlanan çiniler duvarında birikir.
 
-Oturum Apple Watch'ta da sürer; kalan süre bileğinde görünür.
+Apple Watch'ta da bir odak zamanlayıcısı vardır; saat uygulaması açıkken oturum telefonla eşitlenir.
 
 ## Sık sorulanlar
 

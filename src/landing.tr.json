@@ -1,6 +1,6 @@
 {
   "title": "Mola: iPhone için Uygulama Engelleme ve Odak",
-  "description": "Mola, iPhone, iPad ve Apple Watch için hesap gerektirmeyen bir uygulama engelleme ve odak uygulamasıdır. Seçtiğin uygulamaları belirlediğin saatlerde ya da günlük süren tamamlandığında kapatır ve odak oturumlarını çiniye dönüştürür.",
+  "description": "Mola, iPhone ve iPad için kayıt gerektirmeyen bir uygulama engelleme ve odak uygulamasıdır. Ücretsizdir; reklam, izleme ve analiz aracı içermez.",
   "nav": {
     "features": "Özellikler",
     "family": "Aile",
@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "Uygulama engelleme ve odak · iPhone, iPad, Apple Watch",
     "headline": "Dikkatini dağıtanları kapat. Odağına dön.",
-    "lead": "Mola, seçtiğin uygulamaları belirlediğin saatlerde ya da günlük süren tamamlandığında kapatır ve odaklandığın her dakikayı bir çiniye işler. Hesap açmazsın; verilerin telefonunda kalır.",
+    "lead": "Mola, seçtiğin uygulamaları belirlediğin saatlerde ya da günlük süren tamamlandığında kapatır; her odak oturumu bir çiniyi boyar. Kayıt gerekmez; verilerin bize gönderilmez.",
     "soon": "Yakında App Store'da",
     "store": "App Store'dan indir",
     "note": "iOS 18 ve sonrası. Reklam ve izleme yok.",
@@ -28,7 +28,7 @@
     ],
     [
       "Çinini boya",
-      "Odakta geçen süre bir çiniyi boyar. Tamamlanan çiniler duvarında birikir; yarım kalan çini bir sonraki oturumda kaldığı yerden devam eder."
+      "Her odak oturumu bir çiniyi boyar. Tamamlanan çiniler duvarında birikir; yarım kalan çini bir sonraki oturumda kaldığı yerden devam eder."
     ]
   ],
   "features_title": "Odağını koruyan her şey tek yerde",
@@ -49,11 +49,12 @@
       "shot": "limit",
       "tag": "Günlük sınırlar",
       "title": "Günde ne kadar, sen karar ver",
-      "text": "Seçtiğin uygulamalara günlük bir süre tanı. Süre tamamlandığında o uygulamalar ertesi güne kadar kapanır; diğer uygulamaların açık kalır.",
+      "text": "Seçtiğin uygulamalara günlük bir süre tanı. Süre tamamlandığında o uygulamalar kapanır; diğer uygulamaların açık kalır.",
       "points": [
         "Her sınır için ayrı uygulama seçimi",
         "5 dakikadan 8 saate kadar günlük süre",
-        "Süreyi iOS ölçer; birkaç dakikalık sapma olabilir"
+        "Süreyi iOS ölçer; birkaç dakikalık sapma olabilir",
+        "Sınır her cihazda ayrı sayılır"
       ],
       "alt": "Sınır düzenleme ekranı: ad, uygulamalar, günlük süre ve sıkılık düzeyi"
     },
@@ -61,7 +62,7 @@
       "shot": "focus",
       "tag": "Odak oturumları",
       "title": "Pomodoro, ders ya da kendi programın",
-      "text": "Hazır programlardan birini seç ya da odak süresini, tur sayısını ve ara süresini kendin belirle. Oturum sürerken dikkat dağıtan uygulamalar kapalı kalır.",
+      "text": "Hazır programlardan birini seç ya da odak süresini, tur sayısını ve ara süresini kendin belirle. İstersen oturum sürerken seçtiğin uygulamalar kapalı kalır.",
       "points": [
         "Pomodoro (25 dk), Ders (45 dk), Derin odak (50 dk)",
         "Kilitli Ekran'da ve Dynamic Island'da Canlı Etkinlik",
@@ -98,7 +99,7 @@
   "extras": [
     [
       "Apple Watch",
-      "Telefonda başlattığın oturum bileğinde de sürer: aynı çini aynı hızda boyanır, kalan süre ve günün saati birlikte görünür."
+      "Apple Watch'ta odak zamanlayıcısı: saat uygulaması açıkken oturum telefonla eşitlenir; aynı çini boyanır, kalan süre ve günün saati birlikte görünür."
     ],
     [
       "Araç takımları",
@@ -144,8 +145,8 @@
     "title": "Verilerin sende kalır",
     "text": "Mola'yı veri toplamadan çalışacak biçimde tasarladık. Tek başına kullanırken sunucumuzda sana ait hiçbir kayıt oluşmaz.",
     "points": [
-      "Ad, e-posta, telefon numarası ya da konum istemeyiz; hesap açmazsın.",
-      "Uygulama seçimin, planların, odak geçmişin ve çini duvarın yalnızca cihazında durur.",
+      "E-posta, telefon numarası ya da konum istemeyiz; kayıt ve parola yoktur.",
+      "Uygulama seçimin, planların, odak geçmişin ve çini duvarın cihazında durur; bize gönderilmez.",
       "Hangi uygulamayı ne kadar kullandığını biz göremeyiz.",
       "Aile özelliğini kullanırsan sunucumuzda yalnızca rastgele kimlikler, okuyamadığımız şifreli mesajlar ve bildirimleri açan ebeveynin bildirim jetonu bulunur.",
       "Reklam, izleme ve analiz aracı yoktur."
@@ -160,11 +161,11 @@
     ],
     [
       "Hesap açmam gerekiyor mu?",
-      "Hayır. Mola'yı açar açmaz kullanmaya başlarsın. Aile özelliği için de ad, e-posta ya da telefon numarası istenmez; cihazlar bir QR kodla eşleşir."
+      "Hayır. Kayıt, e-posta ve parola yoktur; Mola'yı açar açmaz kullanmaya başlarsın. Aile özelliğinde de e-posta ya da telefon numarası istenmez: cihazlar bir QR kodla eşleşir ve yalnızca ailenin göreceği bir ad yazarsın."
     ],
     [
       "Bir uygulamayı günde yalnızca belirli bir süre kullanabilir miyim?",
-      "Evet. Bugün sekmesinde bir günlük sınır oluştur, uygulamaları seç ve günlük süreyi belirle. Süre tamamlandığında o uygulamalar ertesi güne kadar kapanır. Belirli saatlerde kapanmaları için ise bir engelleme planı kullanırsın."
+      "Evet. Bugün sekmesinde bir günlük sınır oluştur, uygulamaları seç ve günlük süreyi belirle. Süre tamamlandığında o uygulamalar kapanır; sınırın sıkılık düzeyi izin veriyorsa 5 dakikalık mola verebilirsin. Belirli saatlerde kapanmaları için ise bir engelleme planı kullanırsın."
     ],
     [
       "Kapattığım bir uygulamaya gerçekten ihtiyacım olursa ne olur?",
@@ -184,7 +185,7 @@
     ]
   ],
   "cta": {
-    "title": "Odağını geri al",
+    "title": "Uygulamalara mola ver",
     "text": "Mola yakında App Store'da."
   },
   "footer": "Mehmet Mutlu tarafından bireysel olarak geliştirildi.",
@@ -196,10 +197,6 @@
     "delete": "Verileri silme",
     "support": "Destek"
   },
-  "other": [
-    "English",
-    "en"
-  ],
   "back": "Ana sayfa",
   "notfound_title": "Sayfa bulunamadı",
   "notfound_body": "Aradığın sayfa burada değil.",
@@ -224,5 +221,6 @@
       "25 dakikalık turlar, aralar ve telefonu işin dışında tutmak."
     ]
   ],
-  "updated": "Son güncelleme"
+  "updated": "Son güncelleme",
+  "language_label": "Dil"
 }

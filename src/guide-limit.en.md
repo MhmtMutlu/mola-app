@@ -1,6 +1,6 @@
 # How to set a daily time limit for an app
 
-To set a daily time limit for an app on iPhone, go to **Settings > Screen Time > App Limits > Add Limit**: choose the app and set the time. When the time is up, the app closes until the next day.
+To set a daily time limit for an app on iPhone, go to **Settings > Screen Time > App Limits > Add Limit**: choose the app and set the time. When the time is up, the app is blocked for the rest of the day.
 
 ## Step by step with Screen Time
 
@@ -17,7 +17,7 @@ iOS counts the time, and with **Share Across Devices** on it is counted together
 2. Choose the apps and set the daily time.
 3. Choose the strictness level.
 
-When the time is up, those apps close until the next day; your other apps stay open. iOS still does the counting: Mola doesn't see which app you use or for how long, it is only told when the time is up.
+When the time is up, those apps are blocked; your other apps stay open. If the limit's strictness level allows it, you can take a 5-minute break. iOS still does the counting: Mola doesn't see which app you use or for how long, it is only told when the time is up.
 
 ## A time limit or a schedule?
 

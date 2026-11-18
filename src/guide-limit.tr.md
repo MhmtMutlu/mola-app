@@ -1,6 +1,6 @@
 # Bir uygulamaya günlük süre sınırı nasıl konur?
 
-iPhone'da bir uygulamaya günlük süre sınırı koymak için **Ayarlar > Ekran Süresi > Uygulama Sınırları > Sınır Ekle** yolunu izlersin: uygulamayı seçer, süreyi belirlersin. Süre tamamlandığında uygulama ertesi güne kadar kapanır.
+iPhone'da bir uygulamaya günlük süre sınırı koymak için **Ayarlar > Ekran Süresi > Uygulama Sınırları > Sınır Ekle** yolunu izlersin: uygulamayı seçer, süreyi belirlersin. Süre tamamlandığında uygulama o gün için kapanır.
 
 ## Ekran Süresi ile adım adım
 
@@ -17,7 +17,7 @@ Süre iOS tarafından sayılır ve aynı Apple hesabını kullanan cihazlarında
 2. Uygulamaları seç ve günlük süreyi belirle.
 3. Sıkılık düzeyini seç.
 
-Süre tamamlandığında o uygulamalar ertesi güne kadar kapanır; diğer uygulamaların açık kalır. Süreyi yine iOS sayar: Mola hangi uygulamayı ne kadar kullandığını görmez, yalnızca süre tamamlandığında haberdar olur.
+Süre tamamlandığında o uygulamalar kapanır; diğer uygulamaların açık kalır. Sınırın sıkılık düzeyi izin veriyorsa 5 dakikalık mola verebilirsin. Süreyi yine iOS sayar: Mola hangi uygulamayı ne kadar kullandığını görmez, yalnızca süre tamamlandığında haberdar olur.
 
 ## Süre sınırı mı, saat planı mı?
 

@@ -1,6 +1,6 @@
 {
   "title": "Mola: App Blocker & Focus Timer for iPhone",
-  "description": "Mola is an app blocker and focus app for iPhone, iPad and Apple Watch that needs no account. It closes the apps you choose during the hours you set or once your daily time is up, and turns your focus sessions into tiles.",
+  "description": "Mola is an app blocker and focus app for iPhone and iPad that needs no sign-up. It is free, with no ads, no tracking and no analytics tools.",
   "nav": {
     "features": "Features",
     "family": "Family",
@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "App blocker and focus · iPhone, iPad, Apple Watch",
     "headline": "Close your distractions. Get back to your focus.",
-    "lead": "Mola closes the apps you choose during the hours you set or once your daily time is up, and paints every minute of focus into a tile. You don't create an account, and your data stays on your phone.",
+    "lead": "Mola blocks the apps you choose during the hours you set or once your daily time is up, and every focus session paints a tile. There is no sign-up, and your data is not sent to us.",
     "soon": "Coming soon to the App Store",
     "store": "Download on the App Store",
     "note": "iOS 18 or later. No ads, no tracking.",
@@ -28,7 +28,7 @@
     ],
     [
       "Paint your tile",
-      "Time spent in focus paints a tile. Finished tiles build up on your wall; an unfinished tile picks up where it left off in your next session."
+      "Every focus session paints a tile. Finished tiles build up on your wall; an unfinished tile picks up where it left off in your next session."
     ]
   ],
   "features_title": "Everything that protects your focus, in one place",
@@ -49,11 +49,12 @@
       "shot": "limit",
       "tag": "Daily limits",
       "title": "Decide how much each day",
-      "text": "Give the apps you choose a daily amount of time. When the time is up, those apps close until the next day; your other apps stay open.",
+      "text": "Give the apps you choose a daily amount of time. When the time is up, those apps are blocked; your other apps stay open.",
       "points": [
         "A separate choice of apps for each limit",
         "A daily time from 5 minutes to 8 hours",
-        "iOS measures the time; it can be off by a few minutes"
+        "iOS measures the time; it can be off by a few minutes",
+        "A limit is counted on each device separately"
       ],
       "alt": "The limit editor: name, apps, daily time and strictness"
     },
@@ -61,7 +62,7 @@
       "shot": "focus",
       "tag": "Focus sessions",
       "title": "Pomodoro, study or your own program",
-      "text": "Choose one of the ready-made programs or set the focus time, the number of rounds and the break length yourself. Distracting apps stay closed while the session runs.",
+      "text": "Choose one of the ready-made programs or set the focus time, the number of rounds and the break length yourself. If you like, the apps you chose stay blocked while the session runs.",
       "points": [
         "Pomodoro (25 min), Study (45 min), Deep focus (50 min)",
         "A Live Activity on the Lock Screen and in the Dynamic Island",
@@ -98,7 +99,7 @@
   "extras": [
     [
       "Apple Watch",
-      "A session started on your phone continues on your wrist: the same tile is painted at the same pace, with the time left and the time of day both in view."
+      "A focus timer on Apple Watch: while the watch app is open the session stays in sync with your phone, the same tile is painted, and the time left and the time of day are both in view."
     ],
     [
       "Widgets",
@@ -144,8 +145,8 @@
     "title": "Your data stays with you",
     "text": "We designed Mola to work without collecting data. When you use it on your own, no record about you is created on our server.",
     "points": [
-      "We don't ask for a name, email address, phone number or location; you don't create an account.",
-      "Your app selection, your plans, your focus history and your tile wall are stored only on your device.",
+      "We don't ask for an email address, phone number or location; there is no sign-up and no password.",
+      "Your app selection, your plans, your focus history and your tile wall stay on your device; they are not sent to us.",
       "We can't see which apps you use or for how long.",
       "If you use the family feature, our server holds only random identifiers, encrypted messages we can't read and the notification token of a parent who turns on notifications.",
       "There are no ads, no tracking and no analytics tools."
@@ -160,11 +161,11 @@
     ],
     [
       "Do I need to create an account?",
-      "No. You can start using Mola as soon as you open it. The family feature doesn't ask for a name, email address or phone number either; devices are paired with a QR code."
+      "No. There is no sign-up, email or password; you can start using Mola as soon as you open it. The family feature doesn't ask for an email address or phone number either: devices are paired with a QR code and you only write a name that your family will see."
     ],
     [
       "Can I use an app for only a set amount of time each day?",
-      "Yes. Create a daily limit in the Today tab, choose the apps and set the daily time. When the time is up, those apps close until the next day. To close them at certain hours instead, use a blocking plan."
+      "Yes. Create a daily limit in the Today tab, choose the apps and set the daily time. When the time is up, those apps are blocked; if the limit's strictness level allows it, you can take a 5-minute break. To block them at certain hours instead, use a blocking plan."
     ],
     [
       "What if I really need an app I've closed?",
@@ -184,7 +185,7 @@
     ]
   ],
   "cta": {
-    "title": "Take back your focus",
+    "title": "Give your apps a break",
     "text": "Mola is coming soon to the App Store."
   },
   "footer": "Developed independently by Mehmet Mutlu.",
@@ -195,10 +196,6 @@
     "delete": "Deleting your data",
     "support": "Support"
   },
-  "other": [
-    "Türkçe",
-    "tr"
-  ],
   "back": "Home",
   "notfound_title": "Page not found",
   "notfound_body": "The page you're looking for isn't here.",
@@ -223,5 +220,6 @@
       "25-minute rounds, breaks and keeping the phone out of the work."
     ]
   ],
-  "updated": "Last updated"
+  "updated": "Last updated",
+  "language_label": "Language"
 }

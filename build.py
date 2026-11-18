@@ -23,7 +23,16 @@ APP_ID = ""
 APP_STORE_URL = f"https://apps.apple.com/app/id{APP_ID}"
 PUBLISHER = {"@type": "Organization", "@id": "https://mm-apps.com/#org", "name": "mm-apps",
              "url": "https://mm-apps.com/", "email": CONTACT}
-OG_LOCALE = {"tr": "tr_TR", "en": "en_US"}
+# Site languages in menu order: code → (its own name, Open Graph locale). A language is built once
+# src/landing.<code>.json exists; the app speaks the same fifteen.
+LANGUAGES = {
+    "tr": ("Türkçe", "tr_TR"), "en": ("English", "en_US"), "de": ("Deutsch", "de_DE"), "fr": ("Français", "fr_FR"),
+    "es": ("Español", "es_ES"), "pt-BR": ("Português (Brasil)", "pt_BR"), "it": ("Italiano", "it_IT"),
+    "nl": ("Nederlands", "nl_NL"), "pl": ("Polski", "pl_PL"), "ja": ("日本語", "ja_JP"), "ko": ("한국어", "ko_KR"),
+    "zh-Hant": ("繁體中文", "zh_TW"), "zh-Hans": ("简体中文", "zh_CN"), "id": ("Bahasa Indonesia", "id_ID"),
+    "ar": ("العربية", "ar_SA"),
+}
+RTL = {"ar"}
 # Search and answer-engine crawlers are named so that a later "Disallow" for one of them is a decision, not a default.
 CRAWLERS = ["Googlebot", "Bingbot", "Applebot", "Applebot-Extended", "DuckDuckBot", "YandexBot", "GPTBot",
             "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot",
@@ -155,12 +164,25 @@ PAGES = {
     "guide-pomodoro": {"tr": "rehber/pomodoro-teknigi/", "en": "en/guides/pomodoro-technique/"},
 }
 GUIDES = [key for key in PAGES if key.startswith("guide-")]
+# The landing copy lives in src/landing.<lang>.json, so it can be reviewed and translated as text.
+S = {lang: json.loads((SRC / f"landing.{lang}.json").read_text(encoding="utf-8"))
+     for lang in LANGUAGES if (SRC / f"landing.{lang}.json").exists()}
+# Every other language lives under /<code>/ with the English path names. A page exists in a language when its text
+# does: the legal texts are binding in Turkish and English only, so other languages link to the English ones.
+for _key, _paths in PAGES.items():
+    for _lang in S:
+        if _lang not in _paths and (_key == "home" or (SRC / f"{_key}.{_lang}.md").exists()):
+            _paths[_lang] = f"{_lang.lower()}/" + _paths["en"][len("en/"):]
+
+
+def page_path(key, lang):
+    """The page in this language, or in English where it is not translated (Turkish for the KVKK notice)."""
+    return PAGES[key].get(lang) or PAGES[key].get("en") or PAGES[key]["tr"]
+
 DOCS = ["privacy", "terms", "kvkk", "delete", "support", *GUIDES]
 # The day the guides were last checked against iOS and the app; shown on the page and in its structured data.
 GUIDES_UPDATED = "2026-11-17"
 
-# The landing copy lives in src/landing.<lang>.json, so it can be reviewed and translated as text.
-S = {lang: json.loads((SRC / f"landing.{lang}.json").read_text(encoding="utf-8")) for lang in ("tr", "en")}
 # Screenshots a landing page needs (assets/shots/<name>-<lang>.png, made with tools/shots.sh in the app repository).
 SHOT_WIDTH, SHOT_HEIGHT = 603, 1311
 
@@ -171,12 +193,12 @@ def rel(from_path, to_path):
 
 
 def alternates(key):
-    """hreflang links of a page that exists in more than one language; Turkish is the default."""
+    """hreflang links of a page that exists in more than one language; English is the default for other languages."""
     paths = PAGES[key]
     if len(paths) < 2:
         return ""
     links = [f'<link rel="alternate" hreflang="{lang}" href="{SITE_URL}{path}">' for lang, path in paths.items()]
-    links.append(f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{paths["tr"]}">')
+    links.append(f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{paths.get("en", paths["tr"])}">')
     return "\n".join(links) + "\n"
 
 
@@ -193,13 +215,16 @@ def graph(lang, path, title, description, extra=()):
 
 def shell(lang, path, title, description, body, key, extra=(), index=True):
     t = S[lang]
-    other_name, other_lang = t["other"]
-    other_path = PAGES[key].get(other_lang, PAGES["home"][other_lang])
     home = rel(path, PAGES["home"][lang])
+    # every language this page (or, failing that, the home page) exists in
+    choices = "".join(
+        f'<li><a href="{rel(path, PAGES[key].get(code, PAGES["home"][code]))}" lang="{code}" hreflang="{code}"'
+        f'{" aria-current=\"true\"" if code == lang else ""}>{esc(LANGUAGES[code][0])}</a></li>' for code in S)
     top = "".join(f'<a href="{home}#{anchor}">{esc(label)}</a>' for anchor, label in t["nav"].items())
-    foot = "".join(f'<a href="{rel(path, PAGES[k][lang])}">{esc(label)}</a>' for k, label in t["foot_nav"].items())
+    foot = "".join(f'<a href="{rel(path, page_path(k, lang))}">{esc(label)}</a>' for k, label in t["foot_nav"].items()
+                   if k != "kvkk" or lang == "tr")
     return f"""<!doctype html>
-<html lang="{lang}">
+<html lang="{lang}"{' dir="rtl"' if lang in RTL else ''}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -211,7 +236,7 @@ def shell(lang, path, title, description, body, key, extra=(), index=True):
 <link rel="apple-touch-icon" href="{rel(path, 'assets/icon-180.png')}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Mola">
-<meta property="og:locale" content="{OG_LOCALE[lang]}">
+<meta property="og:locale" content="{LANGUAGES[lang][1]}">
 <meta property="og:url" content="{SITE_URL}{path}">
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="{esc(title)}">
@@ -226,7 +251,7 @@ def shell(lang, path, title, description, body, key, extra=(), index=True):
 <header class="top">
 <a class="brand" href="{home}"><img src="{rel(path, 'assets/icon-180.png')}" alt="" width="36" height="36"><span>Mola</span></a>
 <nav class="menu" aria-label="{esc(t['menu_label'])}">{top}</nav>
-<a class="lang" href="{rel(path, other_path)}" lang="{other_lang}" hreflang="{other_lang}">{esc(other_name)}</a>
+<details class="langs"><summary aria-label="{esc(t['language_label'])}">{esc(LANGUAGES[lang][0])}</summary><ul>{choices}</ul></details>
 </header>
 <main id="main">
 {body}
@@ -252,7 +277,9 @@ def badge(lang):
 
 def phone(path, name, lang, alt, eager=False, night=False):
     """A screenshot in a plain device frame."""
-    source = rel(path, f"assets/shots/{name}-{lang}.png")
+    # a language without its own screenshots shows the English ones
+    shot_lang = lang if (ROOT / f"assets/shots/{name}-{lang}.png").exists() else "en"
+    source = rel(path, f"assets/shots/{name}-{shot_lang}.png")
     loading = 'fetchpriority="high"' if eager else 'loading="lazy" decoding="async"'
     return (f'<div class="phone{" night" if night else ""}"><img src="{source}" alt="{esc(alt)}" '
             f'width="{SHOT_WIDTH}" height="{SHOT_HEIGHT}" {loading}></div>')
@@ -283,7 +310,7 @@ def landing(lang):
     privacy_points = "".join(f"<li>{esc(point)}</li>" for point in privacy["points"])
     faq = "".join(f"<details><summary>{esc(question)}</summary><p>{esc(answer)}</p></details>"
                   for question, answer in t["faq"])
-    guides = "".join(f'<article class="card"><h3><a href="{rel(path, PAGES[key][lang])}">{esc(title)}</a></h3>'
+    guides = "".join(f'<article class="card"><h3><a href="{rel(path, page_path(key, lang))}">{esc(title)}</a></h3>'
                      f"<p>{esc(text)}</p></article>" for key, title, text in t["guides"])
     body = f"""<section class="hero">
 <div class="copy">
@@ -326,7 +353,7 @@ def landing(lang):
 <p class="tag tint0">{esc(privacy['tag'])}</p>
 <h2 id="privacy-title">{esc(privacy['title'])}</h2>
 <p>{esc(privacy['text'])}</p>
-<p><a href="{rel(path, PAGES['privacy'][lang])}">{esc(privacy['more'])}</a></p>
+<p><a href="{rel(path, page_path('privacy', lang))}">{esc(privacy['more'])}</a></p>
 </div>
 <ul class="ticks card">{privacy_points}</ul>
 </section>
@@ -351,7 +378,8 @@ def landing(lang):
            "description": t["description"], "url": f"{SITE_URL}{path}", "operatingSystem": "iOS 18, iPadOS 18, watchOS 11",
            "applicationCategory": "ProductivityApplication", "inLanguage": lang, "publisher": {"@id": PUBLISHER["@id"]},
            "image": f"{SITE_URL}assets/icon-512.png",
-           "screenshot": [f"{SITE_URL}assets/shots/{name}-{lang}.png" for name in ("today", "plan", "focus", "wall")]}
+           "screenshot": [f"{SITE_URL}assets/shots/{name}-{lang if (ROOT / f'assets/shots/{name}-{lang}.png').exists() else 'en'}.png"
+                          for name in ("today", "plan", "focus", "wall")]}
     if APP_STORE_LIVE:
         app["downloadUrl"] = APP_STORE_URL
     # The questions and answers are the ones on the page, word for word.
@@ -381,8 +409,9 @@ def document(key, lang):
 def llms():
     """A plain summary for answer engines, made from the same copy as the pages so the two cannot disagree."""
     t = S["en"]
-    facts = [("Platforms", "iPhone (iOS 18 or later), iPad (iPadOS 18 or later), Apple Watch (watchOS 11 or later)"),
-             ("Account", "none; the family feature pairs devices with a QR code"),
+    facts = [("Platforms", "iPhone (iOS 18 or later) and iPad (iPadOS 18 or later); a focus timer on Apple Watch (watchOS 11 or later)"),
+             ("Sign-up", "none (no email, no password); the family feature pairs devices with a QR code and asks only for a display name"),
+             ("Price", "free"),
              ("Ads, tracking, analytics", "none"),
              ("Where data lives", t["privacy"]["points"][1]),
              ("Languages", t["extras"][3][1]),
