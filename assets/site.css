@@ -32,8 +32,9 @@ h1, h2, .feature h3 { font-family: var(--display); font-weight: 600; letter-spac
 p { margin: 0; text-wrap: pretty; }
 main ul, main ol, footer ul { margin: 0; padding: 0; list-style: none; }
 main, .top, footer { max-width: 1120px; margin: 0 auto; padding: 0 var(--gutter); }
-.skip { position: absolute; left: -9999px; }
-.skip:focus { left: var(--gutter); top: 12px; z-index: 20; background: var(--surface); padding: 10px 16px; border-radius: 999px; }
+.skip { position: absolute; inset-inline-start: var(--gutter); top: 12px; }
+.skip:not(:focus) { width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip:focus { inset-inline-start: var(--gutter); top: 12px; z-index: 20; background: var(--surface); padding: 10px 16px; border-radius: 999px; }
 
 /* Header */
 .top { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 20px; padding-top: 14px; padding-bottom: 14px;

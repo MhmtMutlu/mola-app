@@ -238,10 +238,12 @@ def shell(lang, path, title, description, body, key, extra=(), index=True):
 <meta property="og:site_name" content="Mola">
 <meta property="og:locale" content="{LANGUAGES[lang][1]}">
 <meta property="og:url" content="{SITE_URL}{path}">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
-<meta property="og:image" content="{SITE_URL}assets/icon-512.png">
+<meta property="og:image" content="{SITE_URL}assets/{'og.jpg' if lang == 'tr' else 'og-en.jpg'}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="theme-color" content="#F3EEE6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#15130F" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="{rel(path, 'assets/site.css')}">

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iPhone에서 앱 차단하는 방법 · Mola</title>
+<meta name="description" content="iPhone에서 앱을 차단하는 방법은 두 가지예요. iOS에 들어 있는 스크린 타임 설정, 그리고 그 위에 만들어진 Mola 같은 앱이에요. 둘 다 Apple의 같은 프레임워크를 사용해요. 차이는 규칙을 얼마나 쉽게 만들 수 있는지, 닫힌 앱을 얼마나 쉽게 다시 열 수 있는지에 있어요.">
+<link rel="canonical" href="https://mola.mm-apps.com/ko/guides/block-apps/">
+<link rel="alternate" hreflang="tr" href="https://mola.mm-apps.com/rehber/uygulama-engelleme/">
+<link rel="alternate" hreflang="en" href="https://mola.mm-apps.com/en/guides/block-apps/">
+<link rel="alternate" hreflang="de" href="https://mola.mm-apps.com/de/guides/block-apps/">
+<link rel="alternate" hreflang="fr" href="https://mola.mm-apps.com/fr/guides/block-apps/">
+<link rel="alternate" hreflang="es" href="https://mola.mm-apps.com/es/guides/block-apps/">
+<link rel="alternate" hreflang="pt-BR" href="https://mola.mm-apps.com/pt-br/guides/block-apps/">
+<link rel="alternate" hreflang="it" href="https://mola.mm-apps.com/it/guides/block-apps/">
+<link rel="alternate" hreflang="nl" href="https://mola.mm-apps.com/nl/guides/block-apps/">
+<link rel="alternate" hreflang="pl" href="https://mola.mm-apps.com/pl/guides/block-apps/">
+<link rel="alternate" hreflang="ja" href="https://mola.mm-apps.com/ja/guides/block-apps/">
+<link rel="alternate" hreflang="ko" href="https://mola.mm-apps.com/ko/guides/block-apps/">
+<link rel="alternate" hreflang="zh-Hant" href="https://mola.mm-apps.com/zh-hant/guides/block-apps/">
+<link rel="alternate" hreflang="zh-Hans" href="https://mola.mm-apps.com/zh-hans/guides/block-apps/">
+<link rel="alternate" hreflang="id" href="https://mola.mm-apps.com/id/guides/block-apps/">
+<link rel="alternate" hreflang="ar" href="https://mola.mm-apps.com/ar/guides/block-apps/">
+<link rel="alternate" hreflang="x-default" href="https://mola.mm-apps.com/en/guides/block-apps/">
+
+<link rel="icon" href="../../../assets/icon-64.png">
+<link rel="apple-touch-icon" href="../../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mola">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://mola.mm-apps.com/ko/guides/block-apps/">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="iPhone에서 앱 차단하는 방법 · Mola">
+<meta property="og:description" content="iPhone에서 앱을 차단하는 방법은 두 가지예요. iOS에 들어 있는 스크린 타임 설정, 그리고 그 위에 만들어진 Mola 같은 앱이에요. 둘 다 Apple의 같은 프레임워크를 사용해요. 차이는 규칙을 얼마나 쉽게 만들 수 있는지, 닫힌 앱을 얼마나 쉽게 다시 열 수 있는지에 있어요.">
+<meta property="og:image" content="https://mola.mm-apps.com/assets/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#F3EEE6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15130F" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mm-apps.com/#org","name":"mm-apps","url":"https://mm-apps.com/","email":"destek@mm-apps.com"},{"@type":"WebSite","@id":"https://mola.mm-apps.com/#website","url":"https://mola.mm-apps.com/","name":"Mola","publisher":{"@id":"https://mm-apps.com/#org"},"inLanguage":["tr","en","de","fr","es","pt-BR","it","nl","pl","ja","ko","zh-Hant","zh-Hans","id","ar"]},{"@type":"WebPage","@id":"https://mola.mm-apps.com/ko/guides/block-apps/#webpage","url":"https://mola.mm-apps.com/ko/guides/block-apps/","name":"iPhone에서 앱 차단하는 방법 · Mola","description":"iPhone에서 앱을 차단하는 방법은 두 가지예요. iOS에 들어 있는 스크린 타임 설정, 그리고 그 위에 만들어진 Mola 같은 앱이에요. 둘 다 Apple의 같은 프레임워크를 사용해요. 차이는 규칙을 얼마나 쉽게 만들 수 있는지, 닫힌 앱을 얼마나 쉽게 다시 열 수 있는지에 있어요.","inLanguage":"ko","isPartOf":{"@id":"https://mola.mm-apps.com/#website"}},{"@type":"Article","@id":"https://mola.mm-apps.com/ko/guides/block-apps/#article","headline":"iPhone에서 앱 차단하는 방법","description":"iPhone에서 앱을 차단하는 방법은 두 가지예요. iOS에 들어 있는 스크린 타임 설정, 그리고 그 위에 만들어진 Mola 같은 앱이에요. 둘 다 Apple의 같은 프레임워크를 사용해요. 차이는 규칙을 얼마나 쉽게 만들 수 있는지, 닫힌 앱을 얼마나 쉽게 다시 열 수 있는지에 있어요.","inLanguage":"ko","dateModified":"2026-11-17","mainEntityOfPage":"https://mola.mm-apps.com/ko/guides/block-apps/","author":{"@id":"https://mm-apps.com/#org"},"publisher":{"@id":"https://mm-apps.com/#org"},"about":{"@id":"https://mola.mm-apps.com/#app"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="top">
+<a class="brand" href="../../../ko/"><img src="../../../assets/icon-180.png" alt="" width="36" height="36"><span>Mola</span></a>
+<nav class="menu" aria-label="섹션"><a href="../../../ko/#features">기능</a><a href="../../../ko/#family">가족</a><a href="../../../ko/#privacy">개인정보 보호</a><a href="../../../ko/#faq">질문</a></nav>
+<details class="langs"><summary aria-label="언어">한국어</summary><ul><li><a href="../../../rehber/uygulama-engelleme/" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="../../../en/guides/block-apps/" lang="en" hreflang="en">English</a></li><li><a href="../../../de/guides/block-apps/" lang="de" hreflang="de">Deutsch</a></li><li><a href="../../../fr/guides/block-apps/" lang="fr" hreflang="fr">Français</a></li><li><a href="../../../es/guides/block-apps/" lang="es" hreflang="es">Español</a></li><li><a href="../../../pt-br/guides/block-apps/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li><li><a href="../../../it/guides/block-apps/" lang="it" hreflang="it">Italiano</a></li><li><a href="../../../nl/guides/block-apps/" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="../../../pl/guides/block-apps/" lang="pl" hreflang="pl">Polski</a></li><li><a href="../../../ja/guides/block-apps/" lang="ja" hreflang="ja">日本語</a></li><li><a href="../../../ko/guides/block-apps/" lang="ko" hreflang="ko" aria-current="true">한국어</a></li><li><a href="../../../zh-hant/guides/block-apps/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="../../../zh-hans/guides/block-apps/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="../../../id/guides/block-apps/" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="../../../ar/guides/block-apps/" lang="ar" hreflang="ar">العربية</a></li></ul></details>
+</header>
+<main id="main">
+<article class="doc"><p class="crumb"><a href="../../../ko/">홈</a></p><h1>iPhone에서 앱 차단하는 방법</h1>
+<p>iPhone에서 앱을 차단하는 방법은 두 가지예요. iOS에 들어 있는 스크린 타임 설정, 그리고 그 위에 만들어진 Mola 같은 앱이에요. 둘 다 Apple의 같은 프레임워크를 사용해요. 차이는 규칙을 얼마나 쉽게 만들 수 있는지, 닫힌 앱을 얼마나 쉽게 다시 열 수 있는지에 있어요.</p>
+<h2 id="스크린-타임으로-앱-설치-없이">스크린 타임으로 (앱 설치 없이)</h2>
+<ol><li><strong>설정 &gt; 스크린 타임</strong>을 열어요.</li><li>정해진 시간대에는 <strong>다운타임</strong>을 고르고 시작 시간과 종료 시간을 정해요. 그 시간에는 <strong>항상 허용</strong>에 있는 앱만 열려 있어요.</li><li>특정 앱에는 <strong>앱 시간 제한 &gt; 시간 제한 추가</strong>를 탭하고, 앱이나 카테고리를 고른 뒤 하루 사용 시간을 정해요.</li><li>시간 제한이 실제로 앱을 닫게 하려면 <strong>스크린 타임 설정 잠금</strong>으로 암호를 정하고 <strong>시간 제한 종료 시 차단</strong>을 켜요.</li></ol>
+<p>암호가 없으면 시간이 다 됐을 때 나타나는 화면의 <strong>시간 제한 무시</strong> 옵션으로 탭 한 번에 차단이 풀려요. 이 방법은 자녀를 위해 정한 규칙에는 잘 맞아요. 하지만 내 휴대폰에서는 나도 암호를 알고 있어서, 차단이 알림 정도로 그치는 경우가 많아요.</p>
+<h2 id="mola로">Mola로</h2>
+<ol><li>Mola를 열고 스크린 타임 접근을 허용해요. 계정은 필요 없어요.</li><li>닫고 싶은 앱, 카테고리, 웹사이트를 Apple의 선택 화면에서 골라요.</li><li>언제 닫을지 골라요: 하루 사용 시간을 다 썼을 때, 정해진 시간대에, 또는 집중 세션 동안에만.</li><li>엄격함 단계를 골라요: 유연, 균형, 엄격.</li></ol>
+<p>균형 플랜에서는 닫힌 앱을 열고 싶을 때 먼저 20초를 기다리고, 그다음 5분 휴식이 시작돼요. 엄격 플랜에는 끝날 때까지 휴식이 없어요.</p>
+<h2 id="언제-어느-쪽을-쓸까요">언제 어느 쪽을 쓸까요?</h2>
+<div class="table"><table><thead><tr><th></th><th>스크린 타임</th><th>Mola</th></tr></thead><tbody><tr><td>설정</td><td>설정 앱 안에서 여러 메뉴를 거쳐요</td><td>하나의 흐름: 앱, 시간, 엄격함</td></tr><tr><td>시간대로 닫기</td><td>다운타임 일정 하나</td><td>여러 플랜(업무, 공부, 수면)</td></tr><tr><td>차단 넘어가기</td><td>암호 또는 ‘시간 제한 무시’</td><td>기다리는 시간. 엄격 플랜에는 휴식 없음</td></tr><tr><td>집중 세션</td><td>없음</td><td>뽀모도로와 나만의 프로그램</td></tr><tr><td>가격</td><td>무료, iOS에 내장</td><td>무료</td></tr></tbody></table></div>
+<p>앱 하나에 간단한 제한만 두고 싶다면 스크린 타임으로 충분해요. 여러 플랜, 기다리는 시간, 집중 세션을 원한다면 Mola가 이를 한곳에 모아 줘요.</p>
+<h2 id="자주-묻는-질문">자주 묻는 질문</h2>
+<p><strong>차단된 앱은 삭제되나요?</strong> 아니요. 앱과 데이터는 그대로 있고, 차단되는 동안 열리지 않을 뿐이에요.</p>
+<p><strong>Mola가 내가 고른 앱을 볼 수 있나요?</strong> 아니요. 선택은 Apple의 선택 화면에서 이루어지고, Mola는 내 기기에서만 유효한 암호화된 토큰만 저장해요.</p>
+<p><strong>웹사이트도 차단할 수 있나요?</strong> 네. 선택 화면에서 앱과 함께 웹사이트도 추가할 수 있어요.</p>
+<p class="fine">마지막 업데이트: <time datetime="2026-11-17">2026-11-17</time></p></article>
+</main>
+<footer>
+<div class="foot">
+<a class="brand" href="../../../ko/"><img src="../../../assets/icon-180.png" alt="" width="32" height="32"><span>Mola</span></a>
+<nav aria-label="페이지"><a href="../../../en/privacy/">개인정보 보호</a><a href="../../../en/terms/">이용 약관</a><a href="../../../ko/delete-account/">데이터 삭제</a><a href="../../../ko/support/">지원</a></nav>
+</div>
+<p>Mehmet Mutlu가 독립적으로 개발했어요. <a href="mailto:destek@mm-apps.com">destek@mm-apps.com</a> · <a href="https://mm-apps.com/">mm-apps의 다른 게임과 앱</a></p>
+</footer>
+</body>
+</html>

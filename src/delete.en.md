@@ -1,7 +1,7 @@
 # Deleting your data
 
-Mola has no account with a name, email address or password. If you've set up a family, our server holds only random
-identifiers, encrypted envelopes kept for at most 25 hours and (if you turned on notifications on the parent's phone)
+Mola has no sign-up: no username, email address or password. If you've set up a family, our server holds only random
+identifiers, encrypted envelopes kept for up to 25 hours and (if you turned on notifications on the parent's phone)
 that phone's notification token. You can delete all of these from within the app.
 
 ## If you're a parent: your own data
@@ -9,7 +9,7 @@ that phone's notification token. You can delete all of these from within the app
 1. Open Mola and go to the **Settings** tab.
 2. Tap **Leave family and delete data** and confirm.
 
-Deleted immediately: your account on the server, the envelopes you sent and those sent to you, your device record and
+Deleted immediately: the anonymous record created on the server for the family feature, the envelopes you sent and those sent to you, your device record and
 your notification token. If you're the only parent in the family, the records of the children's devices are deleted
 at the same time. The encryption keys and family information on your phone are deleted too. This can't be undone.
 
@@ -18,8 +18,8 @@ at the same time. The encryption keys and family information on your phone are d
 1. In the **Family** tab, tap your child's name.
 2. At the bottom, tap **Remove from family** and confirm.
 
-That device's account, record and envelopes on the server are deleted immediately. Your child's phone learns of this
-the next time it connects and deletes the family information and rules itself.
+That device's anonymous record and envelopes on the server are deleted immediately. The next time your child's phone
+connects, it removes the family information and rules on its own.
 
 ## If you're on a child's device
 
@@ -34,10 +34,10 @@ enough.
 ## If you can't access the app
 
 Send an email to **destek@mm-apps.com** with "Personal data request" as the subject line. Also include the number
-shown under **Settings → Device number**. We delete your data within 30 days at the latest. In addition, the record
-of a device that doesn't connect at all for 180 days is deleted automatically.
+shown under **Settings → Device number**. We'll delete your data within 30 days. Also, the record of any device that
+hasn't connected for 180 days is deleted automatically.
 
 ## Is there anything that isn't deleted?
 
-Emails you send us are kept for at most 24 months after the correspondence is closed (Privacy Policy, Section 3.4).
+Emails you send us are kept for up to 24 months after the conversation ends (Privacy Policy, Section 3.4).
 You can ask for these to be deleted as well.

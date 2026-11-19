@@ -1,6 +1,6 @@
 # Pomodoro tekniği nedir, nasıl uygulanır?
 
-Pomodoro tekniği, işi 25 dakikalık odak turlarına ve aralarındaki kısa aralara bölen bir çalışma yöntemidir. Francesco Cirillo tarafından 1980'lerin sonunda geliştirildi; adını domates biçimli mutfak zamanlayıcısından alır ("pomodoro" İtalyanca domates demektir).
+Pomodoro tekniği, işi 25 dakikalık odak turlarına ve aralarındaki kısa aralara bölen bir çalışma yöntemidir. Francesco Cirillo 1980'lerin sonunda geliştirdi; adını domates biçimli mutfak zamanlayıcısından alır ("pomodoro" İtalyanca domates demektir).
 
 ## Nasıl uygulanır?
 
@@ -21,7 +21,7 @@ Tur sırasında telefona bakmak turu böler. En basit çözüm telefonu başka b
 2. Oturumu başlat. İstersen oturum sürerken seçtiğin uygulamalar kapalı kalır.
 3. Her oturum bir çiniyi boyar: önce kontur, sonra renk, en son sır. Tamamlanan çiniler duvarında birikir.
 
-Apple Watch'ta da bir odak zamanlayıcısı vardır; saat uygulaması açıkken oturum telefonla eşitlenir.
+Apple Watch'ta da bir odak zamanlayıcısı vardır; saatte Mola açıkken oturum telefonla eşitlenir.
 
 ## Sık sorulanlar
 

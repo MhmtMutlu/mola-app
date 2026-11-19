@@ -1,0 +1,225 @@
+{
+  "title": "Mola: Apps blokkeren & focustimer voor iPhone",
+  "description": "Mola is een appblokker en focus-app voor iPhone en iPad waarvoor je je niet hoeft te registreren. Mola is gratis en heeft geen advertenties, geen tracking en geen analysetools.",
+  "nav": {
+    "features": "Functies",
+    "family": "Gezin",
+    "privacy": "Privacy",
+    "faq": "Vragen"
+  },
+  "hero": {
+    "eyebrow": "Apps blokkeren en focus · iPhone, iPad, Apple Watch",
+    "headline": "Sluit wat je afleidt. Ga terug naar je focus.",
+    "lead": "Mola blokkeert de apps die je kiest op de tijden die je instelt of zodra je tijd voor die dag op is, en elke focussessie beschildert een tegel. Je hoeft je niet te registreren en je gebruiksgegevens blijven op je telefoon.",
+    "soon": "Binnenkort in de App Store",
+    "store": "Download in de App Store",
+    "note": "iOS 18 of nieuwer. Geen advertenties, geen tracking.",
+    "alt": "Het scherm Vandaag van Mola: het actieve blokkeerplan, de focustijd van vandaag en het weekoverzicht"
+  },
+  "steps_title": "In drie stappen aan de slag",
+  "steps": [
+    [
+      "Kies je apps",
+      "Kies met de kiezer van Apple zelf de apps, categorieën en websites die je het meest afleiden. Je keuze verlaat je telefoon niet."
+    ],
+    [
+      "Maak een plan of start een sessie",
+      "Maak plannen voor je werk-, studie- en slaaptijden; buiten een plan start je een focussessie wanneer je maar wilt."
+    ],
+    [
+      "Beschilder je tegel",
+      "Elke focussessie beschildert een tegel. Tegels die af zijn krijgen een plek op je muur; een tegel die niet af is, gaat in je volgende sessie verder waar hij gebleven was."
+    ]
+  ],
+  "features_title": "Alles wat je focus beschermt, op één plek",
+  "features": [
+    {
+      "shot": "plan",
+      "tag": "Blokkeerplannen",
+      "title": "Jij kiest de tijden, de rest gaat vanzelf",
+      "text": "Als een plan begint, gaan de apps die je hebt gekozen dicht; als het eindigt, gaan ze weer open. Je kunt aparte plannen maken voor doordeweekse dagen, het weekend of de dagen die je zelf kiest.",
+      "points": [
+        "Aparte plannen voor werk-, studie- en slaaptijden",
+        "Plannen die doorlopen tot na middernacht",
+        "Zet een plan met één tik aan of uit"
+      ],
+      "alt": "Het scherm om een plan te wijzigen: naam, begin- en eindtijd, dagen en striktheidsniveau"
+    },
+    {
+      "shot": "limit",
+      "tag": "Daglimieten",
+      "title": "Bepaal hoeveel per dag",
+      "text": "Geef de apps die je kiest een tijd per dag. Is die tijd op, dan worden die apps geblokkeerd; je andere apps blijven open.",
+      "points": [
+        "Voor elke limiet een eigen keuze van apps",
+        "Een tijd per dag van 5 minuten tot 8 uur",
+        "iOS meet de tijd; die kan een paar minuten afwijken",
+        "Een limiet wordt op elk apparaat apart geteld"
+      ],
+      "alt": "Het scherm om een limiet te wijzigen: naam, apps, tijd per dag en striktheid"
+    },
+    {
+      "shot": "focus",
+      "tag": "Focussessies",
+      "title": "Pomodoro, leren of je eigen programma",
+      "text": "Kies een van de kant-en-klare programma's of stel de focustijd, het aantal rondes en de lengte van de pauze zelf in. Als je wilt, blijven de apps die je hebt gekozen geblokkeerd zolang de sessie loopt.",
+      "points": [
+        "Pomodoro (25 min), Leren (45 min), Diepe focus (50 min)",
+        "Een Live-activiteit op het toegangsscherm en in het Dynamic Island",
+        "Start samen met de focus van je iPhone; Mola kan de eigen herinneringen stilhouden"
+      ],
+      "alt": "Het scherm van een focussessie: een tegel die wordt beschilderd en de resterende tijd"
+    },
+    {
+      "shot": "friction",
+      "tag": "Striktheidsniveaus",
+      "title": "Een kort moment voordat je toegeeft",
+      "text": "Wil je tijdens een gebalanceerd plan even pauze of een sessie eerder stoppen, dan laat Mola je eerst even wachten. Soms is dat al genoeg. Een strikt plan kun je daarentegen niet wijzigen tot het is afgelopen.",
+      "points": [
+        "Flexibel: 5 minuten pauze wanneer je maar wilt",
+        "Gebalanceerd: 20 seconden wachten voor een pauze",
+        "Strikt: geen pauzes tot het plan eindigt"
+      ],
+      "alt": "Het venster voor een korte pauze: de pauzeknop komt beschikbaar als het aftellen voorbij is"
+    },
+    {
+      "shot": "wall",
+      "tag": "Tegelmuur",
+      "title": "Maak je inzet zichtbaar",
+      "text": "Elke tegel krijgt eerst zijn contour, dan zijn kleuren en als laatste zijn glazuur. Je begint met de Seltsjoekse ster; naarmate je muur groeit, komen de patronen Tulp, Anjer, Rumi, Çintemani, Hatayi, Vlechtwerk en Granaatappel erbij en groei je van leerling naar meester.",
+      "points": [
+        "Acht patronen, vier rangen: leerling, gezel, meester, grootmeester",
+        "Je ziet altijd hoeveel tegels je nog te gaan hebt tot het volgende patroon",
+        "Een half beschilderde tegel raak je nooit kwijt; wat je hebt verdiend, wordt niet teruggenomen"
+      ],
+      "alt": "De tegelmuur: tegels die af zijn en de keuze van het volgende patroon"
+    }
+  ],
+  "extras_title": "Ook buiten je telefoon bij je",
+  "extras": [
+    [
+      "Apple Watch",
+      "Een focustimer op de Apple Watch: zolang de app op je horloge open is, loopt de sessie gelijk met je telefoon, wordt dezelfde tegel beschilderd en zie je zowel de resterende tijd als hoe laat het is."
+    ],
+    [
+      "Widgets",
+      "Start met één tik een sessie vanaf het beginscherm en zie in één oogopslag hoeveel tijd je nog hebt."
+    ],
+    [
+      "iPad en iPhone Duo",
+      "De indeling past zich aan de grootte van het scherm aan; als je het apparaat dichtvouwt, blijf je waar je was."
+    ],
+    [
+      "15 talen",
+      "Turks en Engels, en daarnaast onder meer Nederlands, Duits, Frans, Spaans, Japans, Koreaans en Arabisch."
+    ]
+  ],
+  "family": {
+    "tag": "Gezin",
+    "title": "Als je wilt, ook met je gezin",
+    "text": "Terwijl je Mola voor jezelf gebruikt, kun je op elk moment een gezin instellen. De tijd per dag, de schooltijden en de slaaptijden voor de telefoon van je kind bepaal je samen met je kind, dat op het eigen scherm ziet welke regel geldt, waarom en tot wanneer.",
+    "points": [
+      [
+        "Samen opgestelde regels",
+        "Tijd per dag, schoolmodus en slaapmodus. Er zijn geen verborgen regels."
+      ],
+      [
+        "Tijdverzoeken",
+        "Het kind vraagt om extra tijd met een korte reden; de ouder antwoordt met één tik."
+      ],
+      [
+        "Een afspraak, geen toezicht",
+        "Mola laat de ouder geen berichten, foto's of locatie zien, en ook niet welke apps er worden gebruikt."
+      ],
+      [
+        "End-to-end versleuteld",
+        "Berichten tussen de apparaten van het gezin worden op de apparaten versleuteld; onze server kan de inhoud niet lezen."
+      ]
+    ],
+    "note": "Een pauze of een nieuwe regel van de ouder wordt toegepast zodra Mola op de telefoon van het kind wordt geopend. Mola werkt met Schermtijd van Apple.",
+    "alt_parent": "Het scherm Gezin van de ouder: het tijdverzoek van het kind en de resterende tijd",
+    "alt_child": "Het scherm Vandaag van het kind: de resterende tijd en de regels die gelden"
+  },
+  "privacy": {
+    "tag": "Privacy",
+    "title": "Je gegevens blijven bij jou",
+    "text": "We hebben Mola zo ontworpen dat het werkt zonder gegevens te verzamelen. Als je Mola alleen voor jezelf gebruikt, staat er op onze server niets over jou.",
+    "points": [
+      "We vragen niet om een e-mailadres, telefoonnummer of locatie; er is geen registratie en geen wachtwoord.",
+      "Je appkeuze, je plannen, je focusgeschiedenis en je tegelmuur blijven op je apparaat; ze worden niet naar ons gestuurd.",
+      "We kunnen niet zien welke apps je gebruikt of hoelang.",
+      "Als je de gezinsfunctie gebruikt, staan op onze server alleen willekeurige ID's, versleutelde berichten die wij niet kunnen lezen en het meldingstoken van een ouder die meldingen aanzet.",
+      "Er zijn geen advertenties, geen tracking en geen analysetools."
+    ],
+    "more": "Lees het volledige privacybeleid"
+  },
+  "faq_title": "Veelgestelde vragen",
+  "faq": [
+    [
+      "Op welke apparaten werkt Mola?",
+      "Mola werkt op een iPhone met iOS 18 of nieuwer, een iPad met iPadOS 18 of nieuwer en een Apple Watch met watchOS 11 of nieuwer."
+    ],
+    [
+      "Moet ik een account aanmaken?",
+      "Nee. Er is geen registratie, e-mail of wachtwoord; je kunt Mola gebruiken zodra je de app opent. Ook de gezinsfunctie vraagt niet om een e-mailadres of telefoonnummer: apparaten worden gekoppeld met een QR-code en je vult alleen een naam in die je gezin te zien krijgt."
+    ],
+    [
+      "Kan ik een app maar een bepaalde tijd per dag gebruiken?",
+      "Ja. Maak in het tabblad Vandaag een daglimiet, kies de apps en stel de tijd per dag in. Is die tijd op, dan worden die apps geblokkeerd; als het striktheidsniveau van de limiet het toelaat, kun je 5 minuten pauze nemen. Wil je ze liever op bepaalde tijden blokkeren, gebruik dan een blokkeerplan."
+    ],
+    [
+      "Wat als ik een app die dicht is echt nodig heb?",
+      "Als het striktheidsniveau van je plan het toelaat, kun je 5 minuten pauze nemen. In een gebalanceerd plan wacht je 20 seconden voor een pauze; in een strikt plan zijn er geen pauzes tot het plan eindigt. Flexibele en gebalanceerde plannen kun je in Mola altijd uitzetten; een strikt plan kan niet worden uitgezet tot de tijd om is."
+    ],
+    [
+      "Kan Mola zien welke apps ik gebruik?",
+      "Nee. Je kiest apps met de Schermtijd-kiezer van Apple; Mola kent niet eens de namen van de apps die je hebt gekozen en bewaart alleen versleutelde tokens die uitsluitend op jouw apparaat geldig zijn."
+    ],
+    [
+      "Wat heb ik nodig voor de gezinsfunctie?",
+      "Mola hoeft alleen op de telefoon van de ouder en op die van het kind te staan. Om te voorkomen dat het kind de regels kan verwijderen, raden we aan het Apple Account van het kind in 'Delen met gezin' als kind in te stellen."
+    ],
+    [
+      "Wat gebeurt er met mijn gegevens als ik de app verwijder?",
+      "Je plannen, je focusgeschiedenis en je tegelmuur staan op je apparaat en worden dus samen met de app verwijderd. Heb je de gezinsfunctie gebruikt, dan lees je op de pagina 'Je gegevens verwijderen' hoe je je gegevens op de server verwijdert."
+    ]
+  ],
+  "cta": {
+    "title": "Geef je apps even pauze",
+    "text": "Mola komt binnenkort naar de App Store."
+  },
+  "footer": "Onafhankelijk ontwikkeld door Mehmet Mutlu.",
+  "more_apps": "Meer games en apps van mm-apps",
+  "foot_nav": {
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "delete": "Je gegevens verwijderen",
+    "support": "Ondersteuning"
+  },
+  "back": "Home",
+  "notfound_title": "Pagina niet gevonden",
+  "notfound_body": "De pagina die je zoekt, staat hier niet.",
+  "skip": "Ga naar de inhoud",
+  "menu_label": "Onderdelen",
+  "foot_label": "Pagina's",
+  "guides_title": "Handleidingen",
+  "guides": [
+    [
+      "guide-block",
+      "Apps blokkeren op je iPhone",
+      "Stap voor stap, met de instellingen van Schermtijd en met Mola."
+    ],
+    [
+      "guide-limit",
+      "Een dagelijkse tijdslimiet instellen voor een app",
+      "Applimieten, Apparaatvrije tijd en de daglimieten van Mola."
+    ],
+    [
+      "guide-pomodoro",
+      "Wat de pomodorotechniek is en hoe je die gebruikt",
+      "Rondes van 25 minuten, pauzes en je telefoon buiten het werk houden."
+    ]
+  ],
+  "updated": "Laatst bijgewerkt",
+  "language_label": "Taal"
+}

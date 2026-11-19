@@ -9,7 +9,7 @@ iPhone'da bir uygulamaya günlük süre sınırı koymak için **Ayarlar > Ekran
 3. Günlük süreyi belirle. **Günleri Özelleştir** ile hafta sonuna farklı bir süre verebilirsin.
 4. **Sınır Sonunda Engelle**'yi açmak için önce bir Ekran Süresi parolası belirlemen gerekir.
 
-Süre iOS tarafından sayılır ve aynı Apple hesabını kullanan cihazlarında, **Cihazlar Arasında Paylaş** açıksa, birlikte hesaplanır.
+Süreyi iOS sayar ve aynı Apple hesabını kullanan cihazlarında, **Cihazlar Arasında Paylaş** açıksa, birlikte hesaplanır.
 
 ## Mola ile
 
@@ -19,10 +19,10 @@ Süre iOS tarafından sayılır ve aynı Apple hesabını kullanan cihazlarında
 
 Süre tamamlandığında o uygulamalar kapanır; diğer uygulamaların açık kalır. Sınırın sıkılık düzeyi izin veriyorsa 5 dakikalık mola verebilirsin. Süreyi yine iOS sayar: Mola hangi uygulamayı ne kadar kullandığını görmez, yalnızca süre tamamlandığında haberdar olur.
 
-## Süre sınırı mı, saat planı mı?
+## Günlük sınır mı, engelleme planı mı?
 
 - **Günlük sınır** "bu uygulamayı kullanacağım ama günde şu kadar" demektir. Sosyal medya ve oyunlar için uygundur.
-- **Saat planı** "şu saatlerde hiç açılmasın" demektir. Mesai, ders ve uyku saatleri için uygundur.
+- **Engelleme planı** "şu saatlerde hiç açılmasın" demektir. Mesai, ders ve uyku saatleri için uygundur.
 
 İkisi birlikte de kullanılabilir: gündüz için bir günlük sınır, gece için bir uyku planı.
 

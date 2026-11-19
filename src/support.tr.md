@@ -55,7 +55,7 @@ almıyoruz. Bu yüzden verdiğin mola, çocuğunun telefonunda Mola açıldığ�
 günlük sınır gibi planlı kurallar ise çocuğunun telefonunda kayıtlıdır; gecikmeden ve internet bağlantısı olmadan
 çalışır.
 
-### "Bugün kalan süre" neden yaklaşık gösteriliyor?
+### "Bugün kalan süren" neden yaklaşık gösteriliyor?
 
 Apple'ın sistemi toplam kullanım süresini uygulamalarla paylaşmaz; yalnızca belirli eşikler aşıldığında haber verir.
 Mola bu yüzden günlük sınırı sekiz adıma böler ve kalan süreyi bu adımlarla gösterir.

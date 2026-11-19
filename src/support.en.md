@@ -1,6 +1,6 @@
 # Support
 
-If you're having a problem or something isn't clear, write to us: **destek@mm-apps.com** (Turkish or English).
+If you're having a problem or something isn't clear, email us at **destek@mm-apps.com** (Turkish or English).
 We usually reply within a few business days.
 
 We can help faster if you include your device model, iOS version, Mola version and a sentence or two describing the
@@ -26,7 +26,7 @@ What you can do depends on the plan's strictness level. In a **Flexible** plan, 
 whenever you like. In a **Balanced** plan, you wait 20 seconds before a break. In a **Strict** plan, there are no
 breaks until the plan ends.
 
-### How do I change the apps to close?
+### How do I change which apps close?
 
 Open **Settings → Apps to close**. You pick apps, categories and websites with Apple's own picker; your selection
 never leaves your phone.
@@ -45,15 +45,15 @@ your child, allow Screen Time access on their phone and choose the apps the limi
 ### Why is Screen Time access needed?
 
 Mola applies rules using Apple's Screen Time system; it doesn't install a profile on the phone. On the child's phone,
-access is approved with the Apple Account of the parent in Family Sharing. If Family Sharing isn't set up, access can
-still be granted, but in that case it can be turned off in Settings; Mola states this clearly.
+access is approved with the parent's Apple Account through Family Sharing. If Family Sharing isn't set up, access can
+still be granted, but it can then be turned off in Settings; Mola tells you when this is the case.
 
 ### I started a break, but it didn't begin right away on my child's phone. Why?
 
-This is expected. We don't use notifications on children's phones, and we don't take a notification token from them
-either. That's why a break you start is applied when Mola is opened on your child's phone or when iOS runs Mola in
+This is expected. We don't use notifications on children's phones, and we don't collect a notification token from
+them. That's why a break you start is applied when Mola is opened on your child's phone or when iOS runs Mola in
 the background. You can see the status of the command on your own screen: "Delivered" or "Applied". Scheduled rules
-such as school, sleep and the daily limit are stored on your child's phone; they work without delay and without an
+such as school, sleep and the daily limit are stored on your child's phone; they don't need an
 internet connection.
 
 ### Why is "Time left today" shown as approximate?
@@ -68,7 +68,7 @@ tool that applies the rules the family sets together.
 
 ### My tile is half-painted. Is it lost?
 
-No. If you stop a focus session partway through, your tile stays half-painted and continues from where it left off in
+No. If you stop a focus session partway through, your tile stays half-painted and picks up where it left off in
 your next session.
 
 ### How do I delete my data?

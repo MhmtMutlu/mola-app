@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "Uygulama engelleme ve odak · iPhone, iPad, Apple Watch",
     "headline": "Dikkatini dağıtanları kapat. Odağına dön.",
-    "lead": "Mola, seçtiğin uygulamaları belirlediğin saatlerde ya da günlük süren tamamlandığında kapatır; her odak oturumu bir çiniyi boyar. Kayıt gerekmez; verilerin bize gönderilmez.",
+    "lead": "Mola, seçtiğin uygulamaları belirlediğin saatlerde ya da günlük süren tamamlandığında kapatır; her odak oturumu bir çiniyi boyar. Kayıt gerekmez; kullanım verilerin telefonunda kalır.",
     "soon": "Yakında App Store'da",
     "store": "App Store'dan indir",
     "note": "iOS 18 ve sonrası. Reklam ve izleme yok.",
@@ -99,7 +99,7 @@
   "extras": [
     [
       "Apple Watch",
-      "Apple Watch'ta odak zamanlayıcısı: saat uygulaması açıkken oturum telefonla eşitlenir; aynı çini boyanır, kalan süre ve günün saati birlikte görünür."
+      "Apple Watch'ta odak zamanlayıcısı: saatte Mola açıkken oturum telefonla eşitlenir; aynı çini boyanır, kalan süre ve günün saati birlikte görünür."
     ],
     [
       "Araç takımları",

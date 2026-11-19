@@ -1,6 +1,6 @@
 # What the Pomodoro Technique is and how to use it
 
-The Pomodoro Technique is a way of working that splits work into 25-minute rounds of focus with short breaks between them. It was developed by Francesco Cirillo in the late 1980s and is named after a tomato-shaped kitchen timer ("pomodoro" is Italian for tomato).
+The Pomodoro Technique is a way of working in 25-minute rounds of focus with short breaks in between. It was developed by Francesco Cirillo in the late 1980s and is named after a tomato-shaped kitchen timer ("pomodoro" is Italian for tomato).
 
 ## How to use it
 
@@ -11,15 +11,15 @@ The Pomodoro Technique is a way of working that splits work into 25-minute round
 
 The times are a starting point, not a rule. For long-form work such as reading and writing, 50 minutes of work and a 10-minute break is also common.
 
-## Why keep the phone out of it?
+## Why keep your phone out of it?
 
-Looking at the phone during a round splits the round. The simplest fix is to leave the phone in another room. If the phone is the timer, having distracting apps closed while the round runs does the same job.
+Checking your phone during a round breaks it up. The simplest fix is to leave the phone in another room. If your phone is your timer, closing distracting apps for the length of the round does the same job.
 
 ## Pomodoro in Mola
 
 1. Open the **Focus** tab and choose the ready-made Pomodoro program, or set the focus time, the number of rounds and the break length yourself.
-2. Start the session. If you like, the apps you chose stay blocked while it runs.
-3. Every session paints a tile: first its contour, then its colours, and last its glaze. Finished tiles gather on your wall.
+2. Start the session. You can also keep the apps you chose blocked while it runs.
+3. Every session paints a tile: first its outline, then its colors, and finally its glaze. Finished tiles collect on your wall.
 
 Apple Watch has a focus timer too; while the watch app is open, the session stays in sync with your phone.
 
@@ -29,4 +29,4 @@ Apple Watch has a focus timer too; while the watch app is open, the session stay
 
 **What should I do in the breaks?** Stepping away from the screen makes a break a break: stand up, drink some water, look out of the window.
 
-**Does 25 minutes suit everyone?** No. Set the time to fit the work and yourself; what matters is that the round and the break are kept apart.
+**Does 25 minutes suit everyone?** No. Set the time to fit the work and yourself; what matters is keeping work and breaks separate.

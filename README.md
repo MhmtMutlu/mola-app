@@ -3,6 +3,9 @@
 Mola'nın web sitesi: tanıtım sayfası, gizlilik politikası, kullanım koşulları, KVKK aydınlatma metni, verileri silme
 ve destek. Uygulama bu sayfaları buradan açar. GitHub Pages ile yayınlanır; alan adı `mola.mm-apps.com` olacak.
 
+15 dil: Türkçe `/`, İngilizce `/en/`, diğerleri `/<kod>/` altında İngilizce yol adlarıyla (`build.py` → `LANGUAGES`). Bir dil,
+`src/landing.<kod>.json` var olduğunda derlenir; hukuk metinleri yalnız Türkçe ve İngilizcedir, diğer diller İngilizcesine bağlanır.
+
 | Sayfa | Türkçe | English |
 |---|---|---|
 | Tanıtım | `/` | `/en/` |

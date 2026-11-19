@@ -1,0 +1,225 @@
+{
+  "title": "Mola: Bloquear Aplicaciones y Temporizador de Enfoque para iPhone",
+  "description": "Mola es una app para bloquear aplicaciones y concentrarte en el iPhone y el iPad que no pide registro. Es gratuita, sin anuncios, sin rastreo y sin herramientas de analítica.",
+  "nav": {
+    "features": "Funciones",
+    "family": "Familia",
+    "privacy": "Privacidad",
+    "faq": "Preguntas"
+  },
+  "hero": {
+    "eyebrow": "Bloqueo de apps y enfoque · iPhone, iPad, Apple Watch",
+    "headline": "Cierra tus distracciones. Vuelve a concentrarte.",
+    "lead": "Mola bloquea las apps que eliges en las horas que fijas o cuando se cumple tu tiempo diario, y cada sesión de enfoque pinta un azulejo. No hay registro y tus datos de uso se quedan en tu teléfono.",
+    "soon": "Próximamente en el App Store",
+    "store": "Descárgala en el App Store",
+    "note": "iOS 18 o posterior. Sin anuncios, sin rastreo.",
+    "alt": "La pantalla Hoy de Mola: el plan de bloqueo activo, el tiempo de enfoque de hoy y el resumen semanal"
+  },
+  "steps_title": "Empieza en tres pasos",
+  "steps": [
+    [
+      "Elige tus apps",
+      "Elige las apps, las categorías y los sitios web que más te distraen con el selector de Apple. Tu selección nunca sale de tu teléfono."
+    ],
+    [
+      "Crea un plan o inicia una sesión",
+      "Crea planes para tus horas de trabajo, de estudio y de sueño; fuera de un plan, inicia una sesión de enfoque cuando quieras."
+    ],
+    [
+      "Pinta tu azulejo",
+      "Cada sesión de enfoque pinta un azulejo. Los azulejos terminados se van sumando a tu pared; uno sin terminar sigue donde lo dejaste en la siguiente sesión."
+    ]
+  ],
+  "features_title": "Todo lo que cuida tu concentración, en un solo lugar",
+  "features": [
+    {
+      "shot": "plan",
+      "tag": "Planes de bloqueo",
+      "title": "Tú pones las horas; lo demás va solo",
+      "text": "Cuando un plan empieza, las apps que elegiste se cierran; cuando termina, vuelven a abrirse. Puedes crear planes distintos para los días entre semana, el fin de semana o los días que quieras.",
+      "points": [
+        "Planes distintos para las horas de trabajo, de estudio y de sueño",
+        "Planes que pasan de la medianoche",
+        "Activa o desactiva un plan con un toque"
+      ],
+      "alt": "La pantalla de edición de un plan: nombre, hora de inicio y de fin, días y nivel de exigencia"
+    },
+    {
+      "shot": "limit",
+      "tag": "Límites diarios",
+      "title": "Decide cuánto tiempo cada día",
+      "text": "Dales a las apps que elijas un tiempo diario. Cuando el tiempo se cumple, esas apps se bloquean; las demás siguen abiertas.",
+      "points": [
+        "Una selección de apps distinta para cada límite",
+        "Un tiempo diario de 5 minutos a 8 horas",
+        "El tiempo lo mide iOS; puede variar unos minutos",
+        "El límite se cuenta por separado en cada dispositivo"
+      ],
+      "alt": "El editor de límites: nombre, apps, tiempo diario y nivel de exigencia"
+    },
+    {
+      "shot": "focus",
+      "tag": "Sesiones de enfoque",
+      "title": "Pomodoro, estudio o tu propio programa",
+      "text": "Elige uno de los programas ya preparados o define tú el tiempo de enfoque, el número de rondas y la duración del descanso. Si quieres, las apps que elegiste siguen bloqueadas mientras dura la sesión.",
+      "points": [
+        "Pomodoro (25 min), Estudio (45 min), Enfoque profundo (50 min)",
+        "Una actividad en directo en la pantalla de bloqueo y en la Dynamic Island",
+        "Empieza a la vez que el modo de concentración de tu iPhone; Mola puede silenciar sus propios recordatorios"
+      ],
+      "alt": "La pantalla de la sesión de enfoque: un azulejo que se va pintando y el tiempo restante"
+    },
+    {
+      "shot": "friction",
+      "tag": "Niveles de exigencia",
+      "title": "Un momento antes de dejarlo",
+      "text": "Cuando quieres un descanso durante un plan equilibrado o terminar antes una sesión, Mola te hace esperar un momento. A veces con eso basta. Un plan estricto, en cambio, no se puede cambiar hasta que termina.",
+      "points": [
+        "Flexible: un descanso de 5 minutos cuando quieras",
+        "Equilibrado: 20 segundos de espera antes del descanso",
+        "Estricto: sin descansos hasta que termina el plan"
+      ],
+      "alt": "La hoja del descanso breve: el botón de descanso se activa cuando termina la cuenta atrás"
+    },
+    {
+      "shot": "wall",
+      "tag": "Pared de azulejos",
+      "title": "Haz visible tu esfuerzo",
+      "text": "Cada azulejo recibe primero el contorno, después los colores y, al final, el esmalte. Empiezas con la estrella selyúcida; a medida que tu pared crece, se abren los motivos Tulipán, Clavel, Rumi, Çintemani, Hatayi, Lacería y Granada, y pasas de aprendiz a maestro.",
+      "points": [
+        "Ocho motivos y cuatro rangos: aprendiz, oficial, maestro y maestro mayor",
+        "Siempre ves cuántos azulejos faltan para el próximo motivo",
+        "Un azulejo a medio pintar no se pierde; nada de lo que has conseguido se te quita"
+      ],
+      "alt": "La pared de azulejos: los azulejos terminados y la elección del próximo motivo"
+    }
+  ],
+  "extras_title": "Contigo también fuera del teléfono",
+  "extras": [
+    [
+      "Apple Watch",
+      "Un temporizador de enfoque en el Apple Watch: mientras la app del reloj está abierta, la sesión se mantiene sincronizada con tu teléfono, se pinta el mismo azulejo y tienes a la vista el tiempo restante y la hora."
+    ],
+    [
+      "Widgets",
+      "Inicia una sesión desde la pantalla de inicio con un toque y consulta de un vistazo el tiempo que te queda."
+    ],
+    [
+      "iPad y iPhone Duo",
+      "El diseño se adapta al tamaño de la pantalla; al plegar el dispositivo, sigues donde estabas."
+    ],
+    [
+      "15 idiomas",
+      "Turco e inglés, además de alemán, francés, español, japonés, coreano, árabe y más."
+    ]
+  ],
+  "family": {
+    "tag": "Familia",
+    "title": "Con tu familia, si quieres",
+    "text": "Mientras usas Mola para ti, puedes crear una familia cuando quieras. El tiempo diario, el horario escolar y las horas de sueño del teléfono de tu hijo o hija se deciden con él o con ella, y en su pantalla se ve qué regla se aplica, por qué y hasta cuándo.",
+    "points": [
+      [
+        "Reglas acordadas en común",
+        "Tiempo diario, modo escuela y modo sueño. No hay reglas ocultas."
+      ],
+      [
+        "Solicitudes de tiempo",
+        "Tu hijo o hija pide tiempo extra con un motivo breve; tú respondes con un toque."
+      ],
+      [
+        "Un acuerdo, no vigilancia",
+        "Mola no muestra a la madre o al padre los mensajes, las fotos, la ubicación ni qué apps se usan."
+      ],
+      [
+        "Cifrado de extremo a extremo",
+        "Los mensajes entre los dispositivos de la familia se cifran en los propios dispositivos; nuestro servidor no puede leer su contenido."
+      ]
+    ],
+    "note": "Un descanso o una regla nueva de la madre o el padre se aplica cuando se abre Mola en el teléfono del hijo o la hija. Mola funciona con el sistema Tiempo de uso de Apple.",
+    "alt_parent": "La pantalla Familia de la madre o el padre: la solicitud de tiempo del hijo o la hija y el tiempo restante",
+    "alt_child": "La pantalla Hoy del hijo o la hija: el tiempo restante y las reglas vigentes"
+  },
+  "privacy": {
+    "tag": "Privacidad",
+    "title": "Tus datos se quedan contigo",
+    "text": "Diseñamos Mola para que funcione sin recopilar datos. Cuando la usas por tu cuenta, en nuestro servidor no se crea ningún registro sobre ti.",
+    "points": [
+      "No pedimos correo electrónico, número de teléfono ni ubicación; no hay registro ni contraseña.",
+      "Tu selección de apps, tus planes, tu historial de enfoque y tu pared de azulejos se quedan en tu dispositivo; no se nos envían.",
+      "No podemos ver qué apps usas ni durante cuánto tiempo.",
+      "Si usas la función de familia, nuestro servidor solo guarda identificadores aleatorios, mensajes cifrados que no podemos leer y el token de notificación de la madre o el padre que active las notificaciones.",
+      "No hay anuncios, rastreo ni herramientas de analítica."
+    ],
+    "more": "Leer la Política de privacidad completa"
+  },
+  "faq_title": "Preguntas frecuentes",
+  "faq": [
+    [
+      "¿En qué dispositivos funciona Mola?",
+      "Funciona en iPhone con iOS 18 o posterior, en iPad con iPadOS 18 o posterior y en Apple Watch con watchOS 11 o posterior."
+    ],
+    [
+      "¿Tengo que crear una cuenta?",
+      "No. No hay registro, correo electrónico ni contraseña; puedes empezar a usar Mola en cuanto la abres. La función de familia tampoco pide correo electrónico ni número de teléfono: los dispositivos se enlazan con un código QR y solo escribes un nombre que verá tu familia."
+    ],
+    [
+      "¿Puedo usar una app solo un tiempo determinado al día?",
+      "Sí. Crea un límite diario en la pestaña Hoy, elige las apps y fija el tiempo diario. Cuando el tiempo se cumple, esas apps se bloquean; si el nivel de exigencia del límite lo permite, puedes tomarte un descanso de 5 minutos. Para bloquearlas a ciertas horas, usa un plan de bloqueo."
+    ],
+    [
+      "¿Y si de verdad necesito una app que he cerrado?",
+      "Si el nivel de exigencia de tu plan lo permite, puedes tomarte un descanso de 5 minutos. En los planes equilibrados esperas 20 segundos antes del descanso; en los estrictos no hay descansos hasta que el plan termina. Los planes flexibles y equilibrados se pueden desactivar en Mola cuando quieras; un plan estricto no se puede desactivar hasta que se cumple su tiempo."
+    ],
+    [
+      "¿Puede Mola ver qué apps uso?",
+      "No. Eliges las apps con el selector de Tiempo de uso de Apple; Mola ni siquiera conoce los nombres de las que elegiste y solo guarda tokens cifrados que únicamente son válidos en tu dispositivo."
+    ],
+    [
+      "¿Qué necesito para usar la función de familia?",
+      "Basta con que Mola esté instalada en el teléfono de la madre o el padre y en el del hijo o la hija. Para que el menor no pueda quitar las reglas, recomendamos que su cuenta de Apple esté configurada como cuenta infantil en En familia."
+    ],
+    [
+      "¿Qué pasa con mis datos si elimino la app?",
+      "Tus planes, tu historial de enfoque y tu pared de azulejos se guardan en tu dispositivo, así que se eliminan junto con la app. Si has usado la función de familia, la página «Eliminar tus datos» explica cómo borrar tus registros del servidor."
+    ]
+  ],
+  "cta": {
+    "title": "Da un respiro a tus apps",
+    "text": "Mola llegará pronto al App Store."
+  },
+  "footer": "Desarrollada de forma independiente por Mehmet Mutlu.",
+  "more_apps": "Más juegos y apps de mm-apps",
+  "foot_nav": {
+    "privacy": "Privacidad",
+    "terms": "Condiciones",
+    "delete": "Eliminar tus datos",
+    "support": "Soporte"
+  },
+  "back": "Inicio",
+  "notfound_title": "Página no encontrada",
+  "notfound_body": "La página que buscas no está aquí.",
+  "skip": "Ir al contenido",
+  "menu_label": "Secciones",
+  "foot_label": "Páginas",
+  "guides_title": "Guías",
+  "guides": [
+    [
+      "guide-block",
+      "Cómo bloquear aplicaciones en el iPhone",
+      "Con los ajustes de Tiempo de uso y con Mola, paso a paso."
+    ],
+    [
+      "guide-limit",
+      "Cómo poner un límite de tiempo diario a una app",
+      "Límites de uso de apps, Tiempo de inactividad y los límites diarios de Mola."
+    ],
+    [
+      "guide-pomodoro",
+      "Qué es la técnica Pomodoro y cómo usarla",
+      "Rondas de 25 minutos, descansos y el teléfono fuera del trabajo."
+    ]
+  ],
+  "updated": "Última actualización",
+  "language_label": "Idioma"
+}

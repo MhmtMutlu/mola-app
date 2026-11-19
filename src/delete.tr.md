@@ -9,7 +9,7 @@ bulunur. Bunların hepsini uygulamanın içinden silebilirsin.
 1. Mola'yı aç, **Ayarlar** sekmesine git.
 2. **Aileden ayrıl ve verileri sil**'e dokun ve onayla.
 
-Hemen silinenler: sunucudaki hesabın, gönderdiğin ve sana gelen zarflar, cihaz kaydın ve bildirim jetonun. Ailedeki tek
+Hemen silinenler: sunucudaki rastgele kimliğin, gönderdiğin ve sana gelen zarflar, cihaz kaydın ve bildirim jetonun. Ailedeki tek
 ebeveynsen çocuk cihazlarının kayıtları da aynı anda silinir. Telefonundaki şifreleme anahtarları ve aile bilgileri de
 silinir. Bu işlem geri alınamaz.
 
@@ -18,7 +18,7 @@ silinir. Bu işlem geri alınamaz.
 1. **Aile** sekmesinde çocuğunun adına dokun.
 2. En altta **Aileden çıkar**'a dokun ve onayla.
 
-O cihazın sunucudaki hesabı, kaydı ve zarfları hemen silinir. Çocuğunun telefonu bir sonraki bağlanışında bunu öğrenir;
+O cihazın sunucudaki kimliği, kaydı ve zarfları hemen silinir. Çocuğunun telefonu bir sonraki bağlanışında bunu öğrenir;
 aile bilgilerini ve kuralları kendisi siler.
 
 ## Çocuk cihazındaysan

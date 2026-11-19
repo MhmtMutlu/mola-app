@@ -1,0 +1,225 @@
+{
+  "title": "Mola: Blokada aplikacji i minutnik skupienia na iPhone’a",
+  "description": "Mola to blokada aplikacji i aplikacja do skupienia na iPhone’a i iPada, która nie wymaga zakładania konta. Jest bezpłatna: bez reklam, bez śledzenia i bez narzędzi analitycznych.",
+  "nav": {
+    "features": "Funkcje",
+    "family": "Rodzina",
+    "privacy": "Prywatność",
+    "faq": "Pytania"
+  },
+  "hero": {
+    "eyebrow": "Blokada aplikacji i skupienie · iPhone, iPad, Apple Watch",
+    "headline": "Zamknij to, co cię rozprasza. Wróć do skupienia.",
+    "lead": "Mola blokuje wybrane przez ciebie aplikacje w ustalonych godzinach albo po wykorzystaniu dziennego czasu, a każda sesja skupienia maluje kafel. Nie trzeba zakładać konta, a dane o tym, jak korzystasz z telefonu, zostają na twoim urządzeniu.",
+    "soon": "Wkrótce w App Store",
+    "store": "Pobierz z App Store",
+    "note": "iOS 18 lub nowszy. Bez reklam, bez śledzenia.",
+    "alt": "Ekran Dzisiaj w aplikacji Mola: aktywny plan blokowania, dzisiejszy czas skupienia i podsumowanie tygodnia"
+  },
+  "steps_title": "Zacznij w trzech krokach",
+  "steps": [
+    [
+      "Wybierz aplikacje",
+      "W systemowym oknie wyboru Apple wskaż aplikacje, kategorie i witryny, które rozpraszają cię najbardziej. Twój wybór nie opuszcza telefonu."
+    ],
+    [
+      "Ustaw plan albo rozpocznij sesję",
+      "Utwórz plany na godziny pracy, nauki i snu; poza planem rozpocznij sesję skupienia, kiedy tylko chcesz."
+    ],
+    [
+      "Pomaluj swój kafel",
+      "Każda sesja skupienia maluje kafel. Gotowe kafle zbierają się na twojej ścianie; niedokończony kafel wraca w następnej sesji w tym samym miejscu."
+    ]
+  ],
+  "features_title": "Wszystko, co chroni twoje skupienie, w jednym miejscu",
+  "features": [
+    {
+      "shot": "plan",
+      "tag": "Plany blokowania",
+      "title": "Ty ustalasz godziny, reszta dzieje się sama",
+      "text": "Gdy plan się zaczyna, wybrane aplikacje się zamykają; gdy się kończy, znów się otwierają. Możesz mieć osobne plany na dni powszednie, weekend albo dowolne dni.",
+      "points": [
+        "Osobne plany na godziny pracy, nauki i snu",
+        "Plany, które trwają także po północy",
+        "Włączanie i wyłączanie planu jednym stuknięciem"
+      ],
+      "alt": "Ekran edycji planu: nazwa, godzina rozpoczęcia i zakończenia, dni oraz poziom ścisłości"
+    },
+    {
+      "shot": "limit",
+      "tag": "Limity dzienne",
+      "title": "Zdecyduj, ile czasu dziennie",
+      "text": "Przyznaj wybranym aplikacjom dzienny czas. Gdy zostanie wykorzystany, te aplikacje są zablokowane; pozostałe są nadal otwarte.",
+      "points": [
+        "Osobny wybór aplikacji dla każdego limitu",
+        "Dzienny czas od 5 minut do 8 godzin",
+        "Czas mierzy iOS; może się pomylić o kilka minut",
+        "Limit jest liczony osobno na każdym urządzeniu"
+      ],
+      "alt": "Edytor limitu: nazwa, aplikacje, dzienny czas i poziom ścisłości"
+    },
+    {
+      "shot": "focus",
+      "tag": "Sesje skupienia",
+      "title": "Pomodoro, nauka albo własny program",
+      "text": "Wybierz jeden z gotowych programów albo samodzielnie ustaw czas skupienia, liczbę rund i długość przerwy. Jeśli chcesz, wybrane aplikacje pozostają zablokowane przez całą sesję.",
+      "points": [
+        "Pomodoro (25 min), Nauka (45 min), Głębokie skupienie (50 min)",
+        "Aktywność na żywo na ekranie blokady i w Dynamic Island",
+        "Start razem z trybem skupienia na iPhonie; Mola może wyciszyć własne przypomnienia"
+      ],
+      "alt": "Ekran sesji skupienia: malowany kafel i pozostały czas"
+    },
+    {
+      "shot": "friction",
+      "tag": "Poziomy ścisłości",
+      "title": "Krótka chwila, zanim odpuścisz",
+      "text": "Gdy w wyważonym planie chcesz zrobić przerwę albo wcześniej zakończyć sesję, Mola najpierw prosi, by chwilę poczekać. Czasem to wystarcza. Ścisłego planu nie można natomiast zmienić, dopóki się nie skończy.",
+      "points": [
+        "Elastyczny: 5 minut przerwy, kiedy tylko chcesz",
+        "Wyważony: 20 sekund czekania przed przerwą",
+        "Ścisły: bez przerw do końca planu"
+      ],
+      "alt": "Arkusz krótkiej przerwy: przycisk przerwy staje się aktywny po zakończeniu odliczania"
+    },
+    {
+      "shot": "wall",
+      "tag": "Ściana kafli",
+      "title": "Niech twoją pracę będzie widać",
+      "text": "Każdy kafel dostaje najpierw kontur, potem kolory, a na końcu szkliwo. Zaczynasz od gwiazdy seldżuckiej; gdy ściana rośnie, pojawiają się kolejne wzory: Tulipan, Goździk, Rumi, Çintemani, Hatayi, Plecionka i Granat, a ty przechodzisz drogę od ucznia do mistrza.",
+      "points": [
+        "Osiem wzorów, cztery stopnie: uczeń, czeladnik, mistrz, mistrz pracowni",
+        "Zawsze widzisz, ile kafli zostało do następnego wzoru",
+        "Kafel pomalowany w połowie nie przepada; nic, na co już udało ci się zapracować, nie znika"
+      ],
+      "alt": "Ściana kafli: gotowe kafle i wybór następnego wzoru"
+    }
+  ],
+  "extras_title": "Z tobą także poza telefonem",
+  "extras": [
+    [
+      "Apple Watch",
+      "Minutnik skupienia na Apple Watch: dopóki aplikacja na zegarku jest otwarta, sesja pozostaje zsynchronizowana z telefonem, malowany jest ten sam kafel, a pozostały czas i aktualną godzinę widać jednocześnie."
+    ],
+    [
+      "Widżety",
+      "Rozpocznij sesję z ekranu początkowego jednym stuknięciem i sprawdź pozostały czas jednym spojrzeniem."
+    ],
+    [
+      "iPad i iPhone Duo",
+      "Układ dopasowuje się do wielkości ekranu; po złożeniu urządzenia jesteś w tym samym miejscu."
+    ],
+    [
+      "15 języków",
+      "Turecki i angielski, a także polski, niemiecki, francuski, hiszpański, japoński, koreański, arabski i inne."
+    ]
+  ],
+  "family": {
+    "tag": "Rodzina",
+    "title": "Jeśli chcesz, razem z rodziną",
+    "text": "Korzystając z aplikacji Mola dla siebie, możesz w każdej chwili utworzyć rodzinę. Dzienny czas, godziny szkoły i godziny snu na telefonie dziecka ustalasz razem z dzieckiem, a ono widzi na swoim ekranie, która zasada obowiązuje, dlaczego i do kiedy.",
+    "points": [
+      [
+        "Zasady ustalane razem",
+        "Dzienny czas, tryb szkolny i tryb snu. Nie ma ukrytych zasad."
+      ],
+      [
+        "Prośby o czas",
+        "Dziecko prosi o dodatkowy czas i podaje krótki powód; rodzic odpowiada jednym stuknięciem."
+      ],
+      [
+        "Ustalenia, nie nadzór",
+        "Mola nie pokazuje rodzicowi wiadomości, zdjęć, lokalizacji ani tego, które aplikacje są używane."
+      ],
+      [
+        "Szyfrowanie end-to-end",
+        "Wiadomości między urządzeniami rodziny są szyfrowane na urządzeniach; nasz serwer nie może odczytać ich treści."
+      ]
+    ],
+    "note": "Przerwa albo nowa zasada od rodzica zostaje zastosowana, gdy na telefonie dziecka otworzy się aplikacja Mola. Mola działa z systemowym Czasem przed ekranem firmy Apple.",
+    "alt_parent": "Ekran Rodzina u rodzica: prośba dziecka o czas i pozostały czas",
+    "alt_child": "Ekran Dzisiaj u dziecka: pozostały czas i obowiązujące zasady"
+  },
+  "privacy": {
+    "tag": "Prywatność",
+    "title": "Twoje dane zostają u ciebie",
+    "text": "Zaprojektowaliśmy aplikację Mola tak, żeby działała bez zbierania danych. Gdy korzystasz z niej tylko dla siebie, na naszym serwerze nie powstaje żaden wpis o tobie.",
+    "points": [
+      "Nie pytamy o adres e-mail, numer telefonu ani lokalizację; nie ma zakładania konta ani hasła.",
+      "Twój wybór aplikacji, plany, historia skupienia i ściana kafli zostają na twoim urządzeniu; nie są do nas wysyłane.",
+      "Nie widzimy, z jakich aplikacji korzystasz ani jak długo.",
+      "Jeśli korzystasz z funkcji rodzinnej, nasz serwer przechowuje tylko losowe identyfikatory, zaszyfrowane wiadomości, których nie możemy odczytać, oraz token powiadomień rodzica, który włączył powiadomienia.",
+      "Nie ma reklam, śledzenia ani narzędzi analitycznych."
+    ],
+    "more": "Przeczytaj pełną Politykę prywatności"
+  },
+  "faq_title": "Najczęstsze pytania",
+  "faq": [
+    [
+      "Na jakich urządzeniach działa Mola?",
+      "Na iPhone’ach z systemem iOS 18 lub nowszym, iPadach z systemem iPadOS 18 lub nowszym oraz zegarkach Apple Watch z systemem watchOS 11 lub nowszym."
+    ],
+    [
+      "Czy muszę zakładać konto?",
+      "Nie. Nie ma rejestracji, adresu e-mail ani hasła; z aplikacji Mola możesz korzystać od razu po jej otwarciu. Funkcja rodzinna też nie pyta o adres e-mail ani numer telefonu: urządzenia łączy się kodem QR, a ty wpisujesz tylko imię, które zobaczy twoja rodzina."
+    ],
+    [
+      "Czy mogę korzystać z aplikacji tylko przez określony czas dziennie?",
+      "Tak. Utwórz limit dzienny na karcie Dzisiaj, wybierz aplikacje i ustaw dzienny czas. Gdy czas zostanie wykorzystany, te aplikacje są zablokowane; jeśli pozwala na to poziom ścisłości limitu, możesz zrobić 5 minut przerwy. Aby zamiast tego blokować je w określonych godzinach, użyj planu blokowania."
+    ],
+    [
+      "Co, jeśli naprawdę potrzebuję zamkniętej aplikacji?",
+      "Jeśli pozwala na to poziom ścisłości planu, możesz zrobić 5 minut przerwy. W wyważonych planach przed przerwą czekasz 20 sekund; w ścisłych nie ma przerw do końca planu. Plany elastyczne i wyważone możesz wyłączyć w aplikacji Mola w każdej chwili; ścisłego planu nie można wyłączyć, dopóki jego czas nie minie."
+    ],
+    [
+      "Czy Mola widzi, z jakich aplikacji korzystam?",
+      "Nie. Aplikacje wybierasz w systemowym oknie Czasu przed ekranem firmy Apple; Mola nie zna nawet nazw wybranych aplikacji i przechowuje tylko zaszyfrowane tokeny, które działają wyłącznie na twoim urządzeniu."
+    ],
+    [
+      "Czego potrzebuję, żeby korzystać z funkcji rodzinnej?",
+      "Wystarczy, że aplikacja Mola jest zainstalowana na telefonie rodzica i na telefonie dziecka. Żeby dziecko nie mogło usunąć zasad, zalecamy, aby konto Apple dziecka było skonfigurowane jako konto dziecka w Chmurze rodzinnej."
+    ],
+    [
+      "Co stanie się z moimi danymi, jeśli usunę aplikację?",
+      "Twoje plany, historia skupienia i ściana kafli są przechowywane na twoim urządzeniu, więc znikają razem z aplikacją. Jeśli korzystasz z funkcji rodzinnej, strona „Usuwanie danych” wyjaśnia, jak usunąć swoje wpisy z serwera."
+    ]
+  ],
+  "cta": {
+    "title": "Daj aplikacjom przerwę",
+    "text": "Mola wkrótce pojawi się w App Store."
+  },
+  "footer": "Tworzone niezależnie przez Mehmeta Mutlu.",
+  "more_apps": "Więcej gier i aplikacji od mm-apps",
+  "foot_nav": {
+    "privacy": "Prywatność",
+    "terms": "Warunki",
+    "delete": "Usuwanie danych",
+    "support": "Pomoc"
+  },
+  "back": "Strona główna",
+  "notfound_title": "Nie znaleziono strony",
+  "notfound_body": "Strony, której szukasz, tutaj nie ma.",
+  "skip": "Przejdź do treści",
+  "menu_label": "Sekcje",
+  "foot_label": "Strony",
+  "guides_title": "Poradniki",
+  "guides": [
+    [
+      "guide-block",
+      "Jak zablokować aplikacje na iPhonie",
+      "W ustawieniach Czasu przed ekranem i w aplikacji Mola, krok po kroku."
+    ],
+    [
+      "guide-limit",
+      "Jak ustawić dzienny limit czasu dla aplikacji",
+      "Limity aplikacji, Czas bez urządzenia i limity dzienne w aplikacji Mola."
+    ],
+    [
+      "guide-pomodoro",
+      "Czym jest technika Pomodoro i jak z niej korzystać",
+      "25-minutowe rundy, przerwy i telefon, który nie przeszkadza w pracy."
+    ]
+  ],
+  "updated": "Ostatnia aktualizacja",
+  "language_label": "Język"
+}

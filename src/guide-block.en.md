@@ -9,28 +9,28 @@ There are two ways to block an app on iPhone: iOS's own Screen Time settings, an
 3. For particular apps, tap **App Limits > Add Limit**, choose the app or category and set the daily time.
 4. For the limit to actually close the app, set a passcode with **Lock Screen Time Settings** and turn on **Block at End of Limit**.
 
-Without a passcode, the **Ignore Limit** option on the screen that appears when time is up removes the block with one tap. This route works well for rules set for children; on your own phone you know the passcode too, so the block often stays a reminder.
+Without a passcode, the **Ignore Limit** option on the screen that appears when time is up removes the block with one tap. This route works well for rules set for children; on your own phone you know the passcode too, so the block often ends up as no more than a reminder.
 
 ## With Mola
 
 1. Open Mola and allow Screen Time access. You don't need an account.
-2. Choose the apps, categories and websites you want closed with Apple's picker.
+2. Use Apple's picker to choose the apps, categories and websites you want closed.
 3. Choose when they close: once a daily amount of time is up, during set hours, or only during a focus session.
 4. Choose the strictness level: flexible, balanced or strict.
 
 In a balanced plan, when you want to open a closed app you wait 20 seconds first, then your 5-minute break begins. A strict plan has no breaks until it ends.
 
-## Which one, when?
+## Which should you use?
 
 | | Screen Time | Mola |
 |---|---|---|
 | Setup | Inside Settings, across several menus | One flow: apps, time, strictness |
-| Closing by hours | A single Downtime schedule | Several plans (work, study, sleep) |
-| Getting past the block | Passcode or "Ignore Limit" | A waiting time; no breaks in a strict plan |
+| Scheduled blocking | A single Downtime schedule | Several plans (work, study, sleep) |
+| Getting past the block | Passcode or "Ignore Limit" | A short wait; no breaks in a strict plan |
 | Focus sessions | None | Pomodoro and your own program |
 | Price | Free, built into iOS | Free |
 
-If you want a simple limit on a single app, Screen Time is enough. If you want several plans, a waiting time or focus sessions, Mola keeps them in one place.
+If you want a simple limit on a single app, Screen Time is enough. If you want several plans, a wait before breaks, or focus sessions, Mola keeps them in one place.
 
 ## Common questions
 

@@ -1,16 +1,16 @@
 {
   "title": "Mola: App Blocker & Focus Timer for iPhone",
-  "description": "Mola is an app blocker and focus app for iPhone and iPad that needs no sign-up. It is free, with no ads, no tracking and no analytics tools.",
+  "description": "Mola is an app blocker and focus app for iPhone and iPad that needs no sign-up. It's free, with no ads, no tracking and no analytics.",
   "nav": {
     "features": "Features",
     "family": "Family",
     "privacy": "Privacy",
-    "faq": "Questions"
+    "faq": "FAQ"
   },
   "hero": {
     "eyebrow": "App blocker and focus · iPhone, iPad, Apple Watch",
-    "headline": "Close your distractions. Get back to your focus.",
-    "lead": "Mola blocks the apps you choose during the hours you set or once your daily time is up, and every focus session paints a tile. There is no sign-up, and your data is not sent to us.",
+    "headline": "Close the apps that distract you. Get back to focus.",
+    "lead": "Mola blocks the apps you choose during the hours you set or once your daily time is up, and every focus session paints a tile. There is no sign-up, and your usage data stays on your phone.",
     "soon": "Coming soon to the App Store",
     "store": "Download on the App Store",
     "note": "iOS 18 or later. No ads, no tracking.",
@@ -20,23 +20,23 @@
   "steps": [
     [
       "Choose your apps",
-      "Pick the apps, categories and websites that distract you most with Apple's own picker. Your selection never leaves your phone."
+      "Use Apple's own picker to choose the apps, categories and websites that distract you most. Your selection never leaves your phone."
     ],
     [
       "Set up a plan or start a session",
-      "Create plans for your work, study and sleep hours; outside a plan, start a focus session whenever you like."
+      "Create plans for work, study and sleep hours, or start a focus session whenever you like."
     ],
     [
       "Paint your tile",
-      "Every focus session paints a tile. Finished tiles build up on your wall; an unfinished tile picks up where it left off in your next session."
+      "Every focus session paints a tile. Finished tiles collect on your wall; an unfinished tile picks up where it left off in your next session."
     ]
   ],
-  "features_title": "Everything that protects your focus, in one place",
+  "features_title": "Everything you need to focus, in one place",
   "features": [
     {
       "shot": "plan",
       "tag": "Blocking plans",
-      "title": "You set the hours, the rest takes care of itself",
+      "title": "You set the hours. The rest takes care of itself.",
       "text": "When a plan starts, the apps you chose close; when it ends, they open again. You can set up separate plans for weekdays, weekends or any days you like.",
       "points": [
         "Separate plans for work, study and sleep hours",
@@ -48,13 +48,13 @@
     {
       "shot": "limit",
       "tag": "Daily limits",
-      "title": "Decide how much each day",
+      "title": "You decide how much each day",
       "text": "Give the apps you choose a daily amount of time. When the time is up, those apps are blocked; your other apps stay open.",
       "points": [
-        "A separate choice of apps for each limit",
+        "Each limit has its own set of apps",
         "A daily time from 5 minutes to 8 hours",
         "iOS measures the time; it can be off by a few minutes",
-        "A limit is counted on each device separately"
+        "Each device counts its own limit"
       ],
       "alt": "The limit editor: name, apps, daily time and strictness"
     },
@@ -62,19 +62,19 @@
       "shot": "focus",
       "tag": "Focus sessions",
       "title": "Pomodoro, study or your own program",
-      "text": "Choose one of the ready-made programs or set the focus time, the number of rounds and the break length yourself. If you like, the apps you chose stay blocked while the session runs.",
+      "text": "Choose one of the ready-made programs or set the focus time, the number of rounds and the break length yourself. You can also keep the apps you chose blocked while the session runs.",
       "points": [
         "Pomodoro (25 min), Study (45 min), Deep focus (50 min)",
         "A Live Activity on the Lock Screen and in the Dynamic Island",
-        "Starts together with your iPhone's Focus; Mola can keep its own reminders silent"
+        "Can start when your iPhone's Focus turns on; Mola can silence its own reminders"
       ],
       "alt": "The focus session screen: a tile being painted and the time remaining"
     },
     {
       "shot": "friction",
       "tag": "Strictness levels",
-      "title": "A brief moment before you give up",
-      "text": "When you want to take a break during a balanced plan or end a session early, Mola first has you wait a moment. Sometimes that is enough. A strict plan, though, can't be changed until it ends.",
+      "title": "A short pause before you give in",
+      "text": "When you want to take a break during a balanced plan or end a session early, Mola asks you to wait a moment first. Sometimes that's enough. A strict plan can't be changed until it ends.",
       "points": [
         "Flexible: a 5-minute break whenever you like",
         "Balanced: a 20-second wait before a break",
@@ -86,20 +86,20 @@
       "shot": "wall",
       "tag": "Tile wall",
       "title": "Make your effort visible",
-      "text": "Every tile gets its contour first, then its colours, and last its glaze. You begin with the Seljuk star; as your wall grows, the Tulip, Carnation, Rumi, Çintemani, Hatayi, Interlace and Pomegranate patterns unlock, and you move from apprentice towards master.",
+      "text": "Every tile gets its outline first, then its colors, and finally its glaze. You begin with the Seljuk star; as your wall grows, the Tulip, Carnation, Rumi, Çintemani, Hatayi, Interlace and Pomegranate patterns unlock, and you move from apprentice toward master.",
       "points": [
-        "Eight patterns, four ranks: apprentice, journeyman, master, head master",
+        "Eight patterns, four ranks: apprentice, journeyman, master, master craftsman",
         "You always see how many tiles are left until the next pattern",
         "A half-painted tile is never lost; nothing you earned is taken back"
       ],
       "alt": "The tile wall: finished tiles and the choice of the next pattern"
     }
   ],
-  "extras_title": "With you beyond your phone",
+  "extras_title": "Beyond the app",
   "extras": [
     [
       "Apple Watch",
-      "A focus timer on Apple Watch: while the watch app is open the session stays in sync with your phone, the same tile is painted, and the time left and the time of day are both in view."
+      "A focus timer on Apple Watch: while the watch app is open, the session stays in sync with your phone and paints the same tile, and you can see both the time left and the time of day."
     ],
     [
       "Widgets",
@@ -117,7 +117,7 @@
   "family": {
     "tag": "Family",
     "title": "With your family, if you like",
-    "text": "While using Mola for yourself, you can set up a family at any time. You decide on the daily time, school hours and sleep hours for your child's phone together with your child, who sees on their own screen which rule applies, why, and until when.",
+    "text": "You can use Mola on your own and set up a family whenever you like. You and your child decide together on the daily time, school hours and sleep hours for their phone, and your child can always see which rule applies, why, and until when.",
     "points": [
       [
         "Rules set together",
@@ -143,13 +143,13 @@
   "privacy": {
     "tag": "Privacy",
     "title": "Your data stays with you",
-    "text": "We designed Mola to work without collecting data. When you use it on your own, no record about you is created on our server.",
+    "text": "We designed Mola to work without collecting data. When you use it on your own, our server holds no record of you.",
     "points": [
       "We don't ask for an email address, phone number or location; there is no sign-up and no password.",
       "Your app selection, your plans, your focus history and your tile wall stay on your device; they are not sent to us.",
       "We can't see which apps you use or for how long.",
       "If you use the family feature, our server holds only random identifiers, encrypted messages we can't read and the notification token of a parent who turns on notifications.",
-      "There are no ads, no tracking and no analytics tools."
+      "No ads, no tracking, no analytics."
     ],
     "more": "Read the full Privacy Policy"
   },
@@ -177,7 +177,7 @@
     ],
     [
       "What do I need to use the family feature?",
-      "Mola just needs to be installed on both the parent's and the child's phone. So that the child can't remove the rules, we recommend that the child's Apple Account be set up as a child in Family Sharing."
+      "Just install Mola on both the parent's and the child's phone. We recommend setting up the child's Apple Account as a child account in Family Sharing; otherwise Screen Time access can be turned off in Settings on the child's phone."
     ],
     [
       "What happens to my data if I delete the app?",
@@ -188,7 +188,7 @@
     "title": "Give your apps a break",
     "text": "Mola is coming soon to the App Store."
   },
-  "footer": "Developed independently by Mehmet Mutlu.",
+  "footer": "Made by Mehmet Mutlu, an independent developer.",
   "more_apps": "More games and apps by mm-apps",
   "foot_nav": {
     "privacy": "Privacy",
@@ -217,7 +217,7 @@
     [
       "guide-pomodoro",
       "What the Pomodoro Technique is and how to use it",
-      "25-minute rounds, breaks and keeping the phone out of the work."
+      "25-minute rounds, breaks, and keeping your phone out of the way."
     ]
   ],
   "updated": "Last updated",
