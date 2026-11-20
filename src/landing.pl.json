@@ -1,6 +1,6 @@
 {
   "title": "Mola: Blokada aplikacji i minutnik skupienia na iPhone’a",
-  "description": "Mola to blokada aplikacji i aplikacja do skupienia na iPhone’a i iPada, która nie wymaga zakładania konta. Jest bezpłatna: bez reklam, bez śledzenia i bez narzędzi analitycznych.",
+  "description": "Mola to blokada aplikacji i aplikacja do skupienia na iPhone’a i iPada, która nie wymaga zakładania konta. Do własnego użytku jest bezpłatna: bez reklam, bez śledzenia i bez narzędzi analitycznych.",
   "nav": {
     "features": "Funkcje",
     "family": "Rodzina",
@@ -136,7 +136,7 @@
         "Wiadomości między urządzeniami rodziny są szyfrowane na urządzeniach; nasz serwer nie może odczytać ich treści."
       ]
     ],
-    "note": "Przerwa albo nowa zasada od rodzica zostaje zastosowana, gdy na telefonie dziecka otworzy się aplikacja Mola. Mola działa z systemowym Czasem przed ekranem firmy Apple.",
+    "note": "Przerwa albo nowa zasada od rodzica zostaje zastosowana, gdy na telefonie dziecka otworzy się aplikacja Mola. Mola działa z systemowym Czasem przed ekranem firmy Apple. Funkcja rodzinna działa w subskrypcji miesięcznej lub rocznej; telefon dziecka nic nie płaci.",
     "alt_parent": "Ekran Rodzina u rodzica: prośba dziecka o czas i pozostały czas",
     "alt_child": "Ekran Dzisiaj u dziecka: pozostały czas i obowiązujące zasady"
   },

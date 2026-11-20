@@ -413,7 +413,7 @@ def llms():
     t = S["en"]
     facts = [("Platforms", "iPhone (iOS 18 or later) and iPad (iPadOS 18 or later); a focus timer on Apple Watch (watchOS 11 or later)"),
              ("Sign-up", "none (no email, no password); the family feature pairs devices with a QR code and asks only for a display name"),
-             ("Price", "free"),
+             ("Price", "free for your own use; the family feature is a monthly or yearly subscription bought through Apple"),
              ("Ads, tracking, analytics", "none"),
              ("Where data lives", t["privacy"]["points"][1]),
              ("Languages", t["extras"][3][1]),

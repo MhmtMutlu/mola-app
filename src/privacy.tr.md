@@ -1,6 +1,6 @@
 # Mola Gizlilik Politikası
 
-**Yürürlük tarihi:** 17 Kasım 2026 · **Sürüm:** 1.1
+**Yürürlük tarihi:** 21 Kasım 2026 · **Sürüm:** 1.2
 
 Bu metin, KVKK (6698 sayılı Kişisel Verilerin Korunması Kanunu) madde 10 uyarınca aydınlatma metni ve AB Genel Veri
 Koruma Tüzüğü (GDPR) madde 13 uyarınca bilgilendirme olarak hazırlanmıştır. Kısa KVKK aydınlatma metni:
@@ -129,7 +129,7 @@ Verilerini **satmayız** ve reklam amacıyla **paylaşmayız.** Yalnız şu alı
 | **Güzel Hosting** (GNET İnternet Telekomünikasyon A.Ş., Türkiye) | Bölüm 3.2 ve 3.3'teki sunucu verileri | Sunucumuzun bulunduğu sanal sunucu hizmeti; veritabanı ve sunucu yazılımı (açık kaynaklı Supabase) bu sunucuda, bizim işletmemizle çalışır | Barındırma hizmeti sağlayıcı; herkese açık hizmet koşullarıyla çalışır, aramızda ayrıca bir veri işleme sözleşmesi yoktur |
 | **Güzel Hosting**, kurumsal e-posta | Bize yazdığın e-postalar ve yanıtlarımız | Destek adresimiz bu hizmette barındırılır | Aynı |
 | **MailChannels Corporation** (Kanada) | Sana gönderdiğimiz yanıtın içeriği ve e-posta adresin, yalnız iletim sırasında | Güzel Hosting'in posta iletim hizmeti | Güzel Hosting'in alt hizmeti; kendi koşullarıyla çalışır |
-| **Apple** (Apple Distribution International Ltd. ve bağlı şirketleri) | Uygulamanın App Store'dan indirilmesi; Ekran Süresi ve Aile Paylaşımı (bunlar cihazında Apple'ın sistemidir); ebeveyn telefonunda bildirimleri açtıysan o telefonun bildirim jetonu, uygulamanın kimliği ve içeriksiz bir bildirim, sunucumuzdan; iOS ayarlarında izin verdiysen Apple'ın kendi çökme ve kullanım istatistikleri | App Store, Ekran Süresi, bildirim | Kendi koşulları ve gizlilik politikasıyla çalışır |
+| **Apple** (Apple Distribution International Ltd. ve bağlı şirketleri) | Uygulamanın App Store'dan indirilmesi; aile aboneliğini satın alırsan satın alma işlemi (ödemeyi Apple alır, ödeme bilgilerini biz görmeyiz; abonelik durumunu uygulama cihazında Apple'dan okur ve sunucumuza göndermez); Ekran Süresi ve Aile Paylaşımı (bunlar cihazında Apple'ın sistemidir); ebeveyn telefonunda bildirimleri açtıysan o telefonun bildirim jetonu, uygulamanın kimliği ve içeriksiz bir bildirim, sunucumuzdan; iOS ayarlarında izin verdiysen Apple'ın kendi çökme ve kullanım istatistikleri | App Store, Ekran Süresi, bildirim | Kendi koşulları ve gizlilik politikasıyla çalışır |
 | **Yetkili kamu kurumları ve mahkemeler** | Yalnız hukuken zorunlu olan kadarı | Hukuki yükümlülük | — |
 
 **Üçüncü tarafların kendi koşulları.** Apple, hizmetlerini kendi bağımsız koşulları ve gizlilik politikası altında

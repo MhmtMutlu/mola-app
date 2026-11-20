@@ -1,6 +1,6 @@
 {
   "title": "Mola: App Blocker & Focus Timer for iPhone",
-  "description": "Mola is an app blocker and focus app for iPhone and iPad that needs no sign-up. It's free, with no ads, no tracking and no analytics.",
+  "description": "Mola is an app blocker and focus app for iPhone and iPad that needs no sign-up. Using it for yourself is free, with no ads, no tracking and no analytics.",
   "nav": {
     "features": "Features",
     "family": "Family",
@@ -136,7 +136,7 @@
         "Messages between family devices are encrypted on the devices; our server can't read their content."
       ]
     ],
-    "note": "A break or a new rule from the parent is applied when Mola is opened on the child's phone. Mola works with Apple's Screen Time system.",
+    "note": "A break or a new rule from the parent is applied when Mola is opened on the child's phone. Mola works with Apple's Screen Time system. The family feature is opened by a monthly or yearly subscription; a child's phone pays nothing.",
     "alt_parent": "The parent's Family screen: the child's time request and remaining time",
     "alt_child": "The child's Today screen: the time remaining and the rules in effect"
   },

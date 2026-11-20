@@ -1,6 +1,6 @@
 {
   "title": "Mola: Bloquear Aplicativos e Timer de Foco para iPhone",
-  "description": "O Mola é um bloqueador de apps e app de foco para iPhone e iPad que não pede cadastro. É gratuito, sem anúncios, sem rastreamento e sem ferramentas de análise.",
+  "description": "O Mola é um bloqueador de apps e app de foco para iPhone e iPad que não pede cadastro. Para uso próprio é gratuito, sem anúncios, sem rastreamento e sem ferramentas de análise.",
   "nav": {
     "features": "Recursos",
     "family": "Família",
@@ -136,7 +136,7 @@
         "As mensagens entre os dispositivos da família são criptografadas nos próprios dispositivos; nosso servidor não consegue ler o conteúdo."
       ]
     ],
-    "note": "Uma pausa ou uma regra nova do responsável é aplicada quando o Mola for aberto no celular da criança. O Mola funciona com o sistema Tempo de Uso da Apple.",
+    "note": "Uma pausa ou uma regra nova do responsável é aplicada quando o Mola for aberto no celular da criança. O Mola funciona com o sistema Tempo de Uso da Apple. O recurso de família é liberado com uma assinatura mensal ou anual; o celular do seu filho não paga nada.",
     "alt_parent": "Tela Família do responsável: o pedido de tempo da criança e o tempo restante",
     "alt_child": "Tela Hoje da criança: o tempo restante e as regras em vigor"
   },

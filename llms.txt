@@ -1,12 +1,12 @@
 # Mola
 
-> Mola is an app blocker and focus app for iPhone and iPad that needs no sign-up. It's free, with no ads, no tracking and no analytics.
+> Mola is an app blocker and focus app for iPhone and iPad that needs no sign-up. Using it for yourself is free, with no ads, no tracking and no analytics.
 
 ## Facts
 
 - Platforms: iPhone (iOS 18 or later) and iPad (iPadOS 18 or later); a focus timer on Apple Watch (watchOS 11 or later)
 - Sign-up: none (no email, no password); the family feature pairs devices with a QR code and asks only for a display name
-- Price: free
+- Price: free for your own use; the family feature is a monthly or yearly subscription bought through Apple
 - Ads, tracking, analytics: none
 - Where data lives: Your app selection, your plans, your focus history and your tile wall stay on your device; they are not sent to us.
 - Languages: Turkish and English, along with German, French, Spanish, Japanese, Korean, Arabic and more.

@@ -1,6 +1,6 @@
 {
   "title": "Mola: Apps sperren & Fokus-Timer für iPhone",
-  "description": "Mola ist ein App-Blocker und eine Fokus-App für iPhone und iPad, ganz ohne Registrierung. Mola ist kostenlos und kommt ohne Werbung, Tracking und Analyse-Tools aus.",
+  "description": "Mola ist ein App-Blocker und eine Fokus-App für iPhone und iPad, ganz ohne Registrierung. Für dich selbst ist Mola kostenlos und kommt ohne Werbung, Tracking und Analyse-Tools aus.",
   "nav": {
     "features": "Funktionen",
     "family": "Familie",
@@ -136,7 +136,7 @@
         "Nachrichten zwischen den Geräten der Familie werden auf den Geräten verschlüsselt; unser Server kann ihren Inhalt nicht lesen."
       ]
     ],
-    "note": "Eine Pause oder eine neue Regel der Eltern wird angewendet, sobald Mola auf dem Telefon des Kindes geöffnet wird. Mola arbeitet mit der Bildschirmzeit von Apple.",
+    "note": "Eine Pause oder eine neue Regel der Eltern wird angewendet, sobald Mola auf dem Telefon des Kindes geöffnet wird. Mola arbeitet mit der Bildschirmzeit von Apple. Die Familienfunktion gibt es im Monats- oder Jahresabo; das Handy deines Kindes zahlt nichts.",
     "alt_parent": "Der Bildschirm „Familie“ der Eltern: die Zeitanfrage des Kindes und die restliche Zeit",
     "alt_child": "Der Bildschirm „Heute“ des Kindes: die restliche Zeit und die geltenden Regeln"
   },

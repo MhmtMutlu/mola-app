@@ -1,6 +1,6 @@
 {
   "title": "Mola: Blocco App e Studio per iPhone",
-  "description": "Mola è un’app per bloccare le app e concentrarsi su iPhone e iPad, senza registrazione. È gratuita, senza pubblicità, senza tracciamento e senza strumenti di analisi.",
+  "description": "Mola è un’app per bloccare le app e concentrarsi su iPhone e iPad, senza registrazione. Per l’uso personale è gratuita, senza pubblicità, senza tracciamento e senza strumenti di analisi.",
   "nav": {
     "features": "Funzioni",
     "family": "Famiglia",
@@ -136,7 +136,7 @@
         "I messaggi tra i dispositivi della famiglia vengono crittografati sui dispositivi; il nostro server non può leggerne il contenuto."
       ]
     ],
-    "note": "Una pausa o una nuova regola del genitore viene applicata quando Mola viene aperta sul telefono del figlio. Mola funziona con il sistema Tempo di utilizzo di Apple.",
+    "note": "Una pausa o una nuova regola del genitore viene applicata quando Mola viene aperta sul telefono del figlio. Mola funziona con il sistema Tempo di utilizzo di Apple. La funzione Famiglia si attiva con un abbonamento mensile o annuale; il telefono di tuo figlio non paga nulla.",
     "alt_parent": "La schermata Famiglia del genitore: la richiesta di tempo del figlio e il tempo rimanente",
     "alt_child": "La schermata Oggi del figlio: il tempo rimanente e le regole in vigore"
   },

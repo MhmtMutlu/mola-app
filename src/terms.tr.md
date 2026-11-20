@@ -1,6 +1,6 @@
 # Mola Kullanım Koşulları
 
-**Yürürlük tarihi:** 15 Kasım 2026 · **Sürüm:** 1.0
+**Yürürlük tarihi:** 21 Kasım 2026 · **Sürüm:** 1.1
 
 ## Kısaca
 
@@ -68,9 +68,18 @@ Kurulumdan önce çocuğunuzla konuşmanızı öneririz: kuralları birlikte koy
 
 ## 6. Ücret
 
-Mola şu an ücretsizdir. İleride ücretli özellikler eklenirse satın almalar Apple üzerinden yapılır; **satıcı Apple'dır**
-ve ödemeler, faturalar ve iadeler Apple'ın koşullarına tabidir. İade taleplerini Apple'a yaparsın
-(https://reportaproblem.apple.com). Ücretli özellikler gelmeden önce bu koşulları güncelleriz.
+Mola'yı kendin için kullanmak ücretsizdir. Aile özelliği (bir aile kurmak, çocuğunun telefonunu eklemek ve ailenin
+kurallarını değiştirmek) aylık ya da yıllık abonelikle açılır; çocuğun telefonu ücret ödemez. Fiyat ve dönem, satın
+almadan önce uygulamada gösterilir.
+
+- Abonelik, dönem bitmeden en az 24 saat önce iptal edilmezse aynı dönem için kendiliğinden yenilenir. Aboneliğini
+  App Store hesap ayarlarından yönetir ve iptal edersin; iptal, içinde bulunduğun dönemin sonunda geçerli olur.
+- Satın almalar Apple üzerinden yapılır; **satıcı Apple'dır** ve ödemeler, faturalar ve iadeler Apple'ın koşullarına
+  tabidir. İade taleplerini Apple'a yaparsın (https://reportaproblem.apple.com). Ödeme bilgilerini biz görmeyiz.
+- Abonelik sona erdiğinde kurulmuş aile silinmez ve var olan kurallar olduğu gibi sürer. Süre isteklerine yanıt
+  vermek, bir molayı bitirmek, bir çocuğu aileden çıkarmak ve aileden ayrılmak **her zaman** ücretsizdir. Yeni bir
+  aile kurmak, çocuk eklemek ve kuralları değiştirmek için aboneliğin etkin olması gerekir.
+- Tüketici olarak yasadan doğan hakların saklıdır.
 
 ## 7. Hizmetin değişmesi ve sona ermesi
 

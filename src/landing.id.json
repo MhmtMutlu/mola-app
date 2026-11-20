@@ -1,6 +1,6 @@
 {
   "title": "Mola: Blokir Aplikasi & Timer Fokus untuk iPhone",
-  "description": "Mola adalah aplikasi untuk memblokir aplikasi dan menjaga fokus di iPhone dan iPad, tanpa perlu mendaftar. Gratis, tanpa iklan, tanpa pelacakan, dan tanpa alat analitik.",
+  "description": "Mola adalah aplikasi untuk memblokir aplikasi dan menjaga fokus di iPhone dan iPad, tanpa perlu mendaftar. Gratis untuk pemakaian sendiri, tanpa iklan, tanpa pelacakan, dan tanpa alat analitik.",
   "nav": {
     "features": "Fitur",
     "family": "Keluarga",
@@ -136,7 +136,7 @@
         "Pesan antarperangkat keluarga dienkripsi di perangkat; server kami tidak bisa membaca isinya."
       ]
     ],
-    "note": "Istirahat atau aturan baru dari orang tua diterapkan saat Mola dibuka di ponsel anak. Mola bekerja dengan sistem Durasi Layar Apple.",
+    "note": "Istirahat atau aturan baru dari orang tua diterapkan saat Mola dibuka di ponsel anak. Mola bekerja dengan sistem Durasi Layar Apple. Fitur keluarga dibuka dengan langganan bulanan atau tahunan; ponsel anak tidak membayar apa pun.",
     "alt_parent": "Layar Keluarga milik orang tua: permintaan waktu dari anak dan sisa waktunya",
     "alt_child": "Layar Hari Ini milik anak: sisa waktu dan aturan yang berlaku"
   },

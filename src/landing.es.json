@@ -1,6 +1,6 @@
 {
   "title": "Mola: Bloquear Aplicaciones y Temporizador de Enfoque para iPhone",
-  "description": "Mola es una app para bloquear aplicaciones y concentrarte en el iPhone y el iPad que no pide registro. Es gratuita, sin anuncios, sin rastreo y sin herramientas de analítica.",
+  "description": "Mola es una app para bloquear aplicaciones y concentrarte en el iPhone y el iPad que no pide registro. Usarla para ti es gratis, sin anuncios, sin rastreo y sin herramientas de analítica.",
   "nav": {
     "features": "Funciones",
     "family": "Familia",
@@ -136,7 +136,7 @@
         "Los mensajes entre los dispositivos de la familia se cifran en los propios dispositivos; nuestro servidor no puede leer su contenido."
       ]
     ],
-    "note": "Un descanso o una regla nueva de la madre o el padre se aplica cuando se abre Mola en el teléfono del hijo o la hija. Mola funciona con el sistema Tiempo de uso de Apple.",
+    "note": "Un descanso o una regla nueva de la madre o el padre se aplica cuando se abre Mola en el teléfono del hijo o la hija. Mola funciona con el sistema Tiempo de uso de Apple. La función de familia se abre con una suscripción mensual o anual; el teléfono de tu hijo no paga nada.",
     "alt_parent": "La pantalla Familia de la madre o el padre: la solicitud de tiempo del hijo o la hija y el tiempo restante",
     "alt_child": "La pantalla Hoy del hijo o la hija: el tiempo restante y las reglas vigentes"
   },

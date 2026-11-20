@@ -1,6 +1,6 @@
 # Mola Privacy Policy
 
-**Effective date:** 17 November 2026 · **Version:** 1.1
+**Effective date:** 21 November 2026 · **Version:** 1.2
 
 This is a translation provided for convenience. The binding text is the Turkish version:
 https://mola.mm-apps.com/gizlilik/ (Section 14). It has been prepared as the notice required by Article 10 of the
@@ -137,7 +137,7 @@ We do not **sell** your data and do not **share** it for advertising. Only these
 | **Güzel Hosting** (GNET İnternet Telekomünikasyon A.Ş., Türkiye) | The server data of Sections 3.2 and 3.3 | The virtual server service our server is located on; the database and server software (open-source Supabase) run on this server, operated by us | Hosting service provider; it operates under its publicly available terms of service, and there is no separate data processing agreement between us |
 | **Güzel Hosting**, business e-mail | E-mails you write to us and our replies | Our support address is hosted on this service | Same |
 | **MailChannels Corporation** (Canada) | The content of the reply we send you and your e-mail address, in transit only | Güzel Hosting's mail relay service | A sub-service of Güzel Hosting; it operates under its own terms |
-| **Apple** (Apple Distribution International Ltd. and its affiliates) | The download of the app from the App Store; Screen Time and Family Sharing (these are Apple's system on your device); if you turned on notifications on the parent's phone, that phone's notification token, the app's identifier and a notification without content, from our server; Apple's own crash and usage statistics if you allowed them in iOS settings | App Store, Screen Time, notifications | It operates under its own terms and privacy policy |
+| **Apple** (Apple Distribution International Ltd. and its affiliates) | The download of the app from the App Store; if you buy the family subscription, the purchase (Apple takes the payment and we do not see your payment details; the app reads the subscription's status from Apple on your device and does not send it to our server); Screen Time and Family Sharing (these are Apple's system on your device); if you turned on notifications on the parent's phone, that phone's notification token, the app's identifier and a notification without content, from our server; Apple's own crash and usage statistics if you allowed them in iOS settings | App Store, Screen Time, notifications | It operates under its own terms and privacy policy |
 | **Competent public authorities and courts** | Only as much as the law requires | Legal obligation | — |
 
 **Third parties' own terms.** Apple provides its services under its own independent terms and privacy policy and

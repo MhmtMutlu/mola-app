@@ -1,6 +1,6 @@
 {
   "title": "Mola: Apps blokkeren & focustimer voor iPhone",
-  "description": "Mola is een appblokker en focus-app voor iPhone en iPad waarvoor je je niet hoeft te registreren. Mola is gratis en heeft geen advertenties, geen tracking en geen analysetools.",
+  "description": "Mola is een appblokker en focus-app voor iPhone en iPad waarvoor je je niet hoeft te registreren. Voor jezelf is Mola gratis en heeft het geen advertenties, geen tracking en geen analysetools.",
   "nav": {
     "features": "Functies",
     "family": "Gezin",
@@ -136,7 +136,7 @@
         "Berichten tussen de apparaten van het gezin worden op de apparaten versleuteld; onze server kan de inhoud niet lezen."
       ]
     ],
-    "note": "Een pauze of een nieuwe regel van de ouder wordt toegepast zodra Mola op de telefoon van het kind wordt geopend. Mola werkt met Schermtijd van Apple.",
+    "note": "Een pauze of een nieuwe regel van de ouder wordt toegepast zodra Mola op de telefoon van het kind wordt geopend. Mola werkt met Schermtijd van Apple. De gezinsfunctie open je met een maand- of jaarabonnement; de telefoon van je kind betaalt niets.",
     "alt_parent": "Het scherm Gezin van de ouder: het tijdverzoek van het kind en de resterende tijd",
     "alt_child": "Het scherm Vandaag van het kind: de resterende tijd en de regels die gelden"
   },

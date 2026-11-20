@@ -1,6 +1,6 @@
 # Mola Terms of Use
 
-**Effective date:** 15 November 2026 · **Version:** 1.0
+**Effective date:** 21 November 2026 · **Version:** 1.1
 
 This is a translation provided for convenience. The binding text is the Turkish version:
 https://mola.mm-apps.com/kosullar/
@@ -70,9 +70,20 @@ We recommend talking with your child before setup: when you set the rules togeth
 
 ## 6. Price
 
-Mola is currently free. If paid features are added later, purchases are made through Apple; **the seller is Apple**,
-and payments, invoices and refunds are subject to Apple's terms. You make refund requests to Apple
-(https://reportaproblem.apple.com). We will update these terms before paid features arrive.
+Using Mola for yourself is free. The family feature (setting up a family, adding your child's phone and changing the
+family's rules) is opened by a monthly or yearly subscription; a child's phone pays nothing. The price and the period
+are shown in the app before you buy.
+
+- A subscription renews by itself for the same period unless it is cancelled at least 24 hours before the period
+  ends. You manage and cancel it in your App Store account settings; a cancellation takes effect at the end of the
+  period you are in.
+- Purchases are made through Apple; **the seller is Apple**, and payments, invoices and refunds are subject to
+  Apple's terms. You make refund requests to Apple (https://reportaproblem.apple.com). We do not see your payment
+  details.
+- When a subscription ends, a family that exists is not deleted and its rules keep running as they are. Answering a
+  request for time, ending a break, removing a child and leaving the family are **always** free. Setting up a new
+  family, adding a child and changing the rules need an active subscription.
+- Your statutory rights as a consumer are not affected.
 
 ## 7. Changes to and end of the service
 

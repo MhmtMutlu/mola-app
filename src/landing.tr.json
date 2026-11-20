@@ -1,6 +1,6 @@
 {
   "title": "Mola: iPhone için Uygulama Engelleme ve Odak",
-  "description": "Mola, iPhone ve iPad için kayıt gerektirmeyen bir uygulama engelleme ve odak uygulamasıdır. Ücretsizdir; reklam, izleme ve analiz aracı içermez.",
+  "description": "Mola, iPhone ve iPad için kayıt gerektirmeyen bir uygulama engelleme ve odak uygulamasıdır. Kendi kullanımın ücretsizdir; reklam, izleme ve analiz aracı içermez.",
   "nav": {
     "features": "Özellikler",
     "family": "Aile",
@@ -136,7 +136,7 @@
         "Aile cihazları arasındaki mesajlar cihazlarda şifrelenir; sunucumuz içeriği okuyamaz."
       ]
     ],
-    "note": "Ebeveynin verdiği mola ya da yeni kural, çocuğun telefonunda Mola açıldığında uygulanır. Mola, Apple'ın Ekran Süresi sistemiyle çalışır.",
+    "note": "Ebeveynin verdiği mola ya da yeni kural, çocuğun telefonunda Mola açıldığında uygulanır. Mola, Apple'ın Ekran Süresi sistemiyle çalışır. Aile özelliği aylık ya da yıllık abonelikle açılır; çocuğun telefonu ücret ödemez.",
     "alt_parent": "Ebeveynin Aile ekranı: çocuğun süre isteği ve kalan süresi",
     "alt_child": "Çocuğun Bugün ekranı: kalan süre ve geçerli kurallar"
   },

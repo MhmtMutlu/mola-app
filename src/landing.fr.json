@@ -1,6 +1,6 @@
 {
   "title": "Mola : bloqueur d’applications et minuteur de concentration pour iPhone",
-  "description": "Mola est un bloqueur d’applications et une app de concentration pour iPhone et iPad, sans inscription. Elle est gratuite, sans publicité, sans suivi et sans outil d’analyse.",
+  "description": "Mola est un bloqueur d’applications et une app de concentration pour iPhone et iPad, sans inscription. Pour ton propre usage, elle est gratuite, sans publicité, sans suivi et sans outil d’analyse.",
   "nav": {
     "features": "Fonctionnalités",
     "family": "Famille",
@@ -136,7 +136,7 @@
         "Les messages entre les appareils de la famille sont chiffrés sur les appareils ; notre serveur ne peut pas en lire le contenu."
       ]
     ],
-    "note": "Une pause ou une nouvelle règle lancée par le parent s’applique à l’ouverture de Mola sur le téléphone de l’enfant. Mola fonctionne avec le système Temps d’écran d’Apple.",
+    "note": "Une pause ou une nouvelle règle lancée par le parent s’applique à l’ouverture de Mola sur le téléphone de l’enfant. Mola fonctionne avec le système Temps d’écran d’Apple. La fonction Famille s’ouvre avec un abonnement mensuel ou annuel ; le téléphone de ton enfant ne paie rien.",
     "alt_parent": "L’écran Famille du parent : la demande de temps de l’enfant et le temps restant",
     "alt_child": "L’écran Aujourd’hui de l’enfant : le temps restant et les règles en vigueur"
   },
