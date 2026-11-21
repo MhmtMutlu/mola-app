@@ -119,6 +119,10 @@ Ad ve soyad, e-posta (bize yazmadıkça), telefon numarası, doğum tarihi ve ya
 mesajlar, tarama geçmişi, sağlık verisi, reklam kimliği (IDFA). iOS'un "izleme izni" sorusunu sormayız. Uygulamada
 analitik, çökme raporlama, reklam ya da pazarlama aracı yoktur.
 
+**Kamera:** çocuğun telefonunda aile eşleme QR kodunu uygulamanın içinden okutmak istersen Mola kamerayı açar.
+Görüntü cihazında yalnız QR kodu bulmak için işlenir; kaydedilmez, bize ya da başkasına gönderilmez. Kamera izni
+vermezsen kodu telefonun kendi Kamera uygulamasıyla okutabilirsin.
+
 ## 4. Verilerini kimlerle paylaşıyoruz?
 
 Verilerini **satmayız** ve reklam amacıyla **paylaşmayız.** Yalnız şu alıcılar söz konusudur:

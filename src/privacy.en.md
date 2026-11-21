@@ -127,6 +127,10 @@ First and last name, e-mail (unless you write to us), phone number, date of birt
 contacts, photos, messages, browsing history, health data, advertising identifier (IDFA). We do not show iOS's tracking
 prompt. The app contains no analytics, crash-reporting, advertising or marketing tool.
 
+**Camera:** if you choose to scan the family's pairing QR code from inside the app on the child's phone, Mola opens
+the camera. The picture is processed on the device only to find the QR code; it is not saved and not sent to us or
+anyone else. If you do not allow the camera, you can scan the code with the phone's own Camera app.
+
 ## 4. Who we share your data with
 
 We do not **sell** your data and do not **share** it for advertising. Only these recipients are involved:
